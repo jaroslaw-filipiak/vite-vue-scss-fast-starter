@@ -6,6 +6,9 @@
 
 import './scss/main.scss';
 
+import 'swiper/css';
+import Swiper from 'swiper/bundle';
+
 const handleHamburger = () => {
   const hamburger = document.querySelector('.hamburger');
   hamburger.addEventListener('click', () => {
@@ -15,4 +18,17 @@ const handleHamburger = () => {
 
 window.addEventListener('DOMContentLoaded', () => {
   handleHamburger();
+
+  const swiper = new Swiper('.swiper', {
+    speed: 9400,
+    loop: true,
+    centeredSlides: false,
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+  });
 });

@@ -12,10 +12,7 @@
   <!-- top bar fixed h60px mobile -->
   <section class="top-bar pl-5 fixed left-0 top-0 w-full">
     <div class="w-12 flex flex-none">
-      <img class="w-10" src="./src/assets/logo.svg" alt="GrafikOnline logotyp">
-      <img class="w-10" src="/src/assets/logo.svg" alt="GrafikOnline logotyp">
-      <img class="w-10" src="src/assets/logo.svg" alt="GrafikOnline logotyp">
-      <img class="w-10" src="/vite.svg" alt="GrafikOnline logotyp">
+      <img class="w-10" src="/logo.svg" alt="GrafikOnline logotyp">
     </div>
     <div class="w-full text-base text-light flex items-center justify-center">
 
@@ -35,9 +32,22 @@
   <!-- divider -->
   <div class="pt-[60px]"></div>
   <!-- divider -->
+
   <section class="notificaton-slider">
-    <div>Internetowe Studio Projektowe</div>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper" style="transition-timing-function: linear;">
+        <!-- Slides -->
+        <div class="swiper-slide">Internetowe Studio Projektowe</div>
+        <div class="swiper-slide">Internetowe Studio Projektowe</div>
+        <div class="swiper-slide">Internetowe Studio Projektowe</div>
+
+      </div>
+    </div>
+    <div></div>
   </section>
+
   <!-- <div id="app"></div> -->
   <script type="module" src="/src/main.js"></script>
 </body>
