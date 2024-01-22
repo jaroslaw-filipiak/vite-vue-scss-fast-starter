@@ -11,3 +11,8 @@
 @import './components/notifications-slider';
 
 @import './vendors/hamburgers/hamburgers';
+
+html,
+body {
+  @apply bg-dark;
+}
