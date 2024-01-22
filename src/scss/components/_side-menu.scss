@@ -10,7 +10,7 @@
     @apply dark:text-light flex flex-col gap-[2px];
 
     li {
-      @apply text-sm h-10 dark:bg-dark pl-3 pr-3 flex items-center;
+      @apply text-[14px] h-10 dark:bg-dark pl-3 pr-3 flex items-center;
     }
   }
 }

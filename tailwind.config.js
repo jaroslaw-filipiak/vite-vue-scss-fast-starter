@@ -22,8 +22,8 @@ export default {
   plugins: [
     require('tailwindcss-fluid-type')({
       settings: {
-        fontSizeMin: 1.125,
-        fontSizeMax: 1.21,
+        fontSizeMin: 1,
+        fontSizeMax: 1.34,
         ratioMin: 1.125,
         ratioMax: 1.2,
         screenMin: 20,
