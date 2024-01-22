@@ -13,6 +13,7 @@ export default {
       dark2: '#9F9F9F',
       darkMain: '#1E1E1E',
       gray: '#777777',
+      red: '#EF4123',
     },
     extend: {},
   },
