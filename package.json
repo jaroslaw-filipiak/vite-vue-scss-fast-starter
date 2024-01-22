@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "swiper": "^11.0.5",
+    "tailwindcss-fluid-type": "^2.0.3",
     "vue": "^3.3.11"
   },
   "devDependencies": {
