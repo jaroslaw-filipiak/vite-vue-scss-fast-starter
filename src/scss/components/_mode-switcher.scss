@@ -49,9 +49,10 @@
   #toggle:checked + #switch #circle {
     left: 2px;
     background-position: -10px 0;
+    @apply bg-red;
   }
 
   #toggle:checked + #switch {
-    @apply bg-dark;
+    @apply bg-darkMain;
   }
 }
