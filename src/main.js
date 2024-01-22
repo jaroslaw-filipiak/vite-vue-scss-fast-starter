@@ -11,8 +11,10 @@ import Swiper from 'swiper/bundle';
 
 const handleHamburger = () => {
   const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('#side-menu');
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('is-active');
+    nav.classList.toggle('hidden');
   });
 };
 

@@ -1,4 +1,4 @@
 .top-bar {
-  @apply h-[60px] flex dark:text-light;
+  @apply h-[60px] flex dark:text-light z-10;
   @apply dark:bg-gradient-to-r dark:from-[#1e1e1e] dark:to-[#262626];
 }
