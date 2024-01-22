@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     speed: 9400,
     loop: true,
     centeredSlides: false,
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     autoplay: {
