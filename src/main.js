@@ -18,8 +18,21 @@ const handleHamburger = () => {
   });
 };
 
+const handleMobileMenuClick = () => {
+  const items = document.querySelectorAll('.parent');
+  console.log(items);
+  const itemsArray = Array.from(items);
+  itemsArray.map((item) => {
+    item.addEventListener('click', () => {
+      const submenu = item.nextElementSibling;
+      submenu.classList.toggle('h-0');
+    });
+  });
+};
+
 window.addEventListener('DOMContentLoaded', () => {
   handleHamburger();
+  handleMobileMenuClick();
 
   const swiper = new Swiper('.swiper', {
     speed: 9400,

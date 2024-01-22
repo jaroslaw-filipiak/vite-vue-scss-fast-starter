@@ -10,8 +10,8 @@
 
 <body>
   <!-- top bar fixed h60px mobile -->
-  <section class="top-bar pl-5 fixed left-0 top-0 w-full border-b-dark border-b-[2px">
-    <div class="w-12 flex flex-none ]">
+  <section class="top-bar pl-5 fixed left-0 top-0 w-full border-b-dark border-b-[2px]">
+    <div class="w-12 flex flex-none">
       <img class="w-10" src="/logo.svg" alt="GrafikOnline logotyp">
     </div>
     <div class="w-full text-base text-light flex items-center justify-center">
@@ -48,6 +48,8 @@
 
   <!-- mobile menu sidemenu -->
 
+  <!-- TODO: elementy graficzne w menu -->
+
   <section id="side-menu" class="side-menu">
     <div class="flex items-center justify-between ">
       <div class="text-gray text-[12px]">Motyw Ciemny</div>
@@ -56,6 +58,64 @@
           <div id="circle"></div>
         </label>
       </div>
+    </div>
+
+    <div class="flex flex-col gap-0">
+      <ul class="mt-[66px]">
+        <li class="parent dark:text-light text-lg">
+          Studio
+        </li>
+
+        <div class="submenu h-0 overflow-hidden transition-all ">
+          <li class="child">O firmie</li>
+          <li class="child">Kontakt</li>
+          <li class="child">Aktualności</li>
+          <li class="child">Kariera</li>
+        </div>
+      </ul>
+
+      <ul>
+        <li class="parent dark:text-light text-lg">
+          Projekt logo
+        </li>
+
+        <div class="submenu mt-[14px]" style="display: none;">
+          <li class="child">O firmie</li>
+          <li class="child">Kontakt</li>
+          <li class="child">Aktualności</li>
+          <li class="child">Kariera</li>
+
+        </div>
+      </ul>
+
+      <ul>
+        <li class="parent dark:text-light text-lg">
+          Projekty reklamowe
+        </li>
+
+        <div class="submenu mt-[14px]" style="display: none;">
+          <li class="child">O firmie</li>
+          <li class="child">Kontakt</li>
+          <li class="child">Aktualności</li>
+          <li class="child">Kariera</li>
+
+        </div>
+      </ul>
+
+      <ul>
+        <li class="parent dark:text-light text-lg">
+          Strony internetowe
+        </li>
+
+        <div class="submenu mt-[14px]" style="display: none;">
+          <li class="child">O firmie</li>
+          <li class="child">Kontakt</li>
+          <li class="child">Aktualności</li>
+          <li class="child">Kariera</li>
+
+        </div>
+      </ul>
+
     </div>
 
   </section>

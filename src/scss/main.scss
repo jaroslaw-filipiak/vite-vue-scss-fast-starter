@@ -14,6 +14,8 @@
 
 @import './vendors/hamburgers/hamburgers';
 
+@import './utils/debug';
+
 html,
 body {
   @apply dark:bg-darkMain;
