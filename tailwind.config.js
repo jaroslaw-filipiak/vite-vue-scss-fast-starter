@@ -14,6 +14,8 @@ export default {
       darkMain: '#1E1E1E',
       gray: '#777777',
       red: '#EF4123',
+      black: '#000',
+      white: '#fff',
     },
     extend: {},
   },
