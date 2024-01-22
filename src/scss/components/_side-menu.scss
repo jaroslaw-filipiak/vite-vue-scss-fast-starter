@@ -1,4 +1,4 @@
 .side-menu {
-  @apply border border-[#fff] dark:bg-darkMain;
+  @apply border border-[#fff] dark:bg-darkMain pt-[34px] pb-[34] pl-6 pr-6;
   height: calc(100vh - (60px + 32px));
 }
