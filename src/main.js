@@ -7,6 +7,7 @@ import './style.scss';
 import './scss/main.scss';
 
 import 'swiper/css';
+import 'swiper/css/scrollbar';
 import Swiper from 'swiper/bundle';
 
 const handleHamburger = () => {
@@ -43,6 +44,14 @@ window.addEventListener('DOMContentLoaded', () => {
     autoplay: {
       delay: 0,
       disableOnInteraction: false,
+    },
+  });
+
+  const swiper2 = new Swiper('.slider-row__swiper', {
+    spaceBetween: 24,
+    slidesPerView: 'auto',
+    scrollbar: {
+      el: '.swiper-scrollbar',
     },
   });
 });
