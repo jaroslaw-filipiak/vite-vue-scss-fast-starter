@@ -1,6 +1,6 @@
 .side-menu {
-  @apply dark:bg-darkMain pt-[34px] pb-[34] pl-6 pr-6;
-  height: calc(100vh - (60px + 32px));
+  @apply dark:bg-darkMain pt-[84px] pb-[34] pl-6 pr-6;
+  height: 100dvh;
 
   .parent {
     @apply border-b dark:border-dark pt-5 pb-5;
