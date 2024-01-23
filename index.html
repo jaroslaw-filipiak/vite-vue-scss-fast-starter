@@ -9,184 +9,241 @@
 </head>
 
 <body>
-  <!-- top bar fixed h60px mobile -->
-  <section class="top-bar pl-5 lg:pr-14 lg:pl-14 fixed left-0 top-0 w-full ">
 
-    <div class="w-12 lg:w-[66px] flex flex-none">
-      <img class="w-10  lg:w-[66px]" src="/logo.svg" alt="GrafikOnline logotyp">
-    </div>
+  <header>
+    <!-- top bar fixed h60px mobile -->
+    <section class="top-bar pl-5 lg:pr-14 lg:pl-14 fixed left-0 top-0 w-full ">
 
-    <div class="w-full text-[16px] text-light flex items-center justify-center lg:hidden">
-      <p class=" relative inline-block pr-3 font-medium">GrafikOnline <span
-          class="absolute right-0 -top-2 inline-block text-[8px] uppercase">
-          pl</span></p>
-    </div>
+      <div class="w-12 lg:w-[66px] flex flex-none">
+        <img class="w-10  lg:w-[66px]" src="/logo.svg" alt="GrafikOnline logotyp">
+      </div>
 
-    <div class="border-[2px] border-dark w-[60px] border-b-[0px] flex flex-none items-center justify-center lg:hidden">
-      <button class="hamburger hamburger--squeeze" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-    </div>
+      <div class="w-full text-[16px] text-light flex items-center justify-center lg:hidden">
+        <p class=" relative inline-block pr-3 font-medium">GrafikOnline <span
+            class="absolute right-0 -top-2 inline-block text-[8px] uppercase">
+            pl</span></p>
+      </div>
 
-    <!-- desktop -->
-    <div class="desktop-menu hidden lg:flex items-center lg:w-6/12 xl:w-7/12 lg:pl-16  2xl:pl-[142px] ">
-      <ul class=" w-full flex lg:gap-[8px] xl:gap-[38px] 2xl:gap-[68px] h-full items-center">
-        <li class="fluid-text-base has-submenu group"><a class="transition-all relative top-0 group-hover:-top-1 "
-            href="#">Studio</a>
-        </li>
-        <li class="fluid-text-base"><a href="#">Projekt Logo</a></li>
-        <li class="fluid-text-base"><a href="#">Projekty Reklamowe</a></li>
-        <li class="fluid-text-base"><a href="#">Strony Internetowe</a></li>
-      </ul>
-    </div>
+      <div
+        class="border-[2px] border-dark w-[60px] border-b-[0px] flex flex-none items-center justify-center lg:hidden">
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
 
-    <div class="hidden lg:flex items-center justify-end gap-[24px] lg:w-6/12 xl:w-5/12">
+      <!-- desktop -->
+      <div class="desktop-menu hidden lg:flex items-center lg:w-6/12 xl:w-7/12 2xl:w-6/12 lg:pl-16 2xl:pl-[142px] ">
+        <ul class="w-full flex lg:gap-[8px] xl:gap-[38px] 2xl:gap-[68px] h-full items-center">
+          <li class="fluid-text-base has-submenu group"><a class="transition-all relative top-0 group-hover:-top-1 "
+              href="#">Studio</a>
+          </li>
+          <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 "
+              href="#">Projekt
+              Logo</a></li>
+          <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 "
+              href="#">Projekty
+              Reklamowe</a></li>
+          <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 " href="#">Strony
+              Internetowe</a></li>
+        </ul>
+      </div>
 
-      <!-- switcher -->
-      <div class="flex items-center gap-[19px]">
+      <div class="hidden lg:flex items-center justify-end gap-[24px] lg:w-6/12 xl:w-5/12">
+
+        <!-- switcher -->
+        <div class="flex items-center gap-[19px]">
+          <div class="dark:text-gray text-[12px]">Motyw Ciemny</div>
+          <div class="mode-switcher"><input type="checkbox" id="toggle">
+            <label id="switch" for="toggle">
+              <div id="circle"></div>
+            </label>
+          </div>
+        </div>
+
+        <!-- switcher -->
+
+        <!-- TODO: animacje svg -->
+        <a href=" #" class="btn btn--dark">
+          <span>Cennik</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+            <g id="Cennik_Icon" transform="translate(-135 -24)">
+              <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(135 24)" fill="none" stroke="#f9f2e5"
+                stroke-width="1.5">
+                <rect width="20" height="13" stroke="none" />
+                <rect x="0.75" y="0.75" width="18.5" height="11.5" fill="none" />
+              </g>
+              <line id="Line_9" data-name="Line 9" x2="11" transform="translate(139.5 29.5)" fill="none"
+                stroke="#f9f2e5" stroke-width="1.5" />
+            </g>
+          </svg>
+
+        </a>
+
+        <a href=" #" class="btn btn--red">
+          <span>Zamów projekt</span>
+
+          <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
+            <g id="Edit_Icon" transform="translate(-779.261 -1011.304)">
+              <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(787.786 1024.145)" fill="white"
+                stroke="#f9f2e5" stroke-width="1.5" />
+              <g id="Path_316" data-name="Path 316" transform="translate(790.623 1011.304) rotate(45)" fill="none">
+                <path d="M0,0H4.889V12.223l-2.4,3.845L0,12.223Z" stroke="none" />
+                <path
+                  d="M 1.499998092651367 1.499997138977051 L 1.499998092651367 11.77978992462158 L 2.467294692993164 13.27259922027588 L 3.389317989349365 11.7939338684082 L 3.389317989349365 1.499997138977051 L 1.499998092651367 1.499997138977051 M -1.9073486328125e-06 -1.9073486328125e-06 L 4.889317989349365 -1.9073486328125e-06 L 4.889317989349365 12.22328758239746 L 2.491608142852783 16.06853675842285 L -1.9073486328125e-06 12.22328758239746 L -1.9073486328125e-06 -1.9073486328125e-06 Z"
+                  stroke="none" fill="#fff" />
+              </g>
+            </g>
+          </svg>
+
+        </a>
+
+
+      </div>
+
+
+    </section>
+
+
+    <section class="notificaton-slider" style="display: none;">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper" style="transition-timing-function: linear;">
+          <!-- Slides -->
+          <div class="swiper-slide">Internetowe Studio Projektowe</div>
+          <div class="swiper-slide">Internetowe Studio Projektowe</div>
+          <div class="swiper-slide">Internetowe Studio Projektowe</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mobile menu sidemenu -->
+
+    <!-- TODO: elementy graficzne w menu -->
+
+    <section id="side-menu" class="side-menu hidden lg:hidden">
+      <div class="flex items-center justify-between ">
         <div class="dark:text-gray text-[12px]">Motyw Ciemny</div>
-        <div class="mode-switcher"><input type="checkbox" id="toggle">
-          <label id="switch" for="toggle">
+        <div class="mode-switcher"><input type="checkbox" id="toggle2">
+          <label id="switch" for="toggle2">
             <div id="circle"></div>
           </label>
         </div>
       </div>
 
-      <!-- switcher -->
+      <div class="flex flex-col gap-0">
+        <ul class="mt-[66px]">
+          <li class="parent dark:text-light text-[18px]">
+            Studio
+          </li>
 
-      <!-- TODO: animacje svg -->
-      <a href=" #" class="btn btn--dark">
-        <span>Cennik</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
-          <g id="Cennik_Icon" transform="translate(-135 -24)">
-            <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(135 24)" fill="none" stroke="#f9f2e5"
-              stroke-width="1.5">
-              <rect width="20" height="13" stroke="none" />
-              <rect x="0.75" y="0.75" width="18.5" height="11.5" fill="none" />
-            </g>
-            <line id="Line_9" data-name="Line 9" x2="11" transform="translate(139.5 29.5)" fill="none" stroke="#f9f2e5"
-              stroke-width="1.5" />
-          </g>
-        </svg>
+          <div class="submenu h-0 overflow-hidden transition-all ">
+            <li class="child">O firmie</li>
+            <li class="child">Kontakt</li>
+            <li class="child">Aktualności</li>
+            <li class="child">Kariera</li>
+          </div>
+        </ul>
 
-      </a>
+        <ul>
+          <li class="parent dark:text-light text-[18px]">
+            Projekt logo
+          </li>
 
-      <a href=" #" class="btn btn--red">
-        <span>Zamów projekt</span>
+          <div class="submenu mt-[14px]" style="display: none;">
+            <li class="child">O firmie</li>
+            <li class="child">Kontakt</li>
+            <li class="child">Aktualności</li>
+            <li class="child">Kariera</li>
 
-        <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
-          <g id="Edit_Icon" transform="translate(-779.261 -1011.304)">
-            <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(787.786 1024.145)" fill="white"
-              stroke="#f9f2e5" stroke-width="1.5" />
-            <g id="Path_316" data-name="Path 316" transform="translate(790.623 1011.304) rotate(45)" fill="none">
-              <path d="M0,0H4.889V12.223l-2.4,3.845L0,12.223Z" stroke="none" />
-              <path
-                d="M 1.499998092651367 1.499997138977051 L 1.499998092651367 11.77978992462158 L 2.467294692993164 13.27259922027588 L 3.389317989349365 11.7939338684082 L 3.389317989349365 1.499997138977051 L 1.499998092651367 1.499997138977051 M -1.9073486328125e-06 -1.9073486328125e-06 L 4.889317989349365 -1.9073486328125e-06 L 4.889317989349365 12.22328758239746 L 2.491608142852783 16.06853675842285 L -1.9073486328125e-06 12.22328758239746 L -1.9073486328125e-06 -1.9073486328125e-06 Z"
-                stroke="none" fill="#fff" />
-            </g>
-          </g>
-        </svg>
+          </div>
+        </ul>
 
-      </a>
+        <ul>
+          <li class="parent dark:text-light text-[18px]">
+            Projekty reklamowe
+          </li>
 
+          <div class="submenu mt-[14px]" style="display: none;">
+            <li class="child">O firmie</li>
+            <li class="child">Kontakt</li>
+            <li class="child">Aktualności</li>
+            <li class="child">Kariera</li>
 
-    </div>
+          </div>
+        </ul>
 
+        <ul>
+          <li class="parent dark:text-light text-[18px]">
+            Strony internetowe
+          </li>
 
-  </section>
+          <div class="submenu mt-[14px]" style="display: none;">
+            <li class="child">O firmie</li>
+            <li class="child">Kontakt</li>
+            <li class="child">Aktualności</li>
+            <li class="child">Kariera</li>
 
-  <!-- divider -->
-  <div class="pt-[60px] lg:pt-[128px]"></div>
-  <!-- divider -->
+          </div>
+        </ul>
 
-  <section class="notificaton-slider" style="display: none;">
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper" style="transition-timing-function: linear;">
-        <!-- Slides -->
-        <div class="swiper-slide">Internetowe Studio Projektowe</div>
-        <div class="swiper-slide">Internetowe Studio Projektowe</div>
-        <div class="swiper-slide">Internetowe Studio Projektowe</div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- mobile menu sidemenu -->
+  </header>
 
-  <!-- TODO: elementy graficzne w menu -->
+  <section class="content dark:text-light  flex items-start justify-start relative pt-[60px] lg:pt-[128px]">
+    <aside class="w-[240px] hidden lg:block h-screen fixed top-0 left-0">
+      <!-- empty aside -->
+    </aside>
+    <main class="pt-[91px] z-50 pl-[240px]">
+      <h1 class="fluid-text-5xl max-w-[888px]">Tworzymy Projekty Graficzne Online Dbamy o Wizualną Jakość Twojej Firmy
+      </h1>
 
-  <section id="side-menu" class="side-menu hidden lg:hidden">
-    <div class="flex items-center justify-between ">
-      <div class="dark:text-gray text-[12px]">Motyw Ciemny</div>
-      <div class="mode-switcher"><input type="checkbox" id="toggle2">
-        <label id="switch" for="toggle2">
-          <div id="circle"></div>
-        </label>
+      <div class=" flex items-center justify-start gap-[28px] pt-[157px]">
+        <a href=" #" class="btn btn--dark">
+          <span>Cennik</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+            <g id="Cennik_Icon" transform="translate(-135 -24)">
+              <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(135 24)" fill="none" stroke="#f9f2e5"
+                stroke-width="1.5">
+                <rect width="20" height="13" stroke="none" />
+                <rect x="0.75" y="0.75" width="18.5" height="11.5" fill="none" />
+              </g>
+              <line id="Line_9" data-name="Line 9" x2="11" transform="translate(139.5 29.5)" fill="none"
+                stroke="#f9f2e5" stroke-width="1.5" />
+            </g>
+          </svg>
+
+        </a>
+
+        <a href=" #" class="btn btn--red">
+          <span>Zamów projekt</span>
+
+          <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
+            <g id="Edit_Icon" transform="translate(-779.261 -1011.304)">
+              <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(787.786 1024.145)" fill="white"
+                stroke="#f9f2e5" stroke-width="1.5" />
+              <g id="Path_316" data-name="Path 316" transform="translate(790.623 1011.304) rotate(45)" fill="none">
+                <path d="M0,0H4.889V12.223l-2.4,3.845L0,12.223Z" stroke="none" />
+                <path
+                  d="M 1.499998092651367 1.499997138977051 L 1.499998092651367 11.77978992462158 L 2.467294692993164 13.27259922027588 L 3.389317989349365 11.7939338684082 L 3.389317989349365 1.499997138977051 L 1.499998092651367 1.499997138977051 M -1.9073486328125e-06 -1.9073486328125e-06 L 4.889317989349365 -1.9073486328125e-06 L 4.889317989349365 12.22328758239746 L 2.491608142852783 16.06853675842285 L -1.9073486328125e-06 12.22328758239746 L -1.9073486328125e-06 -1.9073486328125e-06 Z"
+                  stroke="none" fill="#fff" />
+              </g>
+            </g>
+          </svg>
+
+        </a>
+
       </div>
-    </div>
-
-    <div class="flex flex-col gap-0">
-      <ul class="mt-[66px]">
-        <li class="parent dark:text-light text-[18px]">
-          Studio
-        </li>
-
-        <div class="submenu h-0 overflow-hidden transition-all ">
-          <li class="child">O firmie</li>
-          <li class="child">Kontakt</li>
-          <li class="child">Aktualności</li>
-          <li class="child">Kariera</li>
-        </div>
-      </ul>
-
-      <ul>
-        <li class="parent dark:text-light text-[18px]">
-          Projekt logo
-        </li>
-
-        <div class="submenu mt-[14px]" style="display: none;">
-          <li class="child">O firmie</li>
-          <li class="child">Kontakt</li>
-          <li class="child">Aktualności</li>
-          <li class="child">Kariera</li>
-
-        </div>
-      </ul>
-
-      <ul>
-        <li class="parent dark:text-light text-[18px]">
-          Projekty reklamowe
-        </li>
-
-        <div class="submenu mt-[14px]" style="display: none;">
-          <li class="child">O firmie</li>
-          <li class="child">Kontakt</li>
-          <li class="child">Aktualności</li>
-          <li class="child">Kariera</li>
-
-        </div>
-      </ul>
-
-      <ul>
-        <li class="parent dark:text-light text-[18px]">
-          Strony internetowe
-        </li>
-
-        <div class="submenu mt-[14px]" style="display: none;">
-          <li class="child">O firmie</li>
-          <li class="child">Kontakt</li>
-          <li class="child">Aktualności</li>
-          <li class="child">Kariera</li>
-
-        </div>
-      </ul>
-
-    </div>
+    </main>
 
   </section>
+
+
+  <!-- <footer class=" p-3"></footer> -->
 
 
 
