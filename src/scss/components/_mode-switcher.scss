@@ -9,7 +9,7 @@
     display: block;
     width: 82px;
     height: 36px;
-    @apply bg-darkMain border-[2px] border-dark;
+    @apply bg-darkMain border-[2px] border-dark lg:bg-opacity-0;
     border-radius: 350px;
     cursor: pointer;
   }
@@ -29,23 +29,6 @@
     @apply border-red bg-darkMain;
   }
 
-  //   #text,
-  //   #text2 {
-  //     position: absolute;
-  //     top: 50%;
-  //     transform: translateY(-50%);
-  //     color: #fff;
-  //     font-size: 50px;
-  //     font-weight: 300;
-  //     margin-left: 375px;
-  //     z-index: 1;
-  //   }
-
-  //   #text2 {
-  //     margin-left: 30px;
-  //     text-align: right;
-  //   }
-
   #toggle:checked + #switch #circle {
     left: 2px;
     background-position: -10px 0;
@@ -53,6 +36,16 @@
   }
 
   #toggle:checked + #switch {
-    @apply bg-darkMain;
+    @apply bg-darkMain lg:bg-opacity-0;
+  }
+
+  #toggle2:checked + #switch #circle {
+    left: 2px;
+    background-position: -10px 0;
+    @apply bg-red;
+  }
+
+  #toggle2:checked + #switch {
+    @apply bg-darkMain lg:bg-opacity-0;
   }
 }

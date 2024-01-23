@@ -1,4 +1,22 @@
 .top-bar {
-  @apply h-[60px] lg:h-[128px] flex dark:text-light z-10;
+  @apply h-[60px] lg:h-[128px] flex justify-between dark:text-light z-10;
   @apply dark:bg-gradient-to-r dark:from-[#1e1e1e] dark:to-[#262626];
+}
+
+.desktop-menu {
+  .has-submenu {
+    &:hover {
+      &::after {
+        @apply relative -top-1 transition-all;
+      }
+    }
+    &::after {
+      content: url('dropdown.svg');
+      @apply ml-3 transition-all relative top-0;
+    }
+  }
+
+  li {
+    @apply border-[transparent] hover:border-b-red border-b-2 h-full flex items-center transition-all;
+  }
 }

@@ -20,7 +20,6 @@ const handleHamburger = () => {
 
 const handleMobileMenuClick = () => {
   const items = document.querySelectorAll('.parent');
-  console.log(items);
   const itemsArray = Array.from(items);
   itemsArray.map((item) => {
     item.addEventListener('click', () => {
