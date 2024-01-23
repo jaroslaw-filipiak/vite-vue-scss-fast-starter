@@ -12,10 +12,10 @@
 
   <header>
     <!-- top bar fixed h60px mobile -->
-    <section class="top-bar pl-5 lg:pr-14 lg:pl-14 fixed left-0 top-0 w-full ">
+    <section class="top-bar fixed left-0 top-0 w-full lg:pr-5">
 
-      <div class="w-12 lg:w-[66px] flex flex-none">
-        <img class="w-10  lg:w-[66px]" src="/logo.svg" alt="GrafikOnline logotyp">
+      <div class="pl-5 lg:pl-14  xl:w-[240px] flex flex-none ">
+        <img class="w-[43px] min-w-[43px] lg:w-[66px]" src="/logo.svg" alt="GrafikOnline logotyp">
       </div>
 
       <div class="w-full text-[16px] text-light flex items-center justify-center lg:hidden">
@@ -34,7 +34,7 @@
       </div>
 
       <!-- desktop -->
-      <div class="desktop-menu hidden lg:flex items-center lg:w-6/12 xl:w-7/12 2xl:w-6/12 lg:pl-16 2xl:pl-[142px] ">
+      <div class="desktop-menu hidden lg:flex items-center lg:w-6/12 xl:w-7/12 2xl:w-6/12 lg:pl-16 xl:pl-0">
         <ul class="w-full flex lg:gap-[8px] xl:gap-[38px] 2xl:gap-[68px] h-full items-center">
           <li class="fluid-text-base has-submenu group"><a class="transition-all relative top-0 group-hover:-top-1 "
               href="#">Studio</a>
@@ -54,7 +54,7 @@
 
         <!-- switcher -->
         <div class="flex items-center gap-[19px]">
-          <div class="dark:text-gray text-[12px]">Motyw Ciemny</div>
+          <div class="dark:text-gray text-[12px] hidden 2xl:flex">Motyw Ciemny</div>
           <div class="mode-switcher"><input type="checkbox" id="toggle">
             <label id="switch" for="toggle">
               <div id="circle"></div>
@@ -195,7 +195,7 @@
   </header>
 
   <section class="content dark:text-light  flex items-start justify-start relative pt-[60px] lg:pt-[128px]">
-    <aside class="w-[240px] h-screen hidden xl:fixed top-0 left-0">
+    <aside class="w-[240px] h-screen hidden xl:fixed xl:block top-0 left-0">
       <!-- empty aside -->
     </aside>
     <main class="pt-[91px] z-50 xl:pl-[240px] pl-5 pr-5 lg:pl-14 lg:pr-14">
