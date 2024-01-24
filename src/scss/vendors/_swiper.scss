@@ -4,10 +4,13 @@
 
 .swiper-scrollbar {
   background-color: #323232 !important;
+  height: 2px !important;
+  // bottom: 0px !important;
 }
 
 .slider-row__swiper {
   .swiper-slide {
-    max-width: 1196px !important;
+    @apply md:max-w-[696px] lg:max-w-[896px] xl:max-w-[1196px];
+    // max-width: 1196px !important;
   }
 }

@@ -1,0 +1,36 @@
+// homepage offer title + buttons grid switcher mobile / desktop
+
+.service-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'label'
+    'title'
+    'excerpt'
+    'buttons';
+
+  @media (min-width: 1280px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'title label'
+      'buttons excerpt';
+    grid-column-gap: 60px;
+  }
+}
+
+.grid__title {
+  grid-area: title;
+}
+
+.grid__buttons {
+  grid-area: buttons;
+}
+.grid__label {
+  grid-area: label;
+}
+
+.grid__excerpt {
+  grid-area: excerpt;
+}
