@@ -19,8 +19,9 @@ export default {
       white: '#fff',
     },
     extend: {
+      // TODO: FLUID text
       fontSize: {
-        '1-75rem': '1.75rem',
+        '1-75rem': '1.75rem', // 28px ? 21 pokazuje jako fluid , text-2xl pokazuje 27.78
       },
     },
   },

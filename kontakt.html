@@ -226,7 +226,7 @@
 
     </aside>
 
-    <main class="z-50 xl:pl-[180px] 2xl:pl-[240px] lg:pl-14  w-full">
+    <main class="z-50 xl:pl-[180px] 2xl:pl-[240px] lg:pl-14 w-full">
 
       <div class="breadcrumbs">
         <ul>
@@ -238,13 +238,14 @@
         </ul>
       </div>
 
-      <section id="contact-us-hero" class="dark:bg-gradient-to-r pl-5 lg:pl-0 pr-5 lg:pr-14 lg:pt-[124px]">
+      <section id="contact-us-hero" class="dark:bg-gradient-to-r pl-5 lg:pl-0 pr-5 lg:pr-14 lg:pt-[60px]">
 
-        <div class="border flex">
-          <div class="border w-full lg:w-5/12">
-            <div class="aspect-square bg-dark rounded-lg max-w-[586px]"></div>
+        <div class="flex">
+          <div class="w-full hidden lg:flex lg:w-6/12 xl:w-5/12">
+            <div class="w-full xl:aspect-square bg-dark rounded-lg "></div>
           </div>
-          <div class="border w-full lg:w-8/12 lg:pl-[65px] flex flex-col justify-between">
+          <div
+            class="w-full lg:w-6/12 xl:w-7/12 lg:pl-[45px] xl:pl-[65px] pt-[38px] lg:pt-0 flex flex-col justify-between">
             <div class="flex items-center justify-between">
               <div class="flex flex-col items-start justify-between ">
                 <h1 class="fluid-text-5xl max-w-[444px]">Czy <span class="text-red">jesteś gotowy
@@ -253,7 +254,7 @@
               </div>
             </div>
 
-            <div class="border">
+            <div class="border-b-2 border-dark pb-[29px] pt-[38px] lg:pt-[58px] ">
               <div class="flex items-center gap-[24px] pb-[37px] ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
                   <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
@@ -264,30 +265,41 @@
               </div>
               <div>
                 <div>
-                  <p class="fluid-text-base">Zadzwoń, wyślij wiadomość lub złóż zlecenie poprzez <br />dedykowany do
+                  <p class="text-[14px] lg:fluid-text-base">Zadzwoń, wyślij wiadomość lub złóż zlecenie poprzez
+                    <br />dedykowany do
                     tego
                     <span class="text-red">autorski
                       system online.</span>
                   </p>
-                  <p>&nbsp;</p><br />
-                  <p>&nbsp;</p>
-                  <p class="fluid-text-base">Godziny pracy studia: <span class="text-red">PN - PT - 9:00 - 16:00</span>
+                  <div class="divider border-b-[2px] border-dark lg:hidden max-lg:mt-[24px]"></div>
+                  <p class="hidden lg:block">&nbsp;</p><br />
+                  <p class="hidden lg:block">&nbsp;</p>
+                  <p class="text-[14px] lg:fluid-text-base hidden lg:flex">Godziny pracy studia: <span
+                      class="text-red pl-3">PN - PT - 9:00
+                      - 16:00</span>
                   </p>
                 </div>
-                <div class="pt-[52px]">
-                  <div class="flex items-center gap-[54px]">
+                <div class="lg:pt-[52px]">
+                  <div class="flex flex-col 2xl:flex-row items-start 2xl:items-center lg:gap-[14px] 2xl:gap-[54px]">
                     <!-- TODO: icon -->
-                    <a class="fluid-text-base font-medium" href="#">
+                    <a class="text-[14px] lg:fluid-text-base font-medium  max-lg:w-full max-lg:bg-dark max-lg:pt-[14px] max-lg:pb-[14px] max-lg:pl-6 max-lg:pr-6 max-lg:rounded-full whitespace-nowrap"
+                      href="#">
                       <img src="" style="width:11px;" alt="">
                       <p>+48 794 348 972</p>
                     </a>
 
-                    <a class="fluid-text-base font-medium underline" href="mailto:biuro@grafikonline.pl">
+                    <div class="text-[14px] max-lg:pt-[20px] max-lg:pb-[20px]  self-center lg:hidden">PN - PT
+                      - 9:00 -
+                      16:00
+                    </div>
+
+                    <a class="text-[14px] lg:fluid-text-base font-medium  max-lg:w-full max-lg:bg-dark max-lg:pt-[14px] max-lg:pb-[14px] max-lg:pl-6 max-lg:pr-6 max-lg:rounded-full "
+                      href="mailto:biuro@grafikonline.pl">
                       <img src="" style="width:11px;" alt="">
                       <p>biuro@grafikonline.pl</p>
                     </a>
 
-                    <a href=" #" class="btn btn--red whitespace-nowrap">
+                    <a href=" #" class="btn btn--red whitespace-nowrap max-lg:w-full max-lg:mt-[10px]">
                       <span>Zamów projekt</span>
 
                       <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
@@ -316,12 +328,15 @@
       </section>
 
       <section class="pl-5 lg:pl-0 pr-5 pr-lg:0 lg:pr-14">
-        <div class="divider-with-text flex items-center mt-8 lg:mt-20 xl:mt-[85px]">
-          <p class="text-[14px] text-gray min-w-[90px] flex lg:hidden">Mamy doświadczenie we współpracy z:</p>
-          <p class="text-[14px] text-gray hidden lg:flex w-[190px]">Mamy doświadczenie we współpracy z: </p>
-          <div class="border-[1px] border-gray w-full"></div>
-          <div class="pl-6">
-            <img src="arrow-down.svg" alt="">
+        <div class="divider-with-text flex items-center mt-8 lg:mt-20 xl:mt-[104px] ">
+          <p class=" text-light  w-full lg:w-auto whitespace-nowrap flex text-[16px] lg:fluid-text-2xl lg:pr-[65px]">
+            Mamy
+            doświadczenie we
+            współpracy z:
+          </p>
+          <div class="border-[1px] border-gray w-full hidden lg:flex"></div>
+          <div class="pl-6 hidden lg:flex">
+            <img class="lg:min-w-[14px]" src="arrow-down.svg" alt="">
           </div>
         </div>
       </section>
