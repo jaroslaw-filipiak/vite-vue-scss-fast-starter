@@ -12,20 +12,20 @@
 
   <header>
     <!-- top bar fixed h60px mobile -->
-    <section class="top-bar fixed left-0 top-0 w-full lg:pr-5 z-[444]">
+    <section class="top-bar fixed left-0 top-0 w-full xl:pr-5 z-[444]">
 
       <div class="pl-5 lg:pl-14  xl:w-[180px] 2xl:w-[240px] flex flex-none ">
         <img class="w-[43px] min-w-[43px] lg:w-[66px]" src="/logo.svg" alt="GrafikOnline logotyp">
       </div>
 
-      <div class="w-full text-[16px] text-light flex items-center justify-center lg:hidden">
+      <div class="w-full text-[16px] text-light flex items-center justify-center xl:hidden">
         <p class=" relative inline-block pr-3 font-medium">GrafikOnline <span
             class="absolute right-0 -top-2 inline-block text-[8px] uppercase">
             pl</span></p>
       </div>
 
       <div
-        class="border-[2px] border-dark w-[60px] border-b-[0px] flex flex-none items-center justify-center lg:hidden">
+        class="border-[2px] border-dark w-[60px] lg:w-[110px] border-b-[0px] flex flex-none items-center justify-center xl:hidden">
         <button class="hamburger hamburger--squeeze" type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -34,7 +34,7 @@
       </div>
 
       <!-- desktop -->
-      <div class="desktop-menu hidden lg:flex items-center lg:w-6/12 xl:w-7/12 2xl:w-6/12 lg:pl-16 xl:pl-0">
+      <div class="desktop-menu hidden xl:flex items-center lg:w-6/12 xl:w-7/12 2xl:w-6/12 lg:pl-16 xl:pl-0">
         <ul class="w-full flex lg:gap-[8px] xl:gap-[38px] 2xl:gap-[68px] h-full items-center">
           <li class="fluid-text-base has-submenu group"><a class="transition-all relative top-0 group-hover:-top-1 "
               href="#">Studio</a>
@@ -50,7 +50,7 @@
         </ul>
       </div>
 
-      <div class="hidden lg:flex items-center justify-end gap-[24px] xl:gap-[10px] 2xl:gap-[24px] lg:w-6/12 xl:w-5/12">
+      <div class="hidden xl:flex items-center justify-end gap-[24px] xl:gap-[10px] 2xl:gap-[24px] lg:w-6/12 xl:w-5/12">
 
         <!-- switcher -->
         <div class="flex items-center gap-[19px] ">
@@ -123,7 +123,7 @@
 
     <!-- TODO: elementy graficzne w menu -->
 
-    <section id="side-menu" class="side-menu hidden lg:hidden">
+    <section id="side-menu" class="side-menu hidden xl:hidden">
       <div class="flex items-center justify-between ">
         <div class="dark:text-gray text-[12px]">Motyw Ciemny</div>
         <div class="mode-switcher"><input type="checkbox" id="toggle2">
@@ -431,9 +431,10 @@
           </h3>
 
         </div>
-        <div class="border flex">
-          <div class="border w-full lg:w-5/12">
-            <div class="aspect-square bg-dark rounded-lg max-w-[586px]"></div>
+        <div class="flex">
+          <div class="w-full lg:w-5/12">
+            <!-- max-w-[586px] -->
+            <div class="w-full xl:aspect-square bg-dark rounded-lg"></div>
           </div>
           <div class="border w-full lg:w-8/12 lg:pl-[65px]">
             <div class="flex items-center justify-between">

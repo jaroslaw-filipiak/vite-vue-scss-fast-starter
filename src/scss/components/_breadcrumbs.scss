@@ -1,5 +1,5 @@
 .breadcrumbs {
-  @apply border-b-[2px] border-dark pb-3;
+  @apply border-b-[2px] border-dark pb-3 lg:border-none;
   ul {
     @apply flex items-center justify-start pt-4 gap-6 pl-5 lg:pl-0 pr-5 lg:pr-14;
 

@@ -3,6 +3,7 @@ import './scss/main.scss';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 
+import Swiper from 'swiper/bundle';
 import Lenis from '@studio-freight/lenis';
 
 // lenis init
@@ -35,6 +36,30 @@ const handleMobileMenuClick = () => {
     });
   });
 };
+
+const logosSwiper = new Swiper('.logos-slider', {
+  spaceBetween: 17,
+  // slidesPerView: 'auto',
+  slidesPerView: 2,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 17,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+    // when window width is >= 640px
+
+    1024: {
+      slidesPerView: 'auto',
+      spaceBetween: 24,
+    },
+  },
+});
 
 window.addEventListener('DOMContentLoaded', () => {
   handleHamburger();
