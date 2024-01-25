@@ -38,9 +38,16 @@ const handleMobileMenuClick = () => {
 };
 
 const logosSwiper = new Swiper('.logos-slider', {
+  speed: 9400,
+  loop: true,
+  centeredSlides: false,
   spaceBetween: 17,
   // slidesPerView: 'auto',
   slidesPerView: 2,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     // when window width is >= 320px
     320: {

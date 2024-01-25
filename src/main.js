@@ -50,7 +50,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const swiper = new Swiper('.swiper', {
     speed: 9400,
-    loop: true,
     centeredSlides: false,
     slidesPerView: 1,
     spaceBetween: 30,
