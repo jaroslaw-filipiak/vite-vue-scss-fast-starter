@@ -8,7 +8,21 @@ import './scss/main.scss';
 
 import 'swiper/css';
 import 'swiper/css/scrollbar';
+
 import Swiper from 'swiper/bundle';
+import Lenis from '@studio-freight/lenis';
+import Accordion from 'accordion-js';
+
+// lenis init
+
+const lenis = new Lenis();
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
 
 const handleHamburger = () => {
   const hamburger = document.querySelector('.hamburger');
@@ -53,5 +67,9 @@ window.addEventListener('DOMContentLoaded', () => {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
+  });
+
+  new Accordion('.accordion-container', {
+    duration: 130,
   });
 });

@@ -17,7 +17,11 @@ export default {
       black: '#000',
       white: '#fff',
     },
-    extend: {},
+    extend: {
+      fontSize: {
+        '1-75rem': '1.75rem',
+      },
+    },
   },
   plugins: [
     require('tailwindcss-fluid-type')({
@@ -32,6 +36,7 @@ export default {
         prefix: 'fluid-',
       },
       values: {
+        '3rem': 3,
         // ...
         base: 0,
         // ...

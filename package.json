@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.34",
+    "accordion-js": "^3.3.4",
     "swiper": "^11.0.5",
     "tailwindcss-fluid-type": "^2.0.3",
     "vue": "^3.3.11"

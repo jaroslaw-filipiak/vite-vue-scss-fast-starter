@@ -54,7 +54,7 @@
 
         <!-- switcher -->
         <div class="flex items-center gap-[19px] ">
-          <div class="dark:text-gray text-[12px] hidden 2xl:flex">Motyw Ciemny</div>
+          <div class="dark:text-gray text-[12px] hidden 2xl:flex whitespace-nowrap">Motyw Ciemny</div>
           <div class="mode-switcher"><input type="checkbox" id="toggle">
             <label id="switch" for="toggle">
               <div id="circle"></div>
@@ -81,7 +81,7 @@
 
         </a>
 
-        <a href=" #" class="btn btn--red">
+        <a href=" #" class="btn btn--red whitespace-nowrap">
           <span>Zamów projekt</span>
 
           <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
@@ -321,7 +321,7 @@
         </div>
       </section>
 
-      <section class="pt-[36px] pb-12 lg:pb-[125px]  pl-5 lg:pl-0 pr-5 lg:pr-14  service-grid-container">
+      <section class="pt-[36px] pb-12  pl-5 lg:pl-0 pr-5 lg:pr-14  service-grid-container lg:pb-[124px]">
 
         <h3 class="fluid-text-3xl grid__title pt-[20px] xl:pt-0 pb-[28px] xl:pb-0 ">Potrzebujesz Projektu <br />
           Logo dla
@@ -405,6 +405,103 @@
 
         </div>
 
+      </section>
+
+      <section id="who-we-are"
+        class="dark:bg-gradient-to-r dark:from-[#1e1e1e] dark:to-[#262626] pl-5 lg:pl-0 pr-5 lg:pr-14 lg:pt-[124px]">
+
+        <div class="border">
+          <!-- label -->
+          <div class="flex flex-col items-start justify-between grid__label xl:pb-[72px]">
+            <div class="flex items-center gap-[24px]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
+                  transform="translate(0 8) rotate(-90)" fill="#777777" />
+              </svg>
+              <p class="text-[14px]  text-gray uppercase font-medium ">Kim jestesmy ?</p>
+            </div>
+          </div>
+          <!-- label -->
+          <h3 class="fluid-text-3xl grid__title pt-[20px] xl:pt-0 pb-[28px]  max-w-[1440px] lg:pb-[150px] ">
+            Jesteśmy zespołem
+            praktyków z wieloletnim doświadczeniem projektowym <br class="hidden xl:block" />oraz wdrożeniowym. <span
+              class="text-red">Doskonale
+              rozumiemy potrzeby klientów</span> i
+            oferujemy <br class="hidden xl:block" />dopasowane projekty, które realnie poprawiają wizualną jakość firmy.
+          </h3>
+
+        </div>
+        <div class="border flex">
+          <div class="border w-full lg:w-5/12">
+            <div class="aspect-square bg-dark rounded-lg max-w-[586px]"></div>
+          </div>
+          <div class="border w-full lg:w-8/12 lg:pl-[65px]">
+            <div class="flex items-center justify-between">
+              <div class="flex flex-col items-start justify-between grid__label ">
+                <div class="flex items-center gap-[24px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                    <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
+                      transform="translate(0 8) rotate(-90)" fill="#EF4123" />
+                  </svg>
+                  <p class="text-[14px]  text-red uppercase font-medium ">Nasze wartości</p>
+                </div>
+              </div>
+
+              <div>
+                <a href=" #" class="btn btn--dark max-md:w-full">
+                  <span>O nas</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13.708" height="10.219" viewBox="0 0 13.708 10.219">
+                    <g id="Więcej_Icon" transform="translate(-782.5 -1015.043)">
+                      <line id="Line_6" data-name="Line 6" x2="13.708" transform="translate(782.5 1015.793)" fill="none"
+                        stroke="#f9f2e5" stroke-width="1.5" />
+                      <line id="Line_7" data-name="Line 7" x2="13.708" transform="translate(782.5 1020.153)" fill="none"
+                        stroke="#f9f2e5" stroke-width="1.5" />
+                      <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(782.5 1024.512)" fill="none"
+                        stroke="#f9f2e5" stroke-width="1.5" />
+                    </g>
+                  </svg>
+
+                </a>
+              </div>
+            </div>
+
+            <!-- accordions -->
+
+            <div class="accordion-container">
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </button>
+                </h2>
+                <div class="ac-panel">
+                  <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+                </h2>
+                <div class="ac-panel">
+                  <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+                </h2>
+                <div class="ac-panel">
+                  <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- accordions -->
+
+          </div>
+        </div>
       </section>
     </main>
 
