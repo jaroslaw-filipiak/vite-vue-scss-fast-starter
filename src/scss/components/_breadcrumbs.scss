@@ -1,0 +1,21 @@
+.breadcrumbs {
+  ul {
+    @apply flex items-center justify-start pt-4 gap-6;
+
+    li {
+      @apply text-[12px] text-dark2;
+
+      a {
+        @apply hover:underline;
+      }
+    }
+  }
+
+  .breadcrumb__last {
+    @apply text-light;
+
+    a {
+      @apply hover:no-underline pointer-events-none;
+    }
+  }
+}
