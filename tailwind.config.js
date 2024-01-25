@@ -12,6 +12,7 @@ export default {
       light: '#F9F2E5',
       dark: '#323232',
       dark2: '#9F9F9F',
+      dark3: '#262626', //footer
       darkMain: '#1E1E1E',
       gray: '#777777',
       red: '#EF4123',
