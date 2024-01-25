@@ -15,7 +15,7 @@
     <section class="top-bar fixed left-0 top-0 w-full xl:pr-5 z-[444]">
 
       <div class="pl-5 lg:pl-14  xl:w-[180px] 2xl:w-[240px] flex flex-none ">
-        <img class="w-[43px] min-w-[43px] lg:w-[66px]" src="/logo.svg" alt="GrafikOnline logotyp">
+        <a href="/"> <img class="w-[43px] min-w-[43px] lg:w-[66px]" src="/logo.svg" alt="GrafikOnline logotyp"></a>
       </div>
 
       <div class="w-full text-[16px] text-light flex items-center justify-center xl:hidden">
@@ -81,7 +81,7 @@
 
         </a>
 
-        <a href=" #" class="btn btn--red whitespace-nowrap">
+        <a href="/kontakt" class="btn btn--red whitespace-nowrap">
           <span>Zamów projekt</span>
 
           <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
@@ -312,7 +312,20 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper relative -top-6 pt-6" style="transition-timing-function: linear;">
             <!-- Slides -->
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide">
+              <div class="swiper-slide__top" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
             <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg"></div>
             <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg"></div>
 
