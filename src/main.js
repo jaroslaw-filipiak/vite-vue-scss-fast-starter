@@ -69,10 +69,10 @@ window.addEventListener('DOMContentLoaded', () => {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: true,
-    },
+    // autoplay: {
+    //   delay: 0,
+    //   disableOnInteraction: true,
+    // },
   });
 
   new Accordion('.accordion-container', {
