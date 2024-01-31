@@ -59,7 +59,7 @@
 }
 
 .aside-offset__margin {
-  @apply xl:ml-[180px] 2xl:ml-[240px] lg:ml-[28px];
+  @apply max-w-[1440px] xl:ml-[180px] 2xl:ml-[240px] max-xl:pl-5 max-xl:pr-5;
 }
 
 .aside {

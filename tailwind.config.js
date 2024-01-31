@@ -3,6 +3,7 @@ export default {
   darkMode: 'class',
   content: [
     './index.html',
+    './grid.html',
     './kontakt.html',
     './typo.html',
     './src/**/*.{vue,js,ts,jsx,tsx,html}',
