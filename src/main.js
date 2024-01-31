@@ -70,7 +70,7 @@ window.addEventListener('DOMContentLoaded', () => {
     },
     autoplay: {
       delay: 0,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
   });
 
