@@ -20,9 +20,9 @@ export default {
       white: '#fff',
     },
     extend: {
-      // TODO: FLUID text
       fontSize: {
         '1-75rem': '1.75rem', // 28px ? 21 pokazuje jako fluid , text-2xl pokazuje 27.78
+        '2-75rem': '2.75rem', // 28px ? 21 pokazuje jako fluid , text-2xl pokazuje 27.78
       },
     },
   },
@@ -40,6 +40,7 @@ export default {
       },
       values: {
         '3rem': 3,
+        '4-717rem': 4.717, // 38px on 2xl
         // ...
         base: 0,
         // ...
