@@ -1,4 +1,14 @@
-// homepage offer title + buttons grid switcher mobile / desktop
+/*
+*
+* ========================================================
+* HOMEPAGE GRID
+* ========================================================
+* offer title + buttons grid switcher mobile / desktop
+* section.service-grid-container on homepage
+*
+*
+*
+*/
 
 .service-grid-container {
   display: grid;
@@ -33,4 +43,25 @@
 
 .grid__excerpt {
   grid-area: excerpt;
+}
+
+/*
+*
+* ========================================================
+* ASIDE OFFSET
+* ========================================================
+*  fix: after change swiper slider elements has to be backdropped by aside width opacity visible
+*
+*/
+
+.aside-offset__padding {
+  @apply xl:pl-[180px] 2xl:pl-[240px] lg:pl-[28px];
+}
+
+.aside-offset__margin {
+  @apply xl:ml-[180px] 2xl:ml-[240px] lg:ml-[28px];
+}
+
+.aside {
+  @apply bg-opacity-90;
 }
