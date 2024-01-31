@@ -62,9 +62,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const swiper2 = new Swiper('.slider-row__swiper', {
     spaceBetween: 24,
+    speed: 9400,
+    loop: true,
     slidesPerView: 'auto',
     scrollbar: {
       el: '.swiper-scrollbar',
+    },
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
     },
   });
 
