@@ -64,6 +64,7 @@ window.addEventListener('DOMContentLoaded', () => {
     spaceBetween: 24,
     speed: 9400,
     loop: true,
+    centeredSlides: false,
     slidesPerView: 'auto',
     scrollbar: {
       el: '.swiper-scrollbar',
