@@ -36,9 +36,9 @@ $color-black: #111;
     }
 
     &::after {
-      content: '+';
+      content: url('/public/fag-chevron-down.svg');
+      font-size: 0px;
       text-align: center;
-      width: 15px;
       transform: translate(0, -50%);
       position: absolute;
       right: 10px;
