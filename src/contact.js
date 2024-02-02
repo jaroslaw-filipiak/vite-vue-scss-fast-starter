@@ -4,18 +4,8 @@ import 'swiper/css';
 import 'swiper/css/scrollbar';
 
 import Swiper from 'swiper/bundle';
-import Lenis from '@studio-freight/lenis';
 
 // lenis init
-
-const lenis = new Lenis();
-
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-
-requestAnimationFrame(raf);
 
 const handleHamburger = () => {
   const hamburger = document.querySelector('.hamburger');

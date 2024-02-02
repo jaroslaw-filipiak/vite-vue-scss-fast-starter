@@ -8,16 +8,14 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        grid: resolve(__dirname, 'grid.html'),
         contact: resolve(__dirname, 'kontakt.html'),
-        typo: resolve(__dirname, 'typo.html'),
       },
       output: {
-        entryFileNames: `js/scripts.js`,
-        chunkFileNames: `js/scripts.js`,
+        entryFileNames: `js/[name].js`,
+        chunkFileNames: `js/[name].js`,
         assetFileNames: `[name].[ext]`,
       },
     },
   },
-  plugins: [vue()],
+  // plugins: [vue()],
 });
