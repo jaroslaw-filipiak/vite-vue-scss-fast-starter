@@ -40,7 +40,7 @@ $color-black: #111;
       text-align: center;
       transform: translate(0, -50%);
       position: absolute;
-      right: 10px;
+      right: 0px;
       top: 28%;
       @apply w-[44px] lg:w-[60px] h-[44px] lg:h-[60px] bg-dark flex items-center justify-center rounded-full border-2 border-opacity-0 border-dark origin-center rotate-0;
     }

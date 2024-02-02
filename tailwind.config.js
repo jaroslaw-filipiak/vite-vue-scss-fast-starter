@@ -35,6 +35,7 @@ export default {
 
       '2xl': '1736px',
       // => @media (min-width: 1736px) { ... }
+      '3xl': '2400px',
     },
     extend: {
       fontSize: {
