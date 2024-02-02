@@ -13,6 +13,8 @@ import Swiper from 'swiper/bundle';
 // import Lenis from '@studio-freight/lenis';
 import Accordion from 'accordion-js';
 
+import './clamp.js';
+
 // lenis init
 
 // const lenis = new Lenis();
@@ -79,3 +81,12 @@ window.addEventListener('DOMContentLoaded', () => {
     duration: 130,
   });
 });
+
+// clamp excerpt in testimonials
+// const testimonial = document.querySelector('.clamp-js');
+// $clamp(testimonial, {
+//   clamp: 3,
+//   useNativeClamp: false,
+//   truncationChar: '&nbsp;',
+//   truncationHTML: '<a class="text-red" href="#">(...)</a>',
+// });
