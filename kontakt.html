@@ -191,7 +191,7 @@
 
   </header>
 
-  <section class="content dark:text-light  flex items-start justify-start relative pt-[50px] border">
+  <section class="content dark:text-light  flex items-start justify-start relative pt-[50px] ">
 
     <aside
       class="xl:w-[180px] 2xl:w-[240px] h-screen hidden xl:fixed top-0 left-0 pl-5 lg:pl-[28px]  xl:flex xl:flex-col xl:justify-between pt-[140px] pb-[40px] aside z-[55]">
@@ -226,7 +226,7 @@
     <!-- pt w zależności od strony i tego czy mamy breadcrumbs -->
     <main class="z-50 w-full">
 
-      <section class="border aside-offset__margin">
+      <section class=" aside-offset__margin">
         <div class="breadcrumbs">
           <ul>
             <li><a href="#">Studio</a></li>
@@ -241,7 +241,7 @@
 
       <section id="contact-us-hero" class="dark:bg-gradient-to-r pl-5 lg:pl-0 pr-5 lg:pr-14 lg:pt-[44px] ">
 
-        <div class="flex aside-offset__margin border">
+        <div class="flex aside-offset__margin ">
           <div class="w-full hidden lg:flex lg:w-5/12 xl:min-w-[586px]">
             <div class="w-full aspect-[1/1.111] bg-red rounded-lg xl:max-w-[586px]"></div>
           </div>
@@ -255,13 +255,13 @@
               </div>
             </div>
 
-            <div class="lg:border-b-2 lg:border-dark pb-[29px] pt-[38px] lg:pt-0 border">
+            <div class="lg:border-b-2 lg:border-dark pb-[29px] pt-[38px] xl:pt-0 ">
               <div class="flex items-center gap-[24px] pb-[37px] ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
                   <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
                     transform="translate(0 8) rotate(-90)" fill="#ef4123"></path>
                 </svg>
-                <p class="text-[14px] text-red uppercase font-medium ">SKONAKTUJ SIĘ</p>
+                <p class="text-[14px] text-red uppercase font-medium ">SKONTAKTUJ SIĘ</p>
 
               </div>
               <div>
@@ -281,7 +281,8 @@
                   </p>
                 </div>
                 <div class="lg:pt-[32px]">
-                  <div class="flex flex-col 2xl:flex-row items-start 2xl:items-center lg:gap-[14px] 2xl:gap-[54px]">
+                  <div
+                    class="flex flex-col xl:flex-row flex-wrap items-start xl:items-center lg:gap-[14px] 2xl:gap-[54px]">
                     <!-- TODO: icon -->
                     <a class="text-[14px] lg:fluid-text-base font-medium  max-lg:w-full max-lg:bg-dark max-lg:pt-[14px] max-lg:pb-[14px] max-lg:pl-6 max-lg:pr-6 max-lg:rounded-full whitespace-nowrap"
                       href="#">
@@ -330,14 +331,18 @@
 
       <section class="pl-5 lg:pl-0 pr-5 lg:pr-0 ">
 
-        <div class="divider-with-text flex items-center mt-8 lg:mt-20 xl:mt-[104px] border aside-offset__margin">
-          <p class=" text-light  w-full lg:w-auto flex text-[16px] lg:fluid-text-2xl lg:pr-[65px] lg:whitespace-nowrap">
-            Mamy doświadczenie we współpracy z:
-          </p>
-          <div class="border-[1px] border-gray w-full hidden lg:flex"></div>
-          <div class="pl-6 hidden lg:flex">
-            <img class="lg:min-w-[14px]" src="arrow-down.svg" alt="">
+        <div class="lg:pr-14   aside-offset__margin">
+          <div class="divider-with-text flex items-center mt-8 lg:mt-20 xl:mt-[104px] ">
+            <p
+              class=" text-light  w-full lg:w-auto flex text-[16px] lg:fluid-text-2xl lg:pr-[65px] lg:whitespace-nowrap">
+              Mamy doświadczenie we współpracy z:
+            </p>
+            <div class="border-[1px] border-gray w-full hidden lg:flex"></div>
+            <div class="pl-6 hidden lg:flex">
+              <img class="lg:min-w-[14px]" src="arrow-down.svg" alt="">
+            </div>
           </div>
+
         </div>
 
         <div class="logos-slider swiper mt-[24px] mb-[24px] lg:mt-[71px] xl:mt-[91px] lg:mb-[71px] xl:mb-[91px]">
@@ -361,7 +366,7 @@
       </section>
 
       <footer class="footer">
-        <div class="flex flex-col lg:flex-row items-start xl:items-stretch  aside-offset__margin ">
+        <div class="flex flex-col lg:flex-row items-start xl:items-stretch  aside-offset__margin">
           <!-- 1 -->
           <div
             class="w-full xl:w-4/12  2xl:min-w-[460px] 2xl:max-w-[460px] lg:pr-10 xl:pr-12 xl:border-r-2 xl:border-dark">
