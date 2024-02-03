@@ -618,7 +618,20 @@
         </div>
 
         <!-- TODO: CLAMP text + buttons -->
-        <div class="slider-row__swiper--testimonials overflow-hidden ">
+        <div class="slider-row__swiper--testimonials overflow-hidden relative border">
+          <div
+            class="testimonials__desktop-nav hidden lg:flex border aside-offset__margin absolute left-0 top-1 w-full h-full  items-center justify-end">
+
+            <button
+              class="w-[120px] h-[120px] bg-dark rounded-full flex items-center justify-center z-20 relative left-[60px] group hover:bg-red hover:shadow-2xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14.993" height="14.993" viewBox="0 0 14.993 14.993"
+                class="-rotate-90 fill-light relative left-0 transition-all group-hover:left-2">
+                <path id="Arrow_Down" d="M0,0V10.6H10.6V9.3H2.223L10.594.929,9.674.008,1.3,8.38V0Z"
+                  transform="translate(0 7.496) rotate(-45)" />
+              </svg>
+
+            </button>
+          </div>
           <div class="testimonials swiper-wrapper ">
             <div
               class="testimonial swiper-slide lg:bg-dark3 flex flex-col-reverse lg:flex-col mt-[24px] lg:pt-[54px] lg:pl-[51px] lg:pr-[51px] lg:pb-0 xl:max-w-[1196px]">
@@ -767,6 +780,8 @@
           </div>
 
         </div>
+
+
 
         <div class="testimonials--nav lg:hidden  flex items-center gap-[12px] mt-[38px]">
           <div
