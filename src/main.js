@@ -77,6 +77,35 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  const swiper3 = new Swiper('.slider-row__swiper--testimonials', {
+    spaceBetween: 24,
+    // speed: 9400,
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+      },
+      // when window width is >= 640px
+      720: {
+        slidesPerView: 'auto',
+      },
+    },
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+    // autoplay: {
+    //   delay: 0,
+    //   disableOnInteraction: true,
+    // },
+  });
+
   new Accordion('.accordion-container', {
     duration: 130,
   });

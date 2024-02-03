@@ -1,0 +1,14 @@
+.testimonials {
+  .testimonial {
+    @apply rounded-lg;
+  }
+
+  .swiper-slide {
+    @apply opacity-100 transition-all;
+  }
+
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    @apply opacity-20;
+  }
+}
