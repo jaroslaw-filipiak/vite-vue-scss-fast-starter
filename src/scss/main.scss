@@ -28,3 +28,20 @@ html,
 body {
   @apply dark:bg-darkMain;
 }
+
+html.lenis {
+  height: auto;
+
+  &.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  &.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  &.lenis-stopped {
+    overflow: hidden;
+  }
+  &.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+}

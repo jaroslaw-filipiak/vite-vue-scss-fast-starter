@@ -1,6 +1,19 @@
 .top-bar {
   @apply h-[60px] lg:h-[128px] flex justify-between dark:text-light;
-  @apply dark:bg-gradient-to-r dark:from-[#1e1e1e] dark:to-[#262626];
+  @apply dark:bg-gradient-to-r dark:from-[#1e1e1e] dark:to-[#262626] translate-y-[0%] transition-all;
+
+  &--hidden {
+    @apply translate-y-[-100%] transition-all;
+  }
+
+  &--visible {
+    @apply translate-y-[0%] transition-all;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    background-image: unset !important;
+  }
 }
 
 .desktop-menu {
@@ -45,4 +58,12 @@
   li {
     @apply h-full flex items-center transition-all;
   }
+}
+
+.on-scroll-down {
+  @apply translate-y-[-100%] transition-all;
+}
+
+.on-scroll-up {
+  @apply translate-y-[0%] transition-all;
 }

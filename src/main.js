@@ -10,21 +10,21 @@ import 'swiper/css';
 import 'swiper/css/scrollbar';
 
 import Swiper from 'swiper/bundle';
-// import Lenis from '@studio-freight/lenis';
+import Lenis from '@studio-freight/lenis';
 import Accordion from 'accordion-js';
 
 import './clamp.js';
 
-// lenis init
+//lenis init
 
-// const lenis = new Lenis();
+const lenis = new Lenis();
 
-// function raf(time) {
-//   lenis.raf(time);
-//   requestAnimationFrame(raf);
-// }
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
 
-// requestAnimationFrame(raf);
+requestAnimationFrame(raf);
 
 const handleHamburger = () => {
   const hamburger = document.querySelector('.hamburger');
@@ -46,9 +46,30 @@ const handleMobileMenuClick = () => {
   });
 };
 
+const handleTopBar = () => {
+  lenis.on('scroll', (e) => {
+    const topBar = document.querySelector('.top-bar');
+    const desktopMenu = document.querySelector('.desktop-menu');
+    const desktopMenuRight = document.querySelector('.desktop-menu__right');
+    const scroll = e.animatedScroll;
+    const direction = e.direction === -1 ? 'up' : 'down';
+
+    if (scroll > 10 && direction === 'down') {
+      desktopMenu.classList.add('on-scroll-down');
+      desktopMenuRight.classList.add('on-scroll-down');
+      topBar.classList.add('top-bar--transparent');
+    } else {
+      desktopMenu.classList.remove('on-scroll-down');
+      desktopMenuRight.classList.remove('on-scroll-down');
+      topBar.classList.remove('top-bar--transparent');
+    }
+  });
+};
+
 window.addEventListener('DOMContentLoaded', () => {
   handleHamburger();
   handleMobileMenuClick();
+  handleTopBar();
 
   const swiper = new Swiper('.swiper', {
     speed: 9400,
