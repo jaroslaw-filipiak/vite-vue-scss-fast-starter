@@ -85,16 +85,39 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const swiper2 = new Swiper('.slider-row__swiper', {
     spaceBetween: 24,
-    speed: 9400,
+    speed: 300,
     loop: true,
     centeredSlides: false,
     slidesPerView: 'auto',
+
     scrollbar: {
       el: '.swiper-scrollbar',
     },
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: true,
+    // autoplay: {
+    //   delay: 0,
+    //   disableOnInteraction: true,
+    // },
+    navigation: {
+      nextEl: '.swiper--portfolio--next',
+    },
+  });
+
+  const swiperProject = new Swiper('.slider-row__swiper-projects', {
+    spaceBetween: 24,
+    speed: 300,
+    loop: true,
+    centeredSlides: false,
+    slidesPerView: 'auto',
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    // autoplay: {
+    //   delay: 0,
+    //   disableOnInteraction: true,
+    // },
+    navigation: {
+      nextEl: '.swiper--portfolio--next',
     },
   });
 
