@@ -118,6 +118,9 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 'auto',
       },
     },
+    navigation: {
+      nextEl: '.swiper--testimonials--next',
+    },
     // scrollbar: {
     //   el: '.swiper-scrollbar',
     // },
