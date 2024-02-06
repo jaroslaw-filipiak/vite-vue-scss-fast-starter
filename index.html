@@ -109,7 +109,7 @@
 
     <section class="notificaton-slider mt-[60px]" style="display: none;">
       <!-- Slider main container -->
-      <div class="swiper">
+      <div class="swiper--notification">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper" style="transition-timing-function: linear;">
           <!-- Slides -->
@@ -227,7 +227,7 @@
 
     </aside>
 
-    <main class=" lg:pt-[161px] z-50 w-full">
+    <main class="pt-[50px] lg:pt-[161px] z-50 w-full ">
 
       <section class="aside-offset__margin">
         <h1 class="fluid-text-5xl ">Tworzymy <span class="text-red lg:text-light">Projekty Graficzne
@@ -755,7 +755,7 @@
       </section>
 
 
-      <section id="testimonials" class=" pt-[36px] lg:pt-[130px] pb-12 lg:pb-[124px]  ">
+      <section id="testimonials" class=" max-xl:pl-5 max-xl:pr-5 pt-[36px] lg:pt-[130px] pb-12 lg:pb-[124px]  ">
         <div class="flex flex-col lg:flex-row items-center justify-between lg:mb-[70px] aside-offset__margin">
           <h3 class="fluid-text-3xl lg:fluid-text-4-717rem xl:whitespace-nowrap lg:pr-[34px]">
             Jakie zdanie mają o nas <span class="text-red">dotychczasowi Klienci?
@@ -985,15 +985,20 @@
         </div>
       </section>
 
-      <section id="home-hero" class="dark:bg-gradient-to-r pl-5 lg:pl-0 pr-5 lg:pr-14 lg:pt-[44px] xl:pb-[124px]">
+      <section class="dark:bg-gradient-to-r pl-5 lg:pl-0 pr-5 lg:pr-14 lg:pt-[44px] xl:pb-[124px]  home-cta">
 
-        <div class="flex aside-offset__margin ">
-          <div class="w-full hidden lg:flex lg:w-5/12 xl:min-w-[586px]">
+        <div class="flex flex-col lg:flex-row aside-offset__margin max-xl:pl-0 max-xl:pr-0">
+
+          <!-- img -->
+          <div class="w-full flex lg:w-5/12 xl:min-w-[586px] home-cta__photo">
             <div class="w-full aspect-[1/1.111] bg-red rounded-lg xl:max-w-[586px]"></div>
           </div>
+
           <div
-            class="w-full lg:w-7/12 lg:pl-[45px] xl:pl-[65px] 2xl:pl-[134px] pt-[38px] lg:pt-0 flex flex-col justify-between">
-            <div class="flex items-center justify-between">
+            class="w-full lg:w-7/12 lg:pl-[45px] xl:pl-[65px] 2xl:pl-[134px] pt-[38px] lg:pt-0 lg:flex lg:flex-col justify-between">
+
+            <!-- jesteś gotowy na wspólprace -->
+            <div class="flex items-center justify-between home-cta__title max-xl:pb-[32px]">
               <div class="flex flex-col items-start justify-between xl:pt-[16px]">
                 <h1 class="fluid-text-5xl max-w-[444px]">Czy <span class="text-red">jesteś gotowy
                   </span> na współpracę?
@@ -1001,8 +1006,10 @@
               </div>
             </div>
 
-            <div>
-              <div class="flex flex-col xl:flex-row flex-wrap items-start xl:items-center lg:gap-[14px] 2xl:gap-[32px]">
+            <!-- buttons -->
+            <div class="home-cta__buttons">
+              <div
+                class="flex  items-start xl:items-center max-xl:justify-between gap-[14px] lg:gap-[14px] 2xl:gap-[32px] max-xl:order-4">
                 <!-- TODO: icon -->
 
                 <a href="#" class="btn btn--dark max-md:w-full whitespace-nowrap">
@@ -1021,7 +1028,7 @@
 
                 </a>
 
-                <a href=" #" class="max-lg:order-4 btn btn--red whitespace-nowrap max-lg:w-full max-lg:mt-[10px]">
+                <a href=" #" class="max-lg:order-4 btn btn--red whitespace-nowrap max-lg:w-full ">
                   <span>Zamów projekt</span>
 
                   <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
@@ -1042,7 +1049,8 @@
               </div>
             </div>
 
-            <div class="pb-[29px] pt-[38px] xl:pt-0 ">
+            <!-- skontaktuj sie -->
+            <div class="pb-[29px] pt-[38px] xl:pt-0 home-cta__text">
               <div class="flex items-center gap-[24px] pb-[37px] ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
                   <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
@@ -1066,6 +1074,7 @@
 
             </div>
           </div>
+
         </div>
       </section>
 
@@ -1162,7 +1171,8 @@
               PN - PT - 9:00 - 16:00</p>
             <div class="xl:mt-[56px]">
 
-              <a href="/kontakt" class="btn btn--red whitespace-nowrap xl:min-w-[234px]">
+              <a href="/kontakt"
+                class="btn btn--red whitespace-nowrap max-xl:mt-[24px] max-xl:w-full max-xl:rounded-[2px] xl:min-w-[234px]">
                 <span>Zamów projekt</span>
 
                 <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">

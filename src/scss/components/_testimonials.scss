@@ -4,7 +4,7 @@
   }
 
   .swiper-slide {
-    @apply opacity-100 transition-all;
+    @apply opacity-100 transition-all max-lg:flex;
   }
 
   .swiper-slide-prev,

@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
   handleMobileMenuClick();
   handleTopBar();
 
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper--notification', {
     speed: 9400,
     centeredSlides: false,
     slidesPerView: 1,
@@ -151,6 +151,37 @@ window.addEventListener('DOMContentLoaded', () => {
     //   delay: 0,
     //   disableOnInteraction: true,
     // },
+  });
+
+  const logosSwiper = new Swiper('.logos-slider', {
+    speed: 9400,
+    loop: true,
+    centeredSlides: false,
+    spaceBetween: 17,
+    // slidesPerView: 'auto',
+    slidesPerView: 2,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 17,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+      // when window width is >= 640px
+
+      1024: {
+        slidesPerView: 'auto',
+        spaceBetween: 24,
+      },
+    },
   });
 
   new Accordion('.accordion-container', {
