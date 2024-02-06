@@ -12,10 +12,11 @@
 
   <header>
     <!-- top bar fixed h60px mobile -->
-    <section class="top-bar fixed left-0 top-0 w-full xl:pr-5 2xl:pr-[43px] z-[444]">
+    <section class="top-bar fixed left-0 top-0 w-full xl:pr-5 2xl:pr-[43px] z-[444] ">
 
       <div class="max-xl:pl-5 lg:pl-[28px]  xl:min-w-[180px] 2xl:min-w-[240px] flex  items-center">
-        <a href="/"> <img class="w-[43px] min-w-[43px] lg:w-[66px]" src="/logo.svg" alt="GrafikOnline logotyp"></a>
+        <a href="/"> <img class="w-[43px] min-w-[43px] lg:w-[66px]" src="/Logo_128px_GrafikOnlinePL_v2.gif"
+            alt="GrafikOnline logotyp"></a>
       </div>
 
       <div class="w-full text-[16px] text-light flex items-center justify-center xl:hidden">
@@ -34,7 +35,8 @@
       </div>
 
       <!-- desktop -->
-      <div class="desktop-menu hidden xl:flex items-center lg:w-6/12 xl:w-7/12 2xl:w-6/12 lg:pl-16 xl:pl-0">
+      <div
+        class="desktop-menu on-scroll-initial hidden xl:flex items-center lg:w-6/12 xl:w-7/12 2xl:w-6/12 lg:pl-16 xl:pl-0 translate-y-0 transition-all">
         <ul class="w-full flex lg:gap-[8px] xl:gap-[38px] 2xl:gap-[68px] h-full items-center">
           <li class="fluid-text-base has-submenu group"><a class="transition-all relative top-0 group-hover:-top-1 "
               href="#">Studio</a>
@@ -45,12 +47,14 @@
           <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 "
               href="#">Projekty
               Reklamowe</a></li>
-          <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 " href="#">Strony
+          <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 "
+              href="websites.html">Strony
               Internetowe</a></li>
         </ul>
       </div>
 
-      <div class="hidden xl:flex items-center justify-end gap-[24px] xl:gap-[10px] 2xl:gap-[24px] lg:w-6/12 xl:w-5/12">
+      <div
+        class="hidden xl:flex items-center justify-end gap-[24px] xl:gap-[10px] 2xl:gap-[24px] lg:w-6/12 xl:w-5/12 translate-y-0 transition-all desktop-menu__right">
 
         <!-- switcher -->
         <div class="flex items-center gap-[19px] ">
@@ -103,18 +107,7 @@
     </section>
 
 
-    <section class="notificaton-slider mt-[60px]" style="display: none1;">
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper" style="transition-timing-function: linear;">
-          <!-- Slides -->
-          <div class="swiper-slide">Internetowe Studio Projektowe</div>
-          <div class="swiper-slide">Internetowe Studio Projektowe</div>
-          <div class="swiper-slide">Internetowe Studio Projektowe</div>
-        </div>
-      </div>
-    </section>
+
 
     <!-- mobile menu sidemenu -->
 
@@ -191,7 +184,7 @@
 
   </header>
 
-  <section class="content dark:text-light  flex items-start justify-start relative pt-[50px] ">
+  <section class="content dark:text-light  flex items-start justify-start relative lg:pt-[50px] mt-[60px]">
 
     <aside
       class="xl:w-[180px] 2xl:w-[240px] h-screen hidden xl:fixed top-0 left-0 pl-5 lg:pl-[28px]  xl:flex xl:flex-col xl:justify-between pt-[140px] pb-[40px] aside z-[55]">
