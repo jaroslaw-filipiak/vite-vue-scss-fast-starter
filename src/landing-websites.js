@@ -188,6 +188,14 @@ window.addEventListener('DOMContentLoaded', () => {
   new Accordion('.accordion-container', {
     duration: 130,
   });
+
+  new Accordion('.accordion-container__2', {
+    duration: 130,
+  });
+
+  new Accordion('.accordion-container__3', {
+    duration: 130,
+  });
 });
 
 // clamp excerpt in testimonials
