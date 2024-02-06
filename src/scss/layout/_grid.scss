@@ -147,7 +147,7 @@
 
   @media (min-width: 1024px) {
     grid-template-columns: 45% auto;
-    grid-template-rows: max-content max-content max-content 1fr;
+    grid-template-rows: max-content max-content auto max-content;
     grid-template-areas:
       'photo title'
       'photo buttons'

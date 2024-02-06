@@ -9,7 +9,8 @@
 }
 
 .slider-row__swiper,
-.slider-row__swiper-projects {
+.slider-row__swiper-projects,
+.slider-row__swiperWebsitesPortfolio {
   .swiper-slide {
     @apply md:max-w-[696px] lg:max-w-[896px] xl:max-w-[1196px] relative bg-cover transition-all;
     // max-width: 1196px !important;
