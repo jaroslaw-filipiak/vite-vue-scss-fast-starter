@@ -105,3 +105,57 @@
 // }
 
 // landing page grid first section
+
+/*
+*
+* ========================================================
+* Landing hero / first section
+* ========================================================
+* 
+*
+*/
+
+.landing-hero {
+  @apply grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'label'
+    'title'
+    'subtitle'
+    'buttons';
+
+  &__photo {
+    grid-area: photo;
+  }
+
+  &___label {
+    grid-area: label;
+  }
+
+  &__title {
+    grid-area: title;
+  }
+
+  &__subtitle {
+    grid-area: subtitle;
+  }
+
+  &__buttons {
+    grid-area: buttons;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 45% auto;
+    grid-template-rows: max-content max-content max-content 1fr;
+    grid-template-areas:
+      'photo title'
+      'photo buttons'
+      'photo label'
+      'photo subtitle';
+  }
+
+  @media (min-width: 1280) {
+    grid-template-columns: 1fr max-content;
+  }
+}
