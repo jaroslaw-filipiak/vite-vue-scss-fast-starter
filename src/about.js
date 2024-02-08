@@ -87,8 +87,17 @@ window.addEventListener('DOMContentLoaded', () => {
     spaceBetween: 24,
     speed: 300,
     loop: true,
-    centeredSlides: false,
-    slidesPerView: 'auto',
+    centeredSlides: true,
+    slidesPerView: 1,
+
+    breakpoints: {
+      // when window width is >= 320px
+
+      1024: {
+        slidesPerView: 'auto',
+        centeredSlides: false,
+      },
+    },
 
     scrollbar: {
       el: '.swiper-scrollbar',
