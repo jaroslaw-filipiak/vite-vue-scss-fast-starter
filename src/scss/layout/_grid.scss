@@ -87,7 +87,7 @@
 
   @media (min-width: 1024px) {
     grid-template-columns: 45% auto;
-    grid-template-rows: max-content max-content auto max-content;
+    grid-template-rows: max-content max-content 44px max-content;
     grid-template-areas:
       'photo title'
       'photo buttons'
@@ -95,14 +95,22 @@
       'photo subtitle';
   }
 
+  // xl
+
   @media (min-width: 1280px) {
-    grid-template-rows: 140px 260px 55px auto;
-    grid-template-columns: 1fr max-content;
+    grid-template-rows: 140px 180px 55px auto;
+    grid-template-columns: 45% auto;
+  }
+
+  // 2xl
+  @media (min-width: 1736px) {
+    grid-template-rows: 140px 254px 34px auto;
+    grid-template-columns: 45% 1fr;
   }
 
   &__photo {
     grid-area: photo;
-    @apply lg:relative lg:-top-[98px] xl:-top-[78px] 2xl:min-w-[590px] lg:-left-[26px] xl:-left-[35px];
+    @apply 2xl:relative  2xl:-top-[78px] 2xl:min-w-[590px] 2xl:-left-[35px];
   }
 
   &__label {
@@ -121,12 +129,13 @@
   &__buttons {
     grid-area: buttons;
     align-self: start;
+    @apply xl:pt-[36px] 2xl:pt-[0px];
   }
 
   &__title,
   &__subtitle,
   &__label,
   &__buttons {
-    @apply pl-[80px];
+    @apply xl:pl-[36px] 2xl:pl-[80px];
   }
 }
