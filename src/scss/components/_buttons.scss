@@ -11,7 +11,7 @@
   }
 
   &--dark {
-    @apply dark:bg-dark hover:scale-[103%] dark:hover:bg-red   transition-all;
+    @apply dark:bg-dark hover:scale-[103%] dark:hover:bg-red  transition-all text-light;
   }
 
   &--red {

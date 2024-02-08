@@ -1,0 +1,19 @@
+.person-popup {
+  @apply w-11/12 xl:w-[1064px] flex;
+
+  &__wrapper {
+    @apply w-screen h-screen fixed top-0 left-0 z-[999] flex items-center justify-center;
+    backdrop-filter: blur(20px);
+  }
+  &__content {
+    @apply bg-darkMain py-[48px] px-[33px] relative flex flex-col items-start justify-between rounded-tr-lg rounded-br-lg;
+  }
+
+  &__photo {
+    @apply lg:min-w-[466px] min-h-[712px] bg-cover bg-no-repeat bg-center rounded-tl-lg rounded-bl-lg;
+  }
+
+  &__close-btn {
+    @apply bg-dark w-[48px] h-[48px] rounded-full flex items-center justify-center hover:bg-red transition-all hover:scale-105 absolute top-[12px] right-[12px] cursor-pointer;
+  }
+}
