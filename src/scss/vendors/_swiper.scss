@@ -41,6 +41,33 @@
   }
 }
 
+.slider-row__persons {
+  .swiper-slide {
+    @apply md:max-w-[708px] aspect-square relative bg-cover transition-all;
+    // max-width: 1196px !important;
+
+    &__top,
+    &__bottom {
+      @apply absolute left-0 right-0 flex items-center justify-center opacity-100 transition-all;
+      height: 100%;
+      width: 100%;
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &__top {
+      @apply z-20;
+    }
+
+    &__bottom {
+      @apply z-10;
+      // @apply opacity-10;;
+    }
+  }
+}
+
 .logos-slider {
   .swiper-slide {
     @apply lg:max-w-[342px] bg-dark pt-[36px] pb-[36px] flex items-center justify-center rounded-lg aspect-video;

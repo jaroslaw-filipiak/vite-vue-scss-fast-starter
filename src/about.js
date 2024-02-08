@@ -83,7 +83,7 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  const swiper2 = new Swiper('.slider-row__swiper', {
+  const swiper2 = new Swiper('.slider-row__persons', {
     spaceBetween: 24,
     speed: 300,
     loop: true,
