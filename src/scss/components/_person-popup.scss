@@ -4,14 +4,16 @@
 
 .popup--active {
   display: flex !important;
+  @apply transition-all;
+  backdrop-filter: blur(20px) !important;
 }
 
 .person-popup {
   @apply w-full max-lg:h-screen max-lg:max-h-screen xl:w-[1064px] flex max-lg:flex-col;
 
   &__wrapper {
-    @apply w-screen h-screen fixed top-0 left-0 z-[999] hidden items-center justify-center;
-    backdrop-filter: blur(20px);
+    @apply w-screen h-screen fixed top-0 left-0 z-[999] hidden items-center justify-center transition-all;
+    backdrop-filter: blur(0px);
   }
   &__content {
     @apply bg-darkMain py-[48px] px-[33px] relative flex flex-col items-start xl:justify-between rounded-tr-lg rounded-br-lg max-lg:h-[70vh];
