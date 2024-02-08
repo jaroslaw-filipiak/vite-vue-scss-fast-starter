@@ -19,7 +19,7 @@ $color-black: #111;
 
   // Trigger class
   .ac-trigger {
-    @apply fluid-text-3rem text-light  border-b-[2px] border-dark pt-[16px] pb-[16px] lg:pt-[48px] lg:pb-[50px] top-0;
+    @apply fluid-text-3rem text-light  border-b-[2px] border-dark pt-[16px] pb-[16px] lg:pt-[39px] lg:pb-[36px] top-0;
     text-align: left;
     width: 100%;
     display: block;
@@ -92,5 +92,11 @@ $color-black: #111;
         @apply lg:w-[60px] lg:h-[60px] bg-dark3 border-dark border-2 lg:border-none lg:bg-red flex items-center justify-center rounded-full origin-center rotate-180;
       }
     }
+  }
+}
+
+.accordion-container__landing {
+  .ac .ac-panel .ac-text {
+    @apply xl:pt-0;
   }
 }
