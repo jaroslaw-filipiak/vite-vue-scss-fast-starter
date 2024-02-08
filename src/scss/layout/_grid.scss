@@ -69,46 +69,6 @@
 /*
 *
 * ========================================================
-* HOME CTA
-* ========================================================
-* 
-*
-*/
-
-// .home-cta {
-//   @media (max-width: 1280px) {
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     grid-template-rows: repeat(4, 1fr);
-//     grid-template-areas:
-//       'title'
-//       'photo'
-//       'text'
-//       'buttons';
-
-//     &__title {
-//       grid-area: title;
-//     }
-
-//     &___photo {
-//       grid-area: photo;
-//     }
-
-//     &__buttons {
-//       grid-area: buttons;
-//     }
-
-//     &__text {
-//       grid-area: text;
-//     }
-//   }
-// }
-
-// landing page grid first section
-
-/*
-*
-* ========================================================
 * Landing hero / first section
 * ========================================================
 * 
@@ -125,12 +85,29 @@
     'subtitle'
     'buttons';
 
-  &__photo {
-    grid-area: photo;
+  @media (min-width: 1024px) {
+    grid-template-columns: 45% auto;
+    grid-template-rows: max-content max-content auto max-content;
+    grid-template-areas:
+      'photo title'
+      'photo buttons'
+      'photo label'
+      'photo subtitle';
   }
 
-  &___label {
+  @media (min-width: 1280px) {
+    grid-template-rows: 140px 260px 55px auto;
+    grid-template-columns: 1fr max-content;
+  }
+
+  &__photo {
+    grid-area: photo;
+    @apply lg:relative lg:-top-[98px] xl:-top-[78px] 2xl:min-w-[590px] lg:-left-[26px] xl:-left-[35px];
+  }
+
+  &__label {
     grid-area: label;
+    align-self: start;
   }
 
   &__title {
@@ -143,19 +120,13 @@
 
   &__buttons {
     grid-area: buttons;
+    align-self: start;
   }
 
-  @media (min-width: 1024px) {
-    grid-template-columns: 45% auto;
-    grid-template-rows: max-content max-content auto max-content;
-    grid-template-areas:
-      'photo title'
-      'photo buttons'
-      'photo label'
-      'photo subtitle';
-  }
-
-  @media (min-width: 1280) {
-    grid-template-columns: 1fr max-content;
+  &__title,
+  &__subtitle,
+  &__label,
+  &__buttons {
+    @apply pl-[80px];
   }
 }
