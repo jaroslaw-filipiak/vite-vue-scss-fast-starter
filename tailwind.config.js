@@ -3,6 +3,7 @@ export default {
   darkMode: 'class',
   content: [
     './index.html',
+    './about.html',
     './websites.html',
     './grid.html',
     './kontakt.html',

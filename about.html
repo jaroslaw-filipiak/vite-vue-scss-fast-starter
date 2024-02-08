@@ -1,0 +1,1216 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrafikOnline</title>
+</head>
+
+<body>
+  <!-- <div class="3xl:container border 3xl:mx-auto"> -->
+
+  <header>
+    <!-- top bar fixed h60px mobile -->
+    <section class="top-bar fixed left-0 top-0 w-full xl:pr-5 2xl:pr-[43px] z-[444] ">
+
+      <div class="max-xl:pl-5 lg:pl-[28px]  xl:min-w-[180px] 2xl:min-w-[240px] flex  items-center">
+        <a href="/"> <img class="w-[43px] min-w-[43px] lg:w-[66px]" src="/Logo_128px_GrafikOnlinePL_v2.gif"
+            alt="GrafikOnline logotyp"></a>
+      </div>
+
+      <div class="w-full text-[16px] text-light flex items-center justify-center xl:hidden">
+        <p class=" relative inline-block pr-3 font-medium">GrafikOnline <span
+            class="absolute right-0 -top-2 inline-block text-[8px] uppercase">
+            pl</span></p>
+      </div>
+
+      <div
+        class="border-[2px] border-dark w-[60px] lg:w-[110px] border-b-[0px] flex flex-none items-center justify-center xl:hidden">
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+
+      <!-- desktop -->
+      <div
+        class="desktop-menu on-scroll-initial hidden xl:flex items-center lg:w-6/12 xl:w-7/12 2xl:w-6/12 lg:pl-16 xl:pl-0 translate-y-0 transition-all">
+        <ul class="w-full flex lg:gap-[8px] xl:gap-[38px] 2xl:gap-[68px] h-full items-center">
+          <li class="fluid-text-base has-submenu group"><a class="transition-all relative top-0 group-hover:-top-1 "
+              href="#">Studio</a>
+          </li>
+          <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 "
+              href="#">Projekt
+              Logo</a></li>
+          <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 "
+              href="#">Projekty
+              Reklamowe</a></li>
+          <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 "
+              href="websites.html">Strony
+              Internetowe</a></li>
+        </ul>
+      </div>
+
+      <div
+        class="hidden xl:flex items-center justify-end gap-[24px] xl:gap-[10px] 2xl:gap-[24px] lg:w-6/12 xl:w-5/12 translate-y-0 transition-all desktop-menu__right">
+
+        <!-- switcher -->
+        <div class="flex items-center gap-[19px] ">
+          <div class="mode-switcher"><input type="checkbox" id="toggle">
+            <label id="switch" for="toggle">
+              <div id="circle"></div>
+            </label>
+          </div>
+        </div>
+
+        <!-- switcher -->
+
+        <!-- TODO: animacje svg -->
+        <a href=" #" class="btn btn--dark">
+          <span>Cennik</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+            <g id="Cennik_Icon" transform="translate(-135 -24)">
+              <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(135 24)" fill="none" stroke="#f9f2e5"
+                stroke-width="1.5">
+                <rect width="20" height="13" stroke="none" />
+                <rect x="0.75" y="0.75" width="18.5" height="11.5" fill="none" />
+              </g>
+              <line id="Line_9" data-name="Line 9" x2="11" transform="translate(139.5 29.5)" fill="none"
+                stroke="#f9f2e5" stroke-width="1.5" />
+            </g>
+          </svg>
+
+        </a>
+
+        <a href="/kontakt.html" class="btn btn--red whitespace-nowrap">
+          <span>Zamów projekt</span>
+
+          <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
+            <g id="Edit_Icon" transform="translate(-779.261 -1011.304)">
+              <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(787.786 1024.145)" fill="white"
+                stroke="#f9f2e5" stroke-width="1.5" />
+              <g id="Path_316" data-name="Path 316" transform="translate(790.623 1011.304) rotate(45)" fill="none">
+                <path d="M0,0H4.889V12.223l-2.4,3.845L0,12.223Z" stroke="none" />
+                <path
+                  d="M 1.499998092651367 1.499997138977051 L 1.499998092651367 11.77978992462158 L 2.467294692993164 13.27259922027588 L 3.389317989349365 11.7939338684082 L 3.389317989349365 1.499997138977051 L 1.499998092651367 1.499997138977051 M -1.9073486328125e-06 -1.9073486328125e-06 L 4.889317989349365 -1.9073486328125e-06 L 4.889317989349365 12.22328758239746 L 2.491608142852783 16.06853675842285 L -1.9073486328125e-06 12.22328758239746 L -1.9073486328125e-06 -1.9073486328125e-06 Z"
+                  stroke="none" fill="#fff" />
+              </g>
+            </g>
+          </svg>
+
+        </a>
+
+
+      </div>
+    </section>
+
+
+    <section class="notificaton-slider mt-[60px]" style="display: none;">
+      <!-- Slider main container -->
+      <div class="swiper--notification">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper" style="transition-timing-function: linear;">
+          <!-- Slides -->
+          <div class="swiper-slide">Internetowe Studio Projektowe</div>
+          <div class="swiper-slide">Internetowe Studio Projektowe</div>
+          <div class="swiper-slide">Internetowe Studio Projektowe</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mobile menu sidemenu -->
+
+    <!-- TODO: elementy graficzne w menu -->
+
+    <section id="side-menu" class="side-menu hidden xl:hidden">
+      <div class="flex items-center justify-between ">
+        <div class="dark:text-gray text-[12px]">Motyw Ciemny</div>
+        <div class="mode-switcher"><input type="checkbox" id="toggle2">
+          <label id="switch" for="toggle2">
+            <div id="circle"></div>
+          </label>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-0">
+        <ul class="mt-[66px]">
+          <li class="parent dark:text-light text-[18px]">
+            Studio
+          </li>
+
+          <div class="submenu h-0 overflow-hidden transition-all ">
+            <li class="child">O firmie</li>
+            <li class="child">Kontakt</li>
+            <li class="child">Aktualności</li>
+            <li class="child">Kariera</li>
+          </div>
+        </ul>
+
+        <ul>
+          <li class="parent dark:text-light text-[18px]">
+            Projekt logo
+          </li>
+
+          <div class="submenu mt-[14px]" style="display: none;">
+            <li class="child">O firmie</li>
+            <li class="child">Kontakt</li>
+            <li class="child">Aktualności</li>
+            <li class="child">Kariera</li>
+
+          </div>
+        </ul>
+
+        <ul>
+          <li class="parent dark:text-light text-[18px]">
+            Projekty reklamowe
+          </li>
+
+          <div class="submenu mt-[14px]" style="display: none;">
+            <li class="child">O firmie</li>
+            <li class="child">Kontakt</li>
+            <li class="child">Aktualności</li>
+            <li class="child">Kariera</li>
+
+          </div>
+        </ul>
+
+        <ul>
+          <li class="parent dark:text-light text-[18px]">
+            Strony internetowe
+          </li>
+
+          <div class="submenu mt-[14px]" style="display: none;">
+            <li class="child">O firmie</li>
+            <li class="child">Kontakt</li>
+            <li class="child">Aktualności</li>
+            <li class="child">Kariera</li>
+
+          </div>
+        </ul>
+
+      </div>
+    </section>
+
+  </header>
+
+  <section class="content dark:text-light flex items-start justify-start relative mt-[60px] lg:mt-[128px] ">
+
+    <aside
+      class="xl:w-[180px] 2xl:w-[240px] h-screen hidden xl:fixed top-0 left-0 pl-5 lg:pl-[28px]  xl:flex xl:flex-col xl:justify-between pt-[140px] pb-[40px] aside z-[55]">
+
+      <!-- aside top -->
+      <div class="">
+
+        <div class="w-full text-[16px] text-light flex items-center">
+          <p class=" relative inline-block pr-3 font-medium">GrafikOnline <span
+              class="absolute right-0 -top-2 inline-block text-[8px] uppercase">
+              pl</span></p>
+        </div>
+
+        <div class="flex flex-col gap-[13px] mt-[30px]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+            <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
+              transform="translate(0 8) rotate(-90)" fill="#ef4123" />
+          </svg>
+          <p class="text-gray text-[14px]">Internetowe <br /> Studio Projektowe</p>
+
+        </div>
+      </div>
+
+      <!-- aside bottom  -->
+      <div>
+        <p class="text-gray text-[14px]">All Right Reserved <br /> © 2017 - 2024</p>
+      </div>
+
+
+    </aside>
+
+    <!-- pt161 on homepage only if dont have breadcrumbs section -->
+    <main class="z-50 w-full">
+
+      <section class="aside-offset__margin">
+        <div class="breadcrumbs">
+          <ul>
+            <li><a href="#">Studio</a></li>
+
+            <li class="breadcrumb__last">
+              <a href="#">Strony internetowe</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="aside-offset__margin pt-[38px] lg:pt-[59px]">
+        <h1 class="fluid-text-5xl "> <span class="text-red">Tworzymy, wdrażamy,</span> wspieramy.
+        </h1>
+
+        <div
+          class="flex flex-col md:flex-row items-center md:items-end justify-center lg:justify-between  w-full  2xl:container  md:mt-[117px] lg:mt-[157px]">
+          <div class="flex items-center justify-start  gap-[10px] lg:gap-[28px]   w-full lg:w-5/12">
+            <div class="pt-[38px] md:pt-0">
+              <div class="flex items-center gap-[24px] pb-[20px] lg:pb-[37px] ">
+                <svg class="fill-gray" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                  <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
+                    transform="translate(0 8) rotate(-90)"></path>
+                </svg>
+                <p class="text-[14px] text-gray uppercase font-medium ">Co robimy</p>
+
+              </div>
+              <div>
+                <div>
+                  <p class="text-[14px] lg:fluid-text-base max-w-[580px]">Od 2017 roku projektujemy praktyczne
+                    rozwiązania, wspierając
+                    firmy w całym kraju. Jako studio projektowe tworzymy funkcjonalny design, który pozwala na rozwój
+                    oraz budowę stabilnej marki.
+                  </p>
+
+
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class=" flex items-center justify-center md:justify-between
+         w-full lg:w-7/12 mt-[32px] md:mt-0  max-w-[680px]">
+
+            <p class="text-[14px] text-gray hidden xl:flex">Narzędzia i technologia:</p>
+            <ul class="flex  items-center gap-3 sm:gap-4 lg:gap-6">
+              <li><img src="icons/ps.svg" alt=""></li>
+              <li><img src="icons/ai.svg" alt=""></li>
+              <li><img src="icons/id.svg" alt=""></li>
+              <li><img src="icons/ae.svg" alt=""></li>
+              <li><img src="icons/xd.svg" alt=""></li>
+              <li><img src="icons/blender.svg" alt=""></li>
+              <li><img src="icons/hotjar.svg" alt=""></li>
+              <li><img src="icons/meet.svg" alt=""></li>
+              <li><img src="icons/drive.svg" alt=""></li>
+              <li><img src="icons/gmail.svg" alt=""></li>
+              <li><img src="icons/wordpress.svg" alt=""></li>
+              <li><img src="icons/gpt.svg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="aside-offset__margin ">
+        <div class="divider-with-text flex items-center mt-8 lg:mt-20 xl:mt-[85px]">
+          <p class="text-[14px] text-gray min-w-[90px] flex lg:hidden">Zjedź niżej </p>
+          <p class="text-[14px] text-gray hidden lg:flex w-[190px]">Zjedź niżej po więcej </p>
+          <div class="border-[1px] border-dark w-full"></div>
+          <div class="pl-6">
+            <img class="lg:min-w-[14px]" src="arrow-down.svg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="slider-row mt-8 lg:mt-11 pl-5 lg:pl-0 pr-5 lg:pr-0 ">
+        <div class="slider-row__swiper w-full overflow-hidden mb-5 relative">
+          <div
+            class="portfolio__desktop-nav hidden lg:flex aside-offset__margin absolute left-0 top-1 w-full h-full  items-center justify-end">
+
+            <button
+              class="w-[120px] h-[120px] bg-dark rounded-full flex items-center justify-center z-20 relative left-[60px] group hover:bg-red hover:shadow-2xl swiper--portfolio--next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14.993" height="14.993" viewBox="0 0 14.993 14.993"
+                class="-rotate-90 fill-light relative left-0 transition-all group-hover:left-2">
+                <path id="Arrow_Down" d="M0,0V10.6H10.6V9.3H2.223L10.594.929,9.674.008,1.3,8.38V0Z"
+                  transform="translate(0 7.496) rotate(-45)" />
+              </svg>
+
+            </button>
+          </div>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper relative -top-6 pt-6" style="transition-timing-function: linear;">
+            <!-- Slides -->
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+
+          </div>
+          <div class="swiper-scrollbar lg:hidden" style="width: 90%; left: 5%"></div>
+        </div>
+      </section>
+
+      <section class="pt-[36px] pb-12 service-grid-container lg:pb-[125px]  aside-offset__margin">
+
+        <h3 class="fluid-text-3xl grid__title pt-[20px] xl:pt-0 pb-[28px] xl:pb-0 ">Potrzebujesz Projektu <br />
+          Logo dla
+          swojej
+          działalności?</h3>
+
+        <div class="flex items-end gap-[10px] lg:gap-[24px] mt-6 lg:mt-[50px] xl:mt-[56px] grid__buttons ">
+
+          <a href=" #" class="btn btn--dark max-md:w-full">
+            <span>Więcej</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13.708" height="10.219" viewBox="0 0 13.708 10.219">
+              <g id="Więcej_Icon" transform="translate(-782.5 -1015.043)">
+                <line id="Line_6" data-name="Line 6" x2="13.708" transform="translate(782.5 1015.793)" fill="none"
+                  stroke="#f9f2e5" stroke-width="1.5" />
+                <line id="Line_7" data-name="Line 7" x2="13.708" transform="translate(782.5 1020.153)" fill="none"
+                  stroke="#f9f2e5" stroke-width="1.5" />
+                <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(782.5 1024.512)" fill="none"
+                  stroke="#f9f2e5" stroke-width="1.5" />
+              </g>
+            </svg>
+
+
+          </a>
+          <span class="hidden lg:flex"><a href="#" class="btn btn--dark">
+              <span>Cennik</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+                <g id="Cennik_Icon" transform="translate(-135 -24)">
+                  <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(135 24)" fill="none"
+                    stroke="#f9f2e5" stroke-width="1.5">
+                    <rect width="20" height="13" stroke="none" />
+                    <rect x="0.75" y="0.75" width="18.5" height="11.5" fill="none" />
+                  </g>
+                  <line id="Line_9" data-name="Line 9" x2="11" transform="translate(139.5 29.5)" fill="none"
+                    stroke="#f9f2e5" stroke-width="1.5" />
+                </g>
+              </svg>
+
+            </a>
+          </span>
+
+
+          <a href=" #" class="btn btn--red max-md:w-full">
+            <span class="hidden lg:flex whitespace-nowrap">Zamów projekt</span>
+            <span class="flex lg:hidden">Zamów</span>
+
+            <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
+              <g id="Edit_Icon" transform="translate(-779.261 -1011.304)">
+                <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(787.786 1024.145)" fill="white"
+                  stroke="#f9f2e5" stroke-width="1.5" />
+                <g id="Path_316" data-name="Path 316" transform="translate(790.623 1011.304) rotate(45)" fill="none">
+                  <path d="M0,0H4.889V12.223l-2.4,3.845L0,12.223Z" stroke="none" />
+                  <path
+                    d="M 1.499998092651367 1.499997138977051 L 1.499998092651367 11.77978992462158 L 2.467294692993164 13.27259922027588 L 3.389317989349365 11.7939338684082 L 3.389317989349365 1.499997138977051 L 1.499998092651367 1.499997138977051 M -1.9073486328125e-06 -1.9073486328125e-06 L 4.889317989349365 -1.9073486328125e-06 L 4.889317989349365 12.22328758239746 L 2.491608142852783 16.06853675842285 L -1.9073486328125e-06 12.22328758239746 L -1.9073486328125e-06 -1.9073486328125e-06 Z"
+                    stroke="none" fill="#fff" />
+                </g>
+              </g>
+            </svg>
+
+          </a>
+        </div>
+
+        <p
+          class="text-light text-[14px] lg:text-[16px] border-b-[2px]  border-b-dark pb-6 lg:pb-[50px] xl:max-w-[708px] grid__excerpt">
+          Uporządkowana
+          komunikacja
+          wizualna
+          marki pozwala
+          skuteczniej ją
+          prezentować i promować. Działamy według
+          uporządkowanego schematu, dzięki któremu Twoja marka stanie się rozpoznawalna i zacznie budzić konkretne,
+          oczekiwane skojarzenia u odbiorców.</p>
+
+        <div class="  flex flex-col items-start justify-between grid__label xl:pb-[107px]">
+          <div class="flex items-center gap-[24px]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+              <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
+                transform="translate(0 8) rotate(-90)" fill="#ef4123" />
+            </svg>
+            <p class="text-[14px] text-red uppercase font-medium ">Logo design</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- projects swiper -->
+      <section class="slider-row  pl-5 lg:pl-0 pr-5 lg:pr-0">
+        <div class="slider-row__swiper-projects w-full overflow-hidden mb-5 relative">
+          <div
+            class="portfolio__desktop-nav hidden lg:flex aside-offset__margin absolute left-0 top-1 w-full h-full  items-center justify-end">
+
+            <button
+              class="w-[120px] h-[120px] bg-dark rounded-full flex items-center justify-center z-20 relative left-[60px] group hover:bg-red hover:shadow-2xl swiper--portfolio--next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14.993" height="14.993" viewBox="0 0 14.993 14.993"
+                class="-rotate-90 fill-light relative left-0 transition-all group-hover:left-2">
+                <path id="Arrow_Down" d="M0,0V10.6H10.6V9.3H2.223L10.594.929,9.674.008,1.3,8.38V0Z"
+                  transform="translate(0 7.496) rotate(-45)" />
+              </svg>
+
+            </button>
+          </div>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper relative -top-6 pt-6" style="transition-timing-function: linear;">
+            <!-- Slides -->
+            <div class="swiper-slide  aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+
+          </div>
+          <div class="swiper-scrollbar lg:hidden" style="width: 90%; left: 5%"></div>
+        </div>
+      </section>
+
+      <!-- after projects  -->
+      <section class="pt-[36px] pb-12 service-grid-container lg:pb-[125px]  aside-offset__margin">
+
+        <h3 class="fluid-text-3xl grid__title pt-[20px] xl:pt-0 pb-[28px] xl:pb-0 ">Potrzebujesz Projektu <br />
+          Logo dla
+          swojej
+          działalności?</h3>
+
+        <div class="flex items-end gap-[10px] lg:gap-[24px] mt-6 lg:mt-[50px] xl:mt-[56px] grid__buttons ">
+
+          <a href=" #" class="btn btn--dark max-md:w-full">
+            <span>Więcej</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13.708" height="10.219" viewBox="0 0 13.708 10.219">
+              <g id="Więcej_Icon" transform="translate(-782.5 -1015.043)">
+                <line id="Line_6" data-name="Line 6" x2="13.708" transform="translate(782.5 1015.793)" fill="none"
+                  stroke="#f9f2e5" stroke-width="1.5" />
+                <line id="Line_7" data-name="Line 7" x2="13.708" transform="translate(782.5 1020.153)" fill="none"
+                  stroke="#f9f2e5" stroke-width="1.5" />
+                <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(782.5 1024.512)" fill="none"
+                  stroke="#f9f2e5" stroke-width="1.5" />
+              </g>
+            </svg>
+
+
+          </a>
+          <span class="hidden lg:flex"><a href="#" class="btn btn--dark">
+              <span>Cennik</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+                <g id="Cennik_Icon" transform="translate(-135 -24)">
+                  <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(135 24)" fill="none"
+                    stroke="#f9f2e5" stroke-width="1.5">
+                    <rect width="20" height="13" stroke="none" />
+                    <rect x="0.75" y="0.75" width="18.5" height="11.5" fill="none" />
+                  </g>
+                  <line id="Line_9" data-name="Line 9" x2="11" transform="translate(139.5 29.5)" fill="none"
+                    stroke="#f9f2e5" stroke-width="1.5" />
+                </g>
+              </svg>
+
+            </a>
+          </span>
+
+
+          <a href=" #" class="btn btn--red max-md:w-full">
+            <span class="hidden lg:flex whitespace-nowrap">Zamów projekt</span>
+            <span class="flex lg:hidden">Zamów</span>
+
+            <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
+              <g id="Edit_Icon" transform="translate(-779.261 -1011.304)">
+                <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(787.786 1024.145)" fill="white"
+                  stroke="#f9f2e5" stroke-width="1.5" />
+                <g id="Path_316" data-name="Path 316" transform="translate(790.623 1011.304) rotate(45)" fill="none">
+                  <path d="M0,0H4.889V12.223l-2.4,3.845L0,12.223Z" stroke="none" />
+                  <path
+                    d="M 1.499998092651367 1.499997138977051 L 1.499998092651367 11.77978992462158 L 2.467294692993164 13.27259922027588 L 3.389317989349365 11.7939338684082 L 3.389317989349365 1.499997138977051 L 1.499998092651367 1.499997138977051 M -1.9073486328125e-06 -1.9073486328125e-06 L 4.889317989349365 -1.9073486328125e-06 L 4.889317989349365 12.22328758239746 L 2.491608142852783 16.06853675842285 L -1.9073486328125e-06 12.22328758239746 L -1.9073486328125e-06 -1.9073486328125e-06 Z"
+                    stroke="none" fill="#fff" />
+                </g>
+              </g>
+            </svg>
+
+          </a>
+        </div>
+
+        <p
+          class="text-light text-[14px] lg:text-[16px] border-b-[2px]  border-b-dark pb-6 lg:pb-[50px] xl:max-w-[708px] grid__excerpt">
+          Uporządkowana
+          komunikacja
+          wizualna
+          marki pozwala
+          skuteczniej ją
+          prezentować i promować. Działamy według
+          uporządkowanego schematu, dzięki któremu Twoja marka stanie się rozpoznawalna i zacznie budzić konkretne,
+          oczekiwane skojarzenia u odbiorców.</p>
+
+        <div class="  flex flex-col items-start justify-between grid__label xl:pb-[107px]">
+          <div class="flex items-center gap-[24px]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+              <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
+                transform="translate(0 8) rotate(-90)" fill="#ef4123" />
+            </svg>
+            <p class="text-[14px] text-red uppercase font-medium ">Logo design</p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <section id="who-we-are"
+        class="dark:bg-gradient-to-r dark:from-[#1e1e1e] dark:to-[#262626] pt-[36px] lg:pt-[124px] pb-[36px] lg:pb-[124px]">
+        <div class="aside-offset__margin">
+          <div>
+            <!-- label -->
+            <div class="flex flex-col items-start justify-between grid__label xl:pb-[72px]">
+              <div class="flex items-center gap-[24px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                  <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
+                    transform="translate(0 8) rotate(-90)" fill="#777777" />
+                </svg>
+                <p class="text-[14px]  text-gray uppercase font-medium ">Kim jestesmy ?</p>
+              </div>
+            </div>
+            <!-- label -->
+            <h3
+              class="fluid-text-3xl lg:fluid-text-4-717rem grid__title pt-[20px] xl:pt-0 pb-[36px]  max-w-[1440px] lg:pb-[150px] ">
+              Jesteśmy zespołem
+              praktyków z wieloletnim doświadczeniem projektowym <br class="hidden xl:block" />oraz wdrożeniowym.
+              <span class="text-red">Doskonale
+                rozumiemy potrzeby klientów</span> i
+              oferujemy <br class="hidden xl:block" />dopasowane projekty, które realnie poprawiają wizualną jakość
+              firmy.
+            </h3>
+
+          </div>
+          <div class="flex flex-col lg:items-stretch lg:flex-row lg:mt-5">
+            <div class="w-full  lg:w-5/12 xl:min-w-[586px] max-w-[586px]  ">
+              <!-- max-w-[586px] -->
+              <div class="w-full aspect-[1/1.087] bg-dark rounded-lg"></div>
+            </div>
+            <div class="lg:w-7/12 lg:pl-[65px] xl:pl-[94px] mt-[36px] lg:mt-0">
+              <div class="flex items-center justify-between lg:-mt-[25px]">
+                <div class="flex flex-col items-start justify-between grid__label ">
+                  <div class="flex items-center gap-[24px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-gray lg:fill-red" width="8" height="8"
+                      viewBox="0 0 8 8">
+                      <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
+                        transform="translate(0 8) rotate(-90)" />
+                    </svg>
+                    <p class="text-[14px]  text-gray lg:text-red uppercase font-medium ">Nasze wartości</p>
+                  </div>
+                </div>
+
+                <div>
+                  <a href=" #" class="btn btn--dark max-md:w-full">
+                    <span>O nas</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13.708" height="10.219" viewBox="0 0 13.708 10.219">
+                      <g id="Więcej_Icon" transform="translate(-782.5 -1015.043)">
+                        <line id="Line_6" data-name="Line 6" x2="13.708" transform="translate(782.5 1015.793)"
+                          fill="none" stroke="#f9f2e5" stroke-width="1.5" />
+                        <line id="Line_7" data-name="Line 7" x2="13.708" transform="translate(782.5 1020.153)"
+                          fill="none" stroke="#f9f2e5" stroke-width="1.5" />
+                        <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(782.5 1024.512)"
+                          fill="none" stroke="#f9f2e5" stroke-width="1.5" />
+                      </g>
+                    </svg>
+
+                  </a>
+                </div>
+              </div>
+
+              <!-- accordions -->
+
+              <div class="accordion-container xl:mt-[112px]">
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger ">
+                      <span class="max-lg:w-10/12 flex">Nowoczesne podejście do klienta</span>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text fluid-text-lg">
+                      <img class="mt-[16px] mb-[16px] lg:hidden" src="icons/arrow_down_right.svg" alt="">
+
+                      Jako firma Boxmet Ltd. Sp. z o.o. współpracujemy ze Studiem GrafikOnline.PL od
+                      stosunkowo niedługiego czasu, jednak już zdążyliśmy się przekonać o jakości obsługi i
+                      profesjonaliźmie. Firma wykazała się kreatywnym i twórczym podejściem do realizacji projektu
+                      nowego katalogu produktowego. Nasza współpraca to nie tylko katalog, ale również stworzenie
+                      całej
+                      szaty graficznej firmy, a w jej obrębie tworzenie wielu projektów graficznych, takich jak banery
+                      na stronę www. Każdy z projektów spotyka się z naszą aprobatą, pomimo wysoko zawieszonych
+                      wymagań.
+                      To czyni współpracę łatwą i przyjemną, ale przede wszystkim w efekcie wpływa na pozytywny
+                      wizerunek firmy. Również projekty mniej typowe, spoza domyślnej oferty, są obsługiwane przez
+                      Studio Graficznej Jarosław Grycaj z pełnym zaangażowaniem. Zdecydowanie polecamy!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger"> <span class="max-lg:w-10/12 flex">Nowoczesne podejście
+                        do
+                        klienta</span></button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text fluid-text-lg"> <img class="mt-[16px] mb-[16px] lg:hidden"
+                        src="icons/arrow_down_right.svg" alt="">Jako firma Boxmet Ltd. Sp. z o.o. współpracujemy ze
+                      Studiem GrafikOnline.PL od
+                      stosunkowo niedługiego czasu, jednak już zdążyliśmy się przekonać o jakości obsługi i
+                      profesjonaliźmie. Firma wykazała się kreatywnym i twórczym podejściem do realizacji projektu
+                      nowego katalogu produktowego. Nasza współpraca to nie tylko katalog, ale również stworzenie
+                      całej
+                      szaty graficznej firmy, a w jej obrębie tworzenie wielu projektów graficznych, takich jak banery
+                      na stronę www. Każdy z projektów spotyka się z naszą aprobatą, pomimo wysoko zawieszonych
+                      wymagań.
+                      To czyni współpracę łatwą i przyjemną, ale przede wszystkim w efekcie wpływa na pozytywny
+                      wizerunek firmy. Również projekty mniej typowe, spoza domyślnej oferty, są obsługiwane przez
+                      Studio Graficznej Jarosław Grycaj z pełnym zaangażowaniem. Zdecydowanie polecamy!</p>
+                  </div>
+                </div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger"> <span class="max-lg:w-10/12 flex">Nowoczesne podejście
+                        do
+                        klienta</span></button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text fluid-text-lg"> <img class="mt-[16px] mb-[16px] lg:hidden"
+                        src="icons/arrow_down_right.svg" alt="">Jako firma Boxmet Ltd. Sp. z o.o. współpracujemy ze
+                      Studiem GrafikOnline.PL od
+                      stosunkowo niedługiego czasu, jednak już zdążyliśmy się przekonać o jakości obsługi i
+                      profesjonaliźmie. Firma wykazała się kreatywnym i twórczym podejściem do realizacji projektu
+                      nowego katalogu produktowego. Nasza współpraca to nie tylko katalog, ale również stworzenie
+                      całej
+                      szaty graficznej firmy, a w jej obrębie tworzenie wielu projektów graficznych, takich jak banery
+                      na stronę www. Każdy z projektów spotyka się z naszą aprobatą, pomimo wysoko zawieszonych
+                      wymagań.
+                      To czyni współpracę łatwą i przyjemną, ale przede wszystkim w efekcie wpływa na pozytywny
+                      wizerunek firmy. Również projekty mniej typowe, spoza domyślnej oferty, są obsługiwane przez
+                      Studio Graficznej Jarosław Grycaj z pełnym zaangażowaniem. Zdecydowanie polecamy!</p>
+                  </div>
+                </div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger ">
+                      <span class="max-lg:w-10/12 flex">Nowoczesne podejście do klienta</span>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text fluid-text-lg">
+                      <img class="mt-[16px] mb-[16px] lg:hidden" src="icons/arrow_down_right.svg" alt="">
+
+                      Jako firma Boxmet Ltd. Sp. z o.o. współpracujemy ze Studiem GrafikOnline.PL od
+                      stosunkowo niedługiego czasu, jednak już zdążyliśmy się przekonać o jakości obsługi i
+                      profesjonaliźmie. Firma wykazała się kreatywnym i twórczym podejściem do realizacji projektu
+                      nowego katalogu produktowego. Nasza współpraca to nie tylko katalog, ale również stworzenie
+                      całej
+                      szaty graficznej firmy, a w jej obrębie tworzenie wielu projektów graficznych, takich jak banery
+                      na stronę www. Każdy z projektów spotyka się z naszą aprobatą, pomimo wysoko zawieszonych
+                      wymagań.
+                      To czyni współpracę łatwą i przyjemną, ale przede wszystkim w efekcie wpływa na pozytywny
+                      wizerunek firmy. Również projekty mniej typowe, spoza domyślnej oferty, są obsługiwane przez
+                      Studio Graficznej Jarosław Grycaj z pełnym zaangażowaniem. Zdecydowanie polecamy!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- accordions -->
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="testimonials" class=" max-xl:pl-5 max-xl:pr-5 pt-[36px] lg:pt-[130px] pb-12 lg:pb-[124px]  ">
+        <div class="flex flex-col lg:flex-row items-center justify-between lg:mb-[70px] aside-offset__margin">
+          <h3 class="fluid-text-3xl lg:fluid-text-4-717rem xl:whitespace-nowrap lg:pr-[34px]">
+            Jakie zdanie mają o nas <span class="text-red">dotychczasowi Klienci?
+            </span>
+
+          </h3>
+          <!-- divider -->
+          <div class="flex items-center w-full mt-[30px] lg:mt-0">
+            <div class="border-[1px] border-dark w-full"></div>
+            <div class="pl-6">
+              <img class="lg:min-w-[14px]" src="arrow-down.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- TODO: CLAMP text + buttons -->
+        <div class="slider-row__swiper--testimonials overflow-hidden relative">
+          <div
+            class="testimonials__desktop-nav hidden lg:flex aside-offset__margin absolute left-0 top-1 w-full h-full  items-center justify-end">
+
+            <button
+              class="w-[120px] h-[120px] bg-dark rounded-full flex items-center justify-center z-20 relative left-[60px] group hover:bg-red hover:shadow-2xl swiper--testimonials--next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14.993" height="14.993" viewBox="0 0 14.993 14.993"
+                class="-rotate-90 fill-light relative left-0 transition-all group-hover:left-2">
+                <path id="Arrow_Down" d="M0,0V10.6H10.6V9.3H2.223L10.594.929,9.674.008,1.3,8.38V0Z"
+                  transform="translate(0 7.496) rotate(-45)" />
+              </svg>
+
+            </button>
+          </div>
+          <div class="testimonials swiper-wrapper ">
+            <div
+              class="testimonial swiper-slide lg:bg-dark3 flex flex-col-reverse lg:flex-col mt-[24px] lg:pt-[54px] lg:pl-[51px] lg:pr-[51px] lg:pb-0 xl:max-w-[1196px]">
+              <div
+                class="testimonial__content text-[14px] lg:text-[20px] lg:leading-[36px] font-normal text-light mt-[22px] lg:mt-0 lg:pb-[134px]">
+                Jako firma Boxmet Ltd. Sp. z o.o. współpracujemy ze Studiem GrafikOnline.PL od stosunkowo niedługiego
+                czasu, jednak już zdążyliśmy się przekonać o jakości obsługi i profesjonaliźmie. Firma wykazała się
+                kreatywnym i twórczym podejściem do realizacji projektu nowego katalogu produktowego. Nasza współpraca
+                to
+                nie tylko katalog, ale również stworzenie całej szaty graficznej firmy, a w jej obrębie tworzenie wielu
+                projektów graficznych, takich jak banery na stronę www. Każdy z projektów spotyka się z naszą aprobatą,
+                pomimo wysoko zawieszonych wymagań. To czyni współpracę łatwą i przyjemną, ale przede wszystkim w
+                efekcie
+                wpływa na pozytywny wizerunek firmy. Również projekty mniej typowe, spoza domyślnej oferty, są
+                obsługiwane
+                przez Studio Graficznej Jarosław Grycaj z pełnym zaangażowaniem. Zdecydowanie polecamy!
+              </div>
+              <div class="testimonial__footer flex flex-wrap mt-[24px] lg:mt-[0px]">
+                <div
+                  class="text-gray text-[12px] lg:text-[14px] font-bold  lg:border-b-[1px] lg:border-dark w-6/12 lg:w-full order-2 lg:order-1 flex justify-end lg:justify-start lg:pb-[12px]">
+                  <!-- TODO: Icon -->
+                  12.2020r.
+                </div>
+                <div
+                  class="max-lg:w-6/12 lg:flex-grow-4 lg:w-8/12  order-1 lg:items-center lg:justify-start lg:pt-[39px] lg:pb-[63px]">
+                  {logo}</div>
+                <div
+                  class="w-full max-lg:w-6/12 lg:flex-grow-1 lg:w-4/12  order-3 flex-grow-[2] mt-[24px] lg:mt-0 lg:pt-[39px] lg:pb-[63px] lg:pl-[70px] lg:justify-end lg:flex lg:flex-col lg:items-start">
+                  <div class="text-[12px] lg:text-[14px] lg:text-light font-bold text-gray">
+                    <p>Paweł Gryszan</p>
+                  </div>
+                  <div class="text-12 lg:text-[14px] font-normal lg:text-light text-gray">
+                    <p>Kierownik Działu Handlu i Marketingu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="testimonial swiper-slide lg:bg-dark3 flex flex-col-reverse lg:flex-col mt-[24px] lg:pt-[54px] lg:pl-[51px] lg:pr-[51px] lg:pb-0 xl:max-w-[1196px]">
+              <div
+                class="testimonial__content text-[14px] lg:text-[20px] lg:leading-[36px] font-normal text-light mt-[22px] lg:mt-0 lg:pb-[134px]">
+                Jako firma Boxmet Ltd. Sp. z o.o. współpracujemy ze Studiem GrafikOnline.PL od stosunkowo niedługiego
+                czasu, jednak już zdążyliśmy się przekonać o jakości obsługi i profesjonaliźmie. Firma wykazała się
+                kreatywnym i twórczym podejściem do realizacji projektu nowego katalogu produktowego. Nasza współpraca
+                to
+                nie tylko katalog, ale również stworzenie całej szaty graficznej firmy, a w jej obrębie tworzenie wielu
+                projektów graficznych, takich jak banery na stronę www. Każdy z projektów spotyka się z naszą aprobatą,
+                pomimo wysoko zawieszonych wymagań. To czyni współpracę łatwą i przyjemną, ale przede wszystkim w
+                efekcie
+                wpływa na pozytywny wizerunek firmy. Również projekty mniej typowe, spoza domyślnej oferty, są
+                obsługiwane
+                przez Studio Graficznej Jarosław Grycaj z pełnym zaangażowaniem. Zdecydowanie polecamy!
+              </div>
+              <div class="testimonial__footer flex flex-wrap mt-[24px] lg:mt-[0px]">
+                <div
+                  class="text-gray text-[12px] lg:text-[14px] font-bold  lg:border-b-[1px] lg:border-dark w-6/12 lg:w-full order-2 lg:order-1 flex justify-end lg:justify-start lg:pb-[12px]">
+                  <!-- TODO: Icon -->
+                  12.2020r.
+                </div>
+                <div
+                  class="max-lg:w-6/12 lg:flex-grow-4 lg:w-8/12  order-1 lg:items-center lg:justify-start lg:pt-[39px] lg:pb-[63px]">
+                  {logo}</div>
+                <div
+                  class="w-full max-lg:w-6/12 lg:flex-grow-1 lg:w-4/12  order-3 flex-grow-[2] mt-[24px] lg:mt-0 lg:pt-[39px] lg:pb-[63px] lg:pl-[70px] lg:justify-end lg:flex lg:flex-col lg:items-start">
+                  <div class="text-[12px] lg:text-[14px] lg:text-light font-bold text-gray">
+                    <p>Paweł Gryszan</p>
+                  </div>
+                  <div class="text-12 lg:text-[14px] font-normal lg:text-light text-gray">
+                    <p>Kierownik Działu Handlu i Marketingu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="testimonial swiper-slide lg:bg-dark3 flex flex-col-reverse lg:flex-col mt-[24px] lg:pt-[54px] lg:pl-[51px] lg:pr-[51px] lg:pb-0 xl:max-w-[1196px]">
+              <div
+                class="testimonial__content text-[14px] lg:text-[20px] lg:leading-[36px] font-normal text-light mt-[22px] lg:mt-0 lg:pb-[134px]">
+                Jako firma Boxmet Ltd. Sp. z o.o. współpracujemy ze Studiem GrafikOnline.PL od stosunkowo niedługiego
+                czasu, jednak już zdążyliśmy się przekonać o jakości obsługi i profesjonaliźmie. Firma wykazała się
+                kreatywnym i twórczym podejściem do realizacji projektu nowego katalogu produktowego. Nasza współpraca
+                to
+                nie tylko katalog, ale również stworzenie całej szaty graficznej firmy, a w jej obrębie tworzenie wielu
+                projektów graficznych, takich jak banery na stronę www. Każdy z projektów spotyka się z naszą aprobatą,
+                pomimo wysoko zawieszonych wymagań. To czyni współpracę łatwą i przyjemną, ale przede wszystkim w
+                efekcie
+                wpływa na pozytywny wizerunek firmy. Również projekty mniej typowe, spoza domyślnej oferty, są
+                obsługiwane
+                przez Studio Graficznej Jarosław Grycaj z pełnym zaangażowaniem. Zdecydowanie polecamy!
+              </div>
+              <div class="testimonial__footer flex flex-wrap mt-[24px] lg:mt-[0px]">
+                <div
+                  class="text-gray text-[12px] lg:text-[14px] font-bold  lg:border-b-[1px] lg:border-dark w-6/12 lg:w-full order-2 lg:order-1 flex justify-end lg:justify-start lg:pb-[12px]">
+                  <!-- TODO: Icon -->
+                  12.2020r.
+                </div>
+                <div
+                  class="max-lg:w-6/12 lg:flex-grow-4 lg:w-8/12  order-1 lg:items-center lg:justify-start lg:pt-[39px] lg:pb-[63px]">
+                  {logo}</div>
+                <div
+                  class="w-full max-lg:w-6/12 lg:flex-grow-1 lg:w-4/12  order-3 flex-grow-[2] mt-[24px] lg:mt-0 lg:pt-[39px] lg:pb-[63px] lg:pl-[70px] lg:justify-end lg:flex lg:flex-col lg:items-start">
+                  <div class="text-[12px] lg:text-[14px] lg:text-light font-bold text-gray">
+                    <p>Paweł Gryszan</p>
+                  </div>
+                  <div class="text-12 lg:text-[14px] font-normal lg:text-light text-gray">
+                    <p>Kierownik Działu Handlu i Marketingu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="testimonial swiper-slide lg:bg-dark3 flex flex-col-reverse lg:flex-col mt-[24px] lg:pt-[54px] lg:pl-[51px] lg:pr-[51px] lg:pb-0 xl:max-w-[1196px] ">
+              <div
+                class="testimonial__content text-[14px] lg:text-[20px] lg:leading-[36px] font-normal text-light mt-[22px] lg:mt-0 lg:pb-[134px]">
+                Jako firma Boxmet Ltd. Sp. z o.o. współpracujemy ze Studiem GrafikOnline.PL od stosunkowo niedługiego
+                czasu, jednak już zdążyliśmy się przekonać o jakości obsługi i profesjonaliźmie. Firma wykazała się
+                kreatywnym i twórczym podejściem do realizacji projektu nowego katalogu produktowego. Nasza współpraca
+                to
+                nie tylko katalog, ale również stworzenie całej szaty graficznej firmy, a w jej obrębie tworzenie wielu
+                projektów graficznych, takich jak banery na stronę www. Każdy z projektów spotyka się z naszą aprobatą,
+                pomimo wysoko zawieszonych wymagań. To czyni współpracę łatwą i przyjemną, ale przede wszystkim w
+                efekcie
+                wpływa na pozytywny wizerunek firmy. Również projekty mniej typowe, spoza domyślnej oferty, są
+                obsługiwane
+                przez Studio Graficznej Jarosław Grycaj z pełnym zaangażowaniem. Zdecydowanie polecamy!
+              </div>
+              <div class="testimonial__footer flex flex-wrap mt-[24px] lg:mt-[0px]">
+                <div
+                  class="text-gray text-[12px] lg:text-[14px] font-bold  lg:border-b-[1px] lg:border-dark w-6/12 lg:w-full order-2 lg:order-1 flex justify-end lg:justify-start lg:pb-[12px]">
+                  <!-- TODO: Icon -->
+                  12.2020r.
+                </div>
+                <div
+                  class="max-lg:w-6/12 lg:flex-grow-4 lg:w-8/12  order-1 lg:items-center lg:justify-start lg:pt-[39px] lg:pb-[63px]">
+                  {logo}</div>
+                <div
+                  class="w-full max-lg:w-6/12 lg:flex-grow-1 lg:w-4/12  order-3 flex-grow-[2] mt-[24px] lg:mt-0 lg:pt-[39px] lg:pb-[63px] lg:pl-[70px] lg:justify-end lg:flex lg:flex-col lg:items-start">
+                  <div class="text-[12px] lg:text-[14px] lg:text-light font-bold text-gray">
+                    <p>Paweł Gryszan</p>
+                  </div>
+                  <div class="text-12 lg:text-[14px] font-normal lg:text-light text-gray">
+                    <p>Kierownik Działu Handlu i Marketingu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="testimonials--nav lg:hidden  flex items-center gap-[12px] mt-[38px]">
+          <div
+            class="w-6/12 flex items-center text-gray text-[12px] font-bold border-[2px]  border-dark rounded-[20px] h-[40px] pl-[18px] pr-[18px]">
+            Rozwiń opis
+          </div>
+          <div class="w-3/12 h-[40px] bg-dark rounded-[20px] flex items-center justify-start pl-[14px]">back</div>
+          <div class="w-3/12 h-[40px] bg-dark rounded-[20px] flex items-center justify-end pr-[14px]">next</div>
+        </div>
+
+
+      </section>
+
+      <section class="pl-5 lg:pl-0 pr-5 lg:pr-0 ">
+
+        <div class="lg:pr-14 xl:pr-0   aside-offset__margin">
+          <div class="divider-with-text flex items-center">
+            <p
+              class=" text-light  w-full lg:w-auto flex text-[16px] lg:fluid-text-2xl lg:pr-[65px] lg:whitespace-nowrap">
+              Mamy doświadczenie we współpracy z:
+            </p>
+            <div class="border-[1px] border-gray w-full hidden lg:flex"></div>
+            <div class="pl-6 hidden lg:flex">
+              <img class="lg:min-w-[14px]" src="arrow-down.svg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="logos-slider swiper mt-[24px] mb-[24px] lg:mt-[71px] xl:mt-[91px] lg:mb-[71px] xl:mb-[91px]">
+
+          <div class="swiper-wrapper" style="transition-timing-function: linear;">
+            <!-- Slides -->
+            <div class="swiper-slide"> logo</div>
+            <div class="swiper-slide"> logo</div>
+            <div class="swiper-slide"> logo</div>
+            <div class="swiper-slide"> logo</div>
+            <div class="swiper-slide"> logo</div>
+            <div class="swiper-slide"> logo</div>
+            <div class="swiper-slide"> logo</div>
+            <div class="swiper-slide"> logo</div>
+            <div class="swiper-slide"> logo</div>
+            <div class="swiper-slide"> logo</div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="dark:bg-gradient-to-r pl-5 lg:pl-0 pr-5 lg:pr-14 lg:pt-[44px] xl:pb-[124px]  home-cta">
+
+        <div class="flex flex-col lg:flex-row aside-offset__margin max-xl:pl-0 max-xl:pr-0">
+
+          <!-- img -->
+          <div class="w-full flex lg:w-5/12 xl:min-w-[586px] home-cta__photo">
+            <div class="w-full aspect-[1/1.111] bg-red rounded-lg xl:max-w-[586px]"></div>
+          </div>
+
+          <div
+            class="w-full lg:w-7/12 lg:pl-[45px] xl:pl-[65px] 2xl:pl-[134px] pt-[38px] lg:pt-0 lg:flex lg:flex-col justify-between">
+
+            <!-- jesteś gotowy na wspólprace -->
+            <div class="flex items-center justify-between home-cta__title max-xl:pb-[32px]">
+              <div class="flex flex-col items-start justify-between xl:pt-[16px]">
+                <h1 class="fluid-text-5xl max-w-[444px]">Czy <span class="text-red">jesteś gotowy
+                  </span> na współpracę?
+                </h1>
+              </div>
+            </div>
+
+            <!-- buttons -->
+            <div class="home-cta__buttons">
+              <div
+                class="flex  items-start xl:items-center max-xl:justify-between gap-[14px] lg:gap-[14px] 2xl:gap-[32px] max-xl:order-4">
+                <!-- TODO: icon -->
+
+                <a href="#" class="btn btn--dark max-md:w-full whitespace-nowrap">
+                  <span> Kontakt</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+                    <g id="Cennik_Icon" transform="translate(-135 -24)">
+                      <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(135 24)" fill="none"
+                        stroke="#f9f2e5" stroke-width="1.5">
+                        <rect width="20" height="13" stroke="none"></rect>
+                        <rect x="0.75" y="0.75" width="18.5" height="11.5" fill="none"></rect>
+                      </g>
+                      <line id="Line_9" data-name="Line 9" x2="11" transform="translate(139.5 29.5)" fill="none"
+                        stroke="#f9f2e5" stroke-width="1.5"></line>
+                    </g>
+                  </svg>
+
+                </a>
+
+                <a href=" #" class="max-lg:order-4 btn btn--red whitespace-nowrap max-lg:w-full ">
+                  <span>Zamów projekt</span>
+
+                  <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
+                    <g id="Edit_Icon" transform="translate(-779.261 -1011.304)">
+                      <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(787.786 1024.145)"
+                        fill="white" stroke="#f9f2e5" stroke-width="1.5" />
+                      <g id="Path_316" data-name="Path 316" transform="translate(790.623 1011.304) rotate(45)"
+                        fill="none">
+                        <path d="M0,0H4.889V12.223l-2.4,3.845L0,12.223Z" stroke="none" />
+                        <path
+                          d="M 1.499998092651367 1.499997138977051 L 1.499998092651367 11.77978992462158 L 2.467294692993164 13.27259922027588 L 3.389317989349365 11.7939338684082 L 3.389317989349365 1.499997138977051 L 1.499998092651367 1.499997138977051 M -1.9073486328125e-06 -1.9073486328125e-06 L 4.889317989349365 -1.9073486328125e-06 L 4.889317989349365 12.22328758239746 L 2.491608142852783 16.06853675842285 L -1.9073486328125e-06 12.22328758239746 L -1.9073486328125e-06 -1.9073486328125e-06 Z"
+                          stroke="none" fill="#fff" />
+                      </g>
+                    </g>
+                  </svg>
+
+                </a>
+              </div>
+            </div>
+
+            <!-- skontaktuj sie -->
+            <div class="pb-[29px] pt-[38px] xl:pt-0 home-cta__text">
+              <div class="flex items-center gap-[24px] pb-[37px] ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                  <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
+                    transform="translate(0 8) rotate(-90)" fill="#ef4123"></path>
+                </svg>
+                <p class="text-[14px] text-red uppercase font-medium ">SKONTAKTUJ SIĘ</p>
+
+              </div>
+              <div>
+                <div>
+                  <p class="text-[14px] lg:fluid-text-base">Nazywam się Jarosław Grycaj i jako właściciel dbam do ciągły
+                    rozwój studia oraz nadzoruję pracę moich podwykonawców. Każdy projekt, który trafia do klienta
+                    uprzednio weryfikuję w trosce o zapewnienie najwyższej jakości.
+                  </p>
+                  <div class="divider border-b-[2px] border-dark lg:hidden max-lg:mt-[24px]"></div>
+
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <footer class="footer">
+        <div class="flex flex-col lg:flex-row items-start xl:items-stretch  aside-offset__margin ">
+          <!-- 1 -->
+          <div
+            class="w-full xl:w-4/12  2xl:min-w-[460px] 2xl:max-w-[460px] lg:pr-10 xl:pr-12 xl:border-r-2 xl:border-dark">
+            <h3 class="text-[18px] text-light mb-[36px] xl:mb-[93px] xl:text-[20px]">Dane firmowe</h3>
+            <p class="text-dark2 xl:text-light text-[14px] mb-[26px] xl:mb-[36px] xl:text-[16px] leading-[28px]">
+              Studio
+              Graficzne
+              Jarosław Grycaj <br class="hidden lg:block" /> ul. Księcia Witolda 49/15, Wrocław<br
+                class="hidden lg:block" /> NIP:
+              886
+              299 77 74, REGON: 367 151 192</p>
+            <div>
+              <ul class="footer__links mb-[24px] lg:flex-row lg:items-start lg:justify-between xl:justify-start">
+                <div class="flex flex-col ">
+                  <li class="group"><a class="lg:whitespace-nowrap flex items-center gap-[22px]" href="#"><svg
+                        class="relative transition-all  left-0 group-hover:left-[5px]"
+                        xmlns="http://www.w3.org/2000/svg" width="5.305" height="8.897" viewBox="0 0 5.305 8.897">
+                        <path id="Link_Icon" d="M7.687,0,4.095,3.592h0L.5,0,0,.5l4.1,4.1L8.19.5Z"
+                          transform="translate(0.354 8.543) rotate(-90)" fill="#f9f2e5" stroke="#f9f2e5"
+                          stroke-width="0.5" />
+                      </svg>
+                      <span class="xl:text-[14px] group-hover:underline">Polityka prywatnośći</span></a></li>
+                  <li class="group"><a class="lg:whitespace-nowrap flex items-center gap-[22px]" href="#"><svg
+                        class="relative transition-all  left-0 group-hover:left-[5px]"
+                        xmlns="http://www.w3.org/2000/svg" width="5.305" height="8.897" viewBox="0 0 5.305 8.897">
+                        <path id="Link_Icon" d="M7.687,0,4.095,3.592h0L.5,0,0,.5l4.1,4.1L8.19.5Z"
+                          transform="translate(0.354 8.543) rotate(-90)" fill="#f9f2e5" stroke="#f9f2e5"
+                          stroke-width="0.5" />
+                      </svg>
+                      <span class="xl:text-[14px] group-hover:underline">jaroslaw.grycaj.pl</span></a></li>
+                </div>
+                <div class="xl:pl-10 2xl:pl-20">
+                  <li class="group"><a class="flex items-center gap-[22px] lg:text-red " href="#"><svg
+                        class="fill-light stroke-light lg:fill-red lg:stroke-red relative transition-all  left-0 group-hover:left-[5px]"
+                        xmlns="http://www.w3.org/2000/svg" width="5.305" height="8.897" viewBox="0 0 5.305 8.897">
+                        <path id="Link_Icon" d="M7.687,0,4.095,3.592h0L.5,0,0,.5l4.1,4.1L8.19.5Z"
+                          transform="translate(0.354 8.543) rotate(-90)" stroke-width="0.5" />
+                      </svg>
+                      <span class="xl:text-[14px] group-hover:underline">Facebook</span></a>
+                  </li>
+                  <li class="group"><a class="flex items-center gap-[22px] lg:text-red " href="#"><svg
+                        class="fill-light stroke-light lg:fill-red lg:stroke-red relative transition-all  left-0 group-hover:left-[5px]"
+                        xmlns="http://www.w3.org/2000/svg" width="5.305" height="8.897" viewBox="0 0 5.305 8.897">
+                        <path id="Link_Icon" d="M7.687,0,4.095,3.592h0L.5,0,0,.5l4.1,4.1L8.19.5Z"
+                          transform="translate(0.354 8.543) rotate(-90)" stroke-width="0.5" />
+                      </svg>
+                      <span class="xl:text-[14px] group-hover:underline">LInkedIn</span></a>
+                  </li>
+
+                </div>
+              </ul>
+            </div>
+            <div class="divider border-b-2 border-b-dark lg:hidden"></div>
+          </div>
+          <!-- 2 -->
+          <div
+            class="w-full xl:w-4/12  2xl:w-full 2xl:min-w-[488px] 2xl:max-w-[488px] mt-[36px] lg:mt-0 lg:pl-10 xl:pl-20 2xl:pl-[124px] xl:border-r-2 xl:border-dark">
+            <h3 class="text-[18px] text-light mb-[24px] xl:text-[20px] xl:mb-[93px]">Oferta</h3>
+            <ul class="footer__links mb-[24px]">
+              <li class="group"><a class="flex items-center gap-[22px] group-hover:text-red group-hover:underline"
+                  href="#"><svg
+                    class="hidden xl:flex fill-red stroke-red group-hover:left-[5px] relative left-0 transition-all"
+                    xmlns="http://www.w3.org/2000/svg" width="5.305" height="8.897" viewBox="0 0 5.305 8.897">
+                    <path id="Link_Icon" d="M7.687,0,4.095,3.592h0L.5,0,0,.5l4.1,4.1L8.19.5Z"
+                      transform="translate(0.354 8.543) rotate(-90)" stroke-width="0.5" />
+                  </svg>Projektowanie Logo</a></li>
+              <li class="group"><a class="flex items-center gap-[22px] group-hover:text-red group-hover:underline"
+                  href=" #"><svg
+                    class="hidden xl:flex fill-red stroke-red group-hover:left-[5px] relative left-0 transition-all"
+                    xmlns="http://www.w3.org/2000/svg" width="5.305" height="8.897" viewBox="0 0 5.305 8.897">
+                    <path id="Link_Icon" d="M7.687,0,4.095,3.592h0L.5,0,0,.5l4.1,4.1L8.19.5Z"
+                      transform="translate(0.354 8.543) rotate(-90)" stroke-width="0.5" />
+                  </svg>Projekty reklamowe</a></li>
+              <li class="group"><a class="flex items-center gap-[22px] group-hover:text-red group-hover:underline"
+                  href="websites.html"><svg
+                    class="hidden xl:flex fill-red stroke-red group-hover:left-[5px] relative left-0 transition-all"
+                    xmlns="http://www.w3.org/2000/svg" width="5.305" height="8.897" viewBox="0 0 5.305 8.897">
+                    <path id="Link_Icon" d="M7.687,0,4.095,3.592h0L.5,0,0,.5l4.1,4.1L8.19.5Z"
+                      transform="translate(0.354 8.543) rotate(-90)" stroke-width="0.5" />
+                  </svg>Strony internetowe</a></li>
+            </ul>
+            <div class="divider border-b-2 border-b-dark lg:hidden"></div>
+          </div>
+          <!-- 3 -->
+          <div class="w-full 2xl:w-full  xl:w-4/12 xl:pl-20 2xl:pl-[147px]">
+            <h3 class="text-[18px] text-light mt-[24px] lg:mt-0 xl:text-[20px] xl:mb-[93px]">Zamów Projekt</h3>
+            <p class="text-dark2 text-[14px] xl:text-[16px] xl:text-light mt-[36px]">Godziny pracy Studia <br />
+              PN - PT - 9:00 - 16:00</p>
+            <div class="xl:mt-[56px]">
+
+              <a href="/kontakt.html"
+                class="btn btn--red whitespace-nowrap max-xl:mt-[24px] max-xl:w-full max-xl:rounded-[2px] xl:min-w-[234px]">
+                <span>Zamów projekt</span>
+
+                <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
+                  <g id="Edit_Icon" transform="translate(-779.261 -1011.304)">
+                    <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(787.786 1024.145)" fill="white"
+                      stroke="#f9f2e5" stroke-width="1.5" />
+                    <g id="Path_316" data-name="Path 316" transform="translate(790.623 1011.304) rotate(45)"
+                      fill="none">
+                      <path d="M0,0H4.889V12.223l-2.4,3.845L0,12.223Z" stroke="none" />
+                      <path
+                        d="M 1.499998092651367 1.499997138977051 L 1.499998092651367 11.77978992462158 L 2.467294692993164 13.27259922027588 L 3.389317989349365 11.7939338684082 L 3.389317989349365 1.499997138977051 L 1.499998092651367 1.499997138977051 M -1.9073486328125e-06 -1.9073486328125e-06 L 4.889317989349365 -1.9073486328125e-06 L 4.889317989349365 12.22328758239746 L 2.491608142852783 16.06853675842285 L -1.9073486328125e-06 12.22328758239746 L -1.9073486328125e-06 -1.9073486328125e-06 Z"
+                        stroke="none" fill="#fff" />
+                    </g>
+                  </g>
+                </svg>
+
+              </a>
+
+            </div>
+            <div class="divider lg:hidden border-b-2 border-b-dark mt-[24px] mb-[14px]"></div>
+            <p class="text-dark2 text-[13px] text-center lg:hidden">All Right Reserved <br />
+              © 2017 - 2023</p>
+          </div>
+        </div>
+
+      </footer>
+    </main>
+
+  </section>
+  <!-- </div> -->
+
+
+
+  <script type="module" src="/src/about.js"></script>
+</body>
+
+</html>
