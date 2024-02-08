@@ -17,6 +17,24 @@
 }
 
 .desktop-menu {
+  .submenu {
+    @apply dark:text-light flex flex-col gap-[1px] min-w-[165px];
+
+    li {
+      @apply text-[16px]  dark:bg-dark  flex items-center  dark:hover:bg-red transition-all;
+      &:hover {
+        &::before {
+          content: '';
+          @apply hidden;
+        }
+      }
+
+      a {
+        @apply block w-full pt-2 pb-2 pl-3 pr-3;
+      }
+    }
+  }
+
   ul {
     @apply border-b-[2px] border-b-dark;
     // lg:gap-[8px] xl:gap-[38px] 2xl:gap-[68px]
