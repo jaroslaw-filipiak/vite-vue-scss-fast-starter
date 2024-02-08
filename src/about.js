@@ -66,10 +66,27 @@ const handleTopBar = () => {
   });
 };
 
+const handlePopup = (id) => {
+  const popup = document.getElementById(id);
+  const open = document.querySelectorAll('.popup__open--1');
+  const close = popup.querySelector('.popup__close');
+
+  open.forEach((item) => {
+    item.addEventListener('click', () => {
+      popup.classList.add('popup--active');
+    });
+  });
+
+  close.addEventListener('click', () => {
+    popup.classList.remove('popup--active');
+  });
+};
+
 window.addEventListener('DOMContentLoaded', () => {
   handleHamburger();
   handleMobileMenuClick();
   handleTopBar();
+  handlePopup('popup-1');
 
   const swiper = new Swiper('.swiper--notification', {
     speed: 9400,
