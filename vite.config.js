@@ -10,6 +10,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         websites: resolve(__dirname, 'websites.html'),
         contact: resolve(__dirname, 'kontakt.html'),
+        about: resolve(__dirname, 'about.html'),
       },
       output: {
         entryFileNames: `js/[name].js`,
