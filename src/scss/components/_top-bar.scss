@@ -18,28 +18,45 @@
 
 .desktop-menu {
   .submenu {
-    @apply dark:text-light flex flex-col gap-[1px] min-w-[165px];
+    @apply dark:text-light  flex-col gap-[1px] min-w-[165px] -bottom-1;
 
     li {
-      @apply text-[16px]  dark:bg-dark  flex items-center  dark:hover:bg-red transition-all;
-      &:hover {
-        &::before {
-          content: '';
-          @apply hidden;
+      @apply text-[16px]  dark:bg-dark  flex items-center transition-all relative p-0 m-0;
+
+      a {
+        @apply block w-full h-full;
+      }
+    }
+
+    .child {
+      @apply relative;
+
+      a {
+        @apply z-10 pl-5 pr-5 pt-[10px] pb-[10px] flex items-center justify-between;
+
+        svg {
+          @apply w-[14px];
         }
       }
 
-      a {
-        @apply block w-full pt-2 pb-2 pl-3 pr-3;
+      &::before {
+        content: '';
+        @apply block absolute right-0 top-0 w-0 h-full ml-0 bg-dark transition-all;
+      }
+
+      &:hover {
+        &::before {
+          content: '';
+          @apply w-full bg-red;
+        }
       }
     }
   }
 
   ul {
     @apply border-b-[2px] border-b-dark;
-    // lg:gap-[8px] xl:gap-[38px] 2xl:gap-[68px]
   }
-  li {
+  li:not(.child) {
     @apply relative whitespace-nowrap;
     &::before {
       content: '';
@@ -57,7 +74,7 @@
     }
     &::after {
       content: '';
-      @apply ml-3 transition-all relative top-0;
+      @apply xl:ml-3 transition-all relative top-0;
     }
   }
 
@@ -69,7 +86,7 @@
     }
     &::after {
       content: url('dropdown.svg') !important;
-      @apply ml-3 transition-all relative top-0;
+      @apply xl:ml-3 transition-all relative top-0;
     }
   }
 
