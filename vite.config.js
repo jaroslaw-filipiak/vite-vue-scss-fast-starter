@@ -11,6 +11,7 @@ export default defineConfig({
         websites: resolve(__dirname, 'websites.html'),
         contact: resolve(__dirname, 'kontakt.html'),
         about: resolve(__dirname, 'about.html'),
+        pricing: resolve(__dirname, 'pricing.html'),
       },
       output: {
         entryFileNames: `js/[name].js`,

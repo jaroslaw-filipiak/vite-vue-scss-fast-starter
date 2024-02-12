@@ -1,0 +1,49 @@
+.is-pricing-active {
+  display: flex !important;
+}
+html.is-popup,
+html.is-popup body {
+  position: fixed;
+  overflow: hidden;
+}
+
+#pricing {
+  @apply fixed left-0 top-0 w-full h-screen z-[999]  flex justify-center items-start lg:justify-center;
+  backdrop-filter: blur(20px) !important;
+}
+
+.pricing {
+  &__top {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'infoIcon . infoClose'
+      'infoTitle infoTitle infoTitle';
+  }
+
+  &__info-icon {
+    grid-area: infoIcon;
+  }
+
+  &__close-icon {
+    grid-area: infoClose;
+    @apply flex items-center justify-end;
+  }
+
+  &__top-txt {
+    grid-area: infoTitle;
+  }
+
+  &__search {
+    @apply bg-darkMain p-5 text-gray text-center;
+  }
+
+  &__item--btn {
+    @apply w-10 h-10 bg-red text-light rounded-full flex items-center justify-center cursor-pointer selection:bg-opacity-0;
+  }
+
+  &__total--btn {
+    @apply w-10 h-10 bg-light text-light rounded-full flex items-center justify-center cursor-pointer selection:bg-opacity-0;
+  }
+}

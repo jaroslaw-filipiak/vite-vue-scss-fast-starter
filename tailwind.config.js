@@ -3,6 +3,7 @@ export default {
   darkMode: 'class',
   content: [
     './index.html',
+    './pricing.html',
     './about.html',
     './websites.html',
     './grid.html',
@@ -21,6 +22,7 @@ export default {
       red: '#EF4123',
       black: '#000',
       white: '#fff',
+      green: '#00CE7B',
     },
     screens: {
       sm: '640px',
