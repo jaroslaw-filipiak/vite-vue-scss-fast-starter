@@ -69,6 +69,14 @@ const handleTopBar = () => {
 const handlePricingPopup = () => {
   const pricingPopup = document.querySelector('#pricing');
   const trigger = document.querySelector('.pricing__trigger');
+  const close = document.querySelector('.pricing__close-icon');
+
+  close.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.body.classList.remove('is-popup');
+    document.documentElement.classList.remove('is-popup');
+    pricingPopup.classList.remove('is-pricing-active');
+  });
 
   trigger.addEventListener('click', (e) => {
     e.preventDefault();

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="dark is-popup">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8" />
@@ -1228,9 +1228,9 @@
 
   <section id="pricing" class="relative">
     <!-- TODO: icons -->
-    <div class="pricing__wrapper">
+    <div class="pricing__wrapper max-w-full">
       <div class="pricing__content">
-        <div class="pricing__top text-light flex flex-col items-center bg-dark pt-4 pb-4 pl-5 pr-5">
+        <div class="pricing__top text-light flex flex-col items-center bg-dark pt-4 pb-4 pl-5 pr-5 lg:pl-10 lg:pr-10">
           <div class="pricing__info-icon">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-circle" width="24"
               height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -1242,7 +1242,7 @@
             </svg>
           </div>
 
-          <div class="pricing__top-txt text-[14px] pb-2 pt-2">
+          <div class="pricing__top-txt text-[14px] pb-2 pt-2 lg:pl-4 text-left sm:text-center">
             <p>Sprawdź ceny naszych usług, a następnie dodaj wybrane do swojego
               zamówienia.</p>
           </div>
@@ -1255,14 +1255,14 @@
               <path d="M6 6l12 12" />
             </svg></div>
         </div>
-        <div class="pricing__search bg-darkMain">
+        <div class="pricing__search bg-darkMain lg:pl-10 lg:pr-10">
           <input
             class="w-full placeholder-gray placeholder:text-[14px] text-[14px] text-center lg:text-left placeholder:text-center lg:placeholder:text-start lg:pl-6 pt-[14px] pb-[14px] bg-dark lg:bg-dark3 rounded-[8px] border-dark border-[2px]"
             type="text" placeholder="Filtruj po nazwie">
         </div>
         <!-- loop -->
         <!-- TODO: szczególy usługi toggle zwiń -->
-        <div class="pricing__items">
+        <div class="pricing__items ">
           <!-- item -->
           <div class="ac">
             <div
@@ -1295,9 +1295,10 @@
               <div class="text-light text-[16px] lg:hidden">200,-</div>
             </div>
             <div class="ac-panel text-light pl-5 pr-5 bg-dark3 pricing__area-content">
+              <div class="text-[14px] text-green lg:mb-3">W cenie naszej usługi otrzymujesz:</div>
 
               <!-- TODO: check icon -->
-              <div class="flex items-start gap-5 pt-5 pb-5">
+              <div class="flex items-start gap-5 pt-5 pb-5 pricing__item-content">
                 <div class="check ">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check stroke-green"
                     width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -1306,7 +1307,60 @@
                     <path d="M5 12l5 5l10 -10" />
                   </svg>
                 </div>
-                <div> Jedną indywidualnie przygotowaną koncepcję projektu. <span class="text-dark2">Jeśli przedstawiona
+
+                <div class="text-[14px] lg:text-[16px]"> Jedną indywidualnie przygotowaną koncepcję projektu. <span
+                    class="text-dark2">Jeśli przedstawiona
+                    propozycja nie
+                    trafi w
+                    twój
+                    gust, otrzymasz kolejną zupełnie nową propozycję, w oparciu o nowe wytyczne.</span></div>
+              </div>
+
+              <div class="flex items-start gap-5 pt-5 pb-5 pricing__item-content">
+                <div class="check ">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check stroke-green"
+                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l5 5l10 -10" />
+                  </svg>
+                </div>
+                <div class="text-[14px] lg:text-[16px]"> Jedną indywidualnie przygotowaną koncepcję projektu. <span
+                    class="text-dark2">Jeśli przedstawiona
+                    propozycja nie
+                    trafi w
+                    twój
+                    gust, otrzymasz kolejną zupełnie nową propozycję, w oparciu o nowe wytyczne.</span></div>
+              </div>
+
+              <div class="flex items-start gap-5 pt-5 pb-5 pricing__item-content">
+                <div class="check ">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check stroke-green"
+                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l5 5l10 -10" />
+                  </svg>
+                </div>
+                <div class="text-[14px] lg:text-[16px]"> Jedną indywidualnie przygotowaną koncepcję projektu. <span
+                    class="text-dark2">Jeśli przedstawiona
+                    propozycja nie
+                    trafi w
+                    twój
+                    gust, otrzymasz kolejną zupełnie nową propozycję, w oparciu o nowe wytyczne.</span></div>
+              </div>
+
+              <div class="flex items-start gap-5 pt-5 pb-5 pricing__item-content">
+                <div class="check ">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check stroke-green"
+                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l5 5l10 -10" />
+                  </svg>
+                </div>
+                <div class="text-[14px] lg:text-[16px]"> Jedną indywidualnie przygotowaną koncepcję projektu. <span
+                    class="text-dark2">Jeśli przedstawiona
                     propozycja nie
                     trafi w
                     twój
@@ -1351,7 +1405,7 @@
             <div class="ac-panel text-light pl-5 pr-5 bg-dark3 pricing__area-content">
 
               <!-- TODO: check icon -->
-              <div class="flex items-start gap-5 pt-5 pb-5">
+              <div class="flex items-start gap-5 pt-5 pb-5 pricing__item-content">
                 <div class="check ">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check stroke-green"
                     width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -1360,7 +1414,8 @@
                     <path d="M5 12l5 5l10 -10" />
                   </svg>
                 </div>
-                <div> Jedną indywidualnie przygotowaną koncepcję projektu. <span class="text-dark2">Jeśli przedstawiona
+                <div class="text-[14px] lg:text-[16px]"> Jedną indywidualnie przygotowaną koncepcję projektu. <span
+                    class="text-dark2">Jeśli przedstawiona
                     propozycja nie
                     trafi w
                     twój
