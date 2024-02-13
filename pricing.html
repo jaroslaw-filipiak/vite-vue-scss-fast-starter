@@ -1257,7 +1257,7 @@
         </div>
         <div class="pricing__search bg-darkMain">
           <input
-            class="w-full placeholder-gray placeholder:text-[14px] text-[14px] text-center placeholder:text-center pt-[14px] pb-[14px] bg-dark rounded-[8px] border-dark"
+            class="w-full placeholder-gray placeholder:text-[14px] text-[14px] text-center lg:text-left placeholder:text-center lg:placeholder:text-start lg:pl-6 pt-[14px] pb-[14px] bg-dark lg:bg-dark3 rounded-[8px] border-dark border-[2px]"
             type="text" placeholder="Filtruj po nazwie">
         </div>
         <!-- loop -->
@@ -1265,14 +1265,26 @@
         <div class="pricing__items">
           <!-- item -->
           <div class="ac">
-            <h2 class="ac-header pl-5 pr-5 flex items-center justify-between dark:bg-dark bg-light pt-[9px] pb-[9px] ">
-              <button type="button" class="ac-trigger">
-                <span class="text-light text-[16px] flex">Projekt wizytówki firmowej</span>
+            <div
+              class="ac-header  pl-5 pr-5 flex items-center justify-between dark:bg-dark dark:lg:bg-darkMain bg-light pt-[9px] pb-[9px]">
+              <button type="button" class="ac-trigger pricing__area-title">
+                <span class="text-light text-[16px] lg:text-[20px] flex">Projekt wizytówki firmowej</span>
               </button>
-            </h2>
-            <div class="bg-dark3 pl-5 pr-5 pt-2 pb-2 flex items-center justify-between ">
-              <div class="flex items-center justify-start gap-[17px]">
-                <div class="underline text-light text-[12px] pt-2 pb-2 pricing__trigger  select-none">Szczegóły usługi
+            </div>
+            <div class="pricing__area-icon hidden lg:flex lg:items-center lg:justify-center">
+              <div class="w-[40px] h-[40px] hiden flex items-center justify-center rounded-full bg-red text-light ">
+                +
+              </div>
+            </div>
+            <div
+              class="text-light text-[16px] pricing__area-price hidden lg:flex items-center justify-center  bg-darkMain">
+              200,-
+            </div>
+            <div
+              class="bg-dark3 lg:bg-darkMain pl-5 pr-5 pt-2 pb-2 flex items-center justify-between lg:justify-center">
+              <div class="flex items-center justify-start gap-[17px] pricing__area-details">
+                <div class="underline text-light text-[12px] pt-2 pb-2 pricing__trigger  select-none lg:text-red">
+                  Szczegóły usługi
                 </div>
                 <div><svg xmlns="http://www.w3.org/2000/svg" width="12.437" height="7.603" viewBox="0 0 12.437 7.603">
                     <path id="Dropdown" d="M10.346,0,5.511,4.834h0L.676,0,0,.677,5.511,6.188,11.022.677Z"
@@ -1280,9 +1292,9 @@
                   </svg>
                 </div>
               </div>
-              <div class="text-light text-[16px]">200,-</div>
+              <div class="text-light text-[16px] lg:hidden">200,-</div>
             </div>
-            <div class="ac-panel text-light pl-5 pr-5 bg-dark3 ">
+            <div class="ac-panel text-light pl-5 pr-5 bg-dark3 pricing__area-content">
 
               <!-- TODO: check icon -->
               <div class="flex items-start gap-5 pt-5 pb-5">
@@ -1307,14 +1319,26 @@
           <!-- item -->
           <!-- item -->
           <div class="ac">
-            <h2 class="ac-header pl-5 pr-5 flex items-center justify-between dark:bg-dark bg-light pt-[9px] pb-[9px] ">
-              <button type="button" class="ac-trigger">
-                <span class="text-light text-[16px] flex">Projekt wizytówki firmowej</span>
+            <div
+              class="ac-header  pl-5 pr-5 flex items-center justify-between dark:bg-dark dark:lg:bg-darkMain bg-light pt-[9px] pb-[9px]">
+              <button type="button" class="ac-trigger pricing__area-title">
+                <span class="text-light text-[16px] lg:text-[20px] flex">Projekt wizytówki firmowej</span>
               </button>
-            </h2>
-            <div class="bg-dark3 pl-5 pr-5 pt-2 pb-2 flex items-center justify-between ">
-              <div class="flex items-center justify-start gap-[17px]">
-                <div class="underline text-light text-[12px] pt-2 pb-2 pricing__trigger  select-none">Szczegóły usługi
+            </div>
+            <div class="pricing__area-icon hidden lg:flex lg:flex lg:items-center lg:justify-center">
+              <div class="w-[40px] h-[40px] hiden flex items-center justify-center rounded-full bg-red text-light ">
+                +
+              </div>
+            </div>
+            <div
+              class="text-light text-[16px] pricing__area-price hidden lg:flex items-center justify-center  bg-darkMain">
+              200,-
+            </div>
+            <div
+              class="bg-dark3 lg:bg-darkMain pl-5 pr-5 pt-2 pb-2 flex items-center justify-between lg:justify-center">
+              <div class="flex items-center justify-start gap-[17px] pricing__area-details">
+                <div class="underline text-light text-[12px] pt-2 pb-2 pricing__trigger  select-none lg:text-red">
+                  Szczegóły usługi
                 </div>
                 <div><svg xmlns="http://www.w3.org/2000/svg" width="12.437" height="7.603" viewBox="0 0 12.437 7.603">
                     <path id="Dropdown" d="M10.346,0,5.511,4.834h0L.676,0,0,.677,5.511,6.188,11.022.677Z"
@@ -1322,60 +1346,12 @@
                   </svg>
                 </div>
               </div>
-              <div class="text-light text-[16px]">200,-</div>
+              <div class="text-light text-[16px] lg:hidden">200,-</div>
             </div>
-            <div class="ac-panel text-light pl-5 pr-5 bg-dark3 ">
+            <div class="ac-panel text-light pl-5 pr-5 bg-dark3 pricing__area-content">
 
               <!-- TODO: check icon -->
-              <div class="flex items-start gap-5 pt-5 pb-5 border-b border-b-dark">
-                <div class="check ">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check stroke-green"
-                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M5 12l5 5l10 -10" />
-                  </svg>
-                </div>
-                <div> Jedną indywidualnie przygotowaną koncepcję projektu. <span class="text-dark2">Jeśli przedstawiona
-                    propozycja nie
-                    trafi w
-                    twój
-                    gust, otrzymasz kolejną zupełnie nową propozycję, w oparciu o nowe wytyczne.</span></div>
-              </div>
-
-              <div class="flex items-start gap-5 pt-5 pb-5 border-b border-b-dark">
-                <div class="check ">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check stroke-green"
-                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M5 12l5 5l10 -10" />
-                  </svg>
-                </div>
-                <div> Jedną indywidualnie przygotowaną koncepcję projektu. <span class="text-dark2">Jeśli przedstawiona
-                    propozycja nie
-                    trafi w
-                    twój
-                    gust, otrzymasz kolejną zupełnie nową propozycję, w oparciu o nowe wytyczne.</span></div>
-              </div>
-
-              <div class="flex items-start gap-5 pt-5 pb-5 border-b border-b-dark">
-                <div class="check ">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check stroke-green"
-                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M5 12l5 5l10 -10" />
-                  </svg>
-                </div>
-                <div> Jedną indywidualnie przygotowaną koncepcję projektu. <span class="text-dark2">Jeśli przedstawiona
-                    propozycja nie
-                    trafi w
-                    twój
-                    gust, otrzymasz kolejną zupełnie nową propozycję, w oparciu o nowe wytyczne.</span></div>
-              </div>
-
-              <div class="flex items-start gap-5 pt-5 pb-5 border-b border-b-dark">
+              <div class="flex items-start gap-5 pt-5 pb-5">
                 <div class="check ">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check stroke-green"
                     width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -1395,9 +1371,6 @@
             </div>
           </div>
           <!-- item -->
-
-
-
 
         </div>
       </div>

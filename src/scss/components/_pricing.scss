@@ -8,8 +8,11 @@ html.is-popup body {
 }
 
 #pricing {
-  @apply fixed left-0 top-0 w-full h-screen z-[999]  flex justify-center items-start lg:justify-center;
-  backdrop-filter: blur(20px) !important;
+  @apply fixed left-0 top-0 w-full h-screen z-[999]  flex justify-center items-start lg:justify-center max-lg:bg-darkMain;
+
+  @media (min-width: 1024px) {
+    backdrop-filter: blur(20px) !important;
+  }
 }
 
 .pricing {
@@ -45,5 +48,73 @@ html.is-popup body {
 
   &__total--btn {
     @apply w-10 h-10 bg-light text-light rounded-full flex items-center justify-center cursor-pointer selection:bg-opacity-0;
+  }
+}
+
+// =================================== accordion
+
+#pricing {
+  .ac {
+    margin-top: 0;
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: max-content 180px 100px 60px;
+      grid-template-areas:
+        'title details price icon'
+        'accordion accordion accordion accordion';
+    }
+  }
+  .ac-header {
+    @apply pl-5 pr-5;
+  }
+
+  @media (min-width: 1024px) {
+    .pricing__area-title {
+      grid-area: title;
+    }
+
+    .pricing__area-details {
+      grid-area: details;
+    }
+
+    .pricing__area-price {
+      grid-area: price;
+    }
+
+    .pricing__area-icon {
+      grid-area: icon;
+    }
+
+    .pricing__area-content {
+      grid-area: accordion;
+    }
+  }
+
+  .ac-trigger {
+    @apply border-none pt-5 pb-5 top-0 border-b-[0px];
+
+    &::after {
+      content: '+';
+      font-size: 20px;
+      text-align: center;
+      transform: translate(50%, -50%) !important;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      @apply w-[40px] h-[40px] flex items-center justify-center rounded-full bg-red text-light  border-0 lg:hidden;
+    }
+
+    &:hover {
+      @apply border-none;
+
+      &::after {
+        content: '+';
+        @apply bg-red w-[40px] h-[40px] transition-all;
+      }
+
+      span {
+        @apply relative top-0;
+      }
+    }
   }
 }
