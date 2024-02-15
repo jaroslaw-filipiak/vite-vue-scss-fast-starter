@@ -26,7 +26,7 @@ function raf(time) {
   requestAnimationFrame(raf);
 }
 
-// requestAnimationFrame(raf);
+requestAnimationFrame(raf);
 
 const handleHamburger = () => {
   const hamburger = document.querySelector('.hamburger');
@@ -34,6 +34,13 @@ const handleHamburger = () => {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('is-active');
     nav.classList.toggle('hidden');
+  });
+};
+
+const handleBackToTop = () => {
+  const btn = document.querySelector('.back-to-top');
+  btn.addEventListener('click', () => {
+    lenis.scrollTo(0);
   });
 };
 
@@ -72,6 +79,7 @@ window.addEventListener('DOMContentLoaded', () => {
   handleHamburger();
   handleMobileMenuClick();
   handleTopBar();
+  handleBackToTop();
 
   const swiper = new Swiper('.swiper--notification', {
     speed: 9400,
