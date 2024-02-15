@@ -15,16 +15,18 @@ import Accordion from 'accordion-js';
 
 import './clamp.js';
 
-//lenis init
+// lenis init
 
-const lenis = new Lenis();
+const lenis = new Lenis({
+  smoothWheel: false,
+});
 
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
 }
 
-requestAnimationFrame(raf);
+// requestAnimationFrame(raf);
 
 const handleHamburger = () => {
   const hamburger = document.querySelector('.hamburger');
