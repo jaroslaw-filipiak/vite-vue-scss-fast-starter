@@ -5,7 +5,7 @@
     @apply dark:text-light flex flex-col;
 
     li {
-      @apply text-[14px] h-10 max-lg:dark:bg-dark  pl-3 pr-3 flex items-center lg:items-start lg:pl-0 mb-[2px] xl:text-[16px];
+      @apply text-[14px] h-10 max-lg:dark:bg-dark  max-lg:pl-[14px] max-lg:pr-[14px] pl-3 pr-3 flex items-center lg:items-start lg:pl-0 mb-[2px] xl:text-[16px];
     }
   }
 }
