@@ -168,6 +168,15 @@
       'photo title'
       'photo buttons'
       'photo content';
+    column-gap: 40px;
+  }
+
+  @media (width > 1280px) {
+    column-gap: 60px;
+  }
+
+  @media (width > 1736px) {
+    column-gap: 0px;
   }
 
   .home-cta__title {
