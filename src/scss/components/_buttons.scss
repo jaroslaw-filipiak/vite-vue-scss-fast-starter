@@ -18,3 +18,16 @@
     @apply dark:bg-red hover:scale-[103%] transition-all;
   }
 }
+
+.btn--contact__animation {
+  .line__transform {
+    transform: translate(455.213px, 7761.406px);
+    transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+  &:hover {
+    .line__transform {
+      transform: translate(455.213px, 7772.5px);
+      transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    }
+  }
+}
