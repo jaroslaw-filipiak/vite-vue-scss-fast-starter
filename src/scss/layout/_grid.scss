@@ -59,7 +59,7 @@
 }
 
 .aside-offset__margin {
-  @apply max-w-[1440px] xl:ml-[180px] 2xl:ml-[240px] max-xl:pl-5 max-xl:pr-5;
+  @apply max-w-[1440px] xl:ml-[180px] 2xl:ml-[240px] max-xl:pl-[24px] max-xl:pr-[24px];
 }
 
 .aside {
@@ -137,5 +137,52 @@
   &__label,
   &__buttons {
     @apply xl:pl-[36px] 2xl:pl-[80px];
+  }
+}
+
+/*
+*
+* ========================================================
+* HOMEPAGE CTA GRID ON MOBILE DEVICES
+* ========================================================
+*  
+*/
+
+.home-cta {
+  @media (width <= 1024px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      'title'
+      'photo'
+      'content'
+      'buttons';
+  }
+
+  @media (width > 1025px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 1fr 1fr;
+    grid-template-areas:
+      'photo title'
+      'photo buttons'
+      'photo content';
+  }
+
+  .home-cta__title {
+    grid-area: title;
+  }
+
+  .home-cta__photo {
+    grid-area: photo;
+  }
+
+  .home-cta__content {
+    grid-area: content;
+  }
+
+  .home-cta__buttons {
+    grid-area: buttons;
   }
 }

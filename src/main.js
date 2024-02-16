@@ -64,13 +64,13 @@ const handleTopBar = () => {
     const direction = e.direction === -1 ? 'up' : 'down';
 
     if (scroll > 10 && direction === 'down') {
-      desktopMenu.classList.add('on-scroll-down');
-      desktopMenuRight.classList.add('on-scroll-down');
-      topBar.classList.add('top-bar--transparent');
+      topBar.classList.add('on-scroll-down');
+      // desktopMenu.classList.add('on-scroll-down');
+      // desktopMenuRight.classList.add('on-scroll-down');
     } else {
-      desktopMenu.classList.remove('on-scroll-down');
-      desktopMenuRight.classList.remove('on-scroll-down');
-      topBar.classList.remove('top-bar--transparent');
+      topBar.classList.remove('on-scroll-down');
+      // desktopMenu.classList.remove('on-scroll-down');
+      // desktopMenuRight.classList.remove('on-scroll-down');
     }
   });
 };
@@ -84,7 +84,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper--notification', {
     speed: 9400,
     centeredSlides: false,
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     spaceBetween: 30,
     loop: true,
     autoplay: {
@@ -93,12 +93,13 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  // portfolio
   const swiper2 = new Swiper('.slider-row__swiper', {
-    spaceBetween: 24,
+    slidesPerView: 1,
+    spaceBetween: 12,
+    centeredSlides: true,
     speed: 300,
     loop: true,
-    centeredSlides: false,
-    slidesPerView: 'auto',
 
     scrollbar: {
       el: '.swiper-scrollbar',
@@ -109,6 +110,15 @@ window.addEventListener('DOMContentLoaded', () => {
     // },
     navigation: {
       nextEl: '.swiper--portfolio--next',
+    },
+
+    breakpoints: {
+      // when window width is >= 640px
+      720: {
+        centeredSlides: false,
+        spaceBetween: 24,
+        slidesPerView: 'auto',
+      },
     },
   });
 

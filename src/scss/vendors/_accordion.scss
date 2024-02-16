@@ -6,7 +6,7 @@ $color-grey: #8a8a8a;
 $color-black: #111;
 
 .ac {
-  margin-top: 8px;
+  @apply lg:mt-[8px];
   //   border: 1px solid $color-light-grey;
   background-color: transparent;
   box-sizing: border-box;
@@ -19,7 +19,7 @@ $color-black: #111;
 
   // Trigger class
   .ac-trigger {
-    @apply fluid-text-3rem text-light  border-b-[2px] border-dark pt-[32px] pb-[32px] lg:pt-[39px] lg:pb-[36px] top-0;
+    @apply text-[18px] lg:fluid-text-3rem text-light  border-b-[2px] border-dark  pt-[22px] pb-[28px] lg:pt-[39px] lg:pb-[36px] top-0;
     text-align: left;
     width: 100%;
     display: block;
@@ -38,10 +38,10 @@ $color-black: #111;
       content: url('/fag-chevron-down.svg');
       font-size: 0px;
       text-align: center;
-      transform: translate(0, -50%);
+      transform: translate(0, -50%) rotate(0deg) !important;
       position: absolute;
       right: 0px;
-      top: 28%;
+      top: 50%;
       @apply w-[44px] lg:w-[60px] h-[44px] lg:h-[60px] bg-dark flex items-center justify-center rounded-full border-2 border-opacity-0 border-dark origin-center rotate-0;
     }
 
@@ -54,6 +54,7 @@ $color-black: #111;
 
       &::after {
         @apply bg-none lg:bg-red w-[44px] h-[44px] lg:w-[60px] lg:h-[60px] transition-all rotate-0 origin-center;
+        transform: translate(0, -50%) rotate(0deg) !important;
       }
 
       span {
@@ -89,7 +90,8 @@ $color-black: #111;
     & > .ac-header .ac-trigger {
       &::after {
         // content: '\2013';
-        @apply lg:w-[60px] lg:h-[60px] bg-dark3 border-dark border-2 lg:border-none lg:bg-red flex items-center justify-center rounded-full origin-center rotate-180;
+        @apply lg:w-[60px] lg:h-[60px] bg-dark3 border-dark border-2 lg:border-none lg:bg-red flex items-center justify-center rounded-full origin-center;
+        transform: translate(0, -50%) rotate(180deg) !important;
       }
     }
   }

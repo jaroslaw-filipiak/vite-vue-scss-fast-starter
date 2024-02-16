@@ -13,131 +13,175 @@
 
   <header>
     <!-- top bar fixed h60px mobile -->
-    <section class="top-bar fixed left-0 top-0 w-full xl:pr-5 2xl:pr-[43px] z-[444] ">
+    <section class="top-bar fixed left-0  w-full z-[444] duration-1000 transition-all ">
 
-      <div class="max-xl:pl-5 lg:pl-[28px]  xl:min-w-[180px] 2xl:min-w-[240px] flex  items-center">
-        <a href="/"> <img class="w-[43px] min-w-[43px] lg:w-[55px]" src="/Logo_128px_GrafikOnlinePL_v2.gif"
-            alt="GrafikOnline logotyp"></a>
+      <div class="w-full xl:pr-5 2xl:pr-[43px] flex items-stretch justify-between h-[60px] lg:h-[128px]">
+
+        <div class="max-xl:pl-5 lg:pl-[28px]  xl:min-w-[180px] 2xl:min-w-[240px] flex  items-center">
+          <a href="/"> <img class="w-[43px] min-w-[43px] lg:w-[55px]" src="/Logo_128px_GrafikOnlinePL_v2.gif"
+              alt="GrafikOnline logotyp"></a>
+        </div>
+
+        <div class="w-full text-[16px] text-light flex items-center justify-center xl:hidden">
+          <p class=" relative inline-block pr-3 font-medium">GrafikOnline <span
+              class="absolute right-0 -top-2 inline-block text-[8px] uppercase">
+              pl</span></p>
+        </div>
+
+        <div
+          class="border-[2px] border-dark w-[60px] lg:w-[110px] border-b-[0px] flex flex-none items-center justify-center xl:hidden">
+          <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+
+        <!-- desktop -->
+        <div
+          class="desktop-menu on-scroll-initial hidden xl:flex items-center lg:w-6/12 xl:w-7/12 2xl:w-6/12 lg:pl-16 xl:pl-0 translate-y-0 transition-all">
+          <ul class="w-full flex lg:gap-[8px] xl:gap-[38px] 2xl:gap-[68px] h-full items-center">
+
+            <li class="relative fluid-text-base has-submenu group"><a
+                class="transition-all relative top-0 group-hover:-top-1 " href="#">Studio</a>
+              <ul
+                class="submenu overflow-hidden transition-all absolute bottom-0  translate-y-[100%] hidden group-hover:flex group-hover:opacity-100 ">
+                <li class="child group/child"><a href="about.html">O firmie <svg
+                      class="relative -left-3 opacity-0 transition-all group-hover/child:opacity-100 group-hover/child:left-0"
+                      xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="24"
+                      height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" />
+                      <path d="M13 18l6 -6" />
+                      <path d="M13 6l6 6" />
+                    </svg></a></li>
+                <li class="child"><a href="kontakt.html">Kontakt</a></li>
+                <li class="child"><a href="#">Aktualności</a></li>
+                <li class="child"><a href="#">Kariera</a></li>
+              </ul>
+            </li>
+
+            <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 "
+                href="#">Projekt
+                Logo</a></li>
+            <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 "
+                href="#">Projekty
+                Reklamowe</a></li>
+            <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 "
+                href="websites.html">Strony
+                Internetowe</a></li>
+          </ul>
+        </div>
+
+        <div
+          class="hidden xl:flex items-center justify-end gap-[24px] xl:gap-[10px] 2xl:gap-[24px] lg:w-6/12 xl:w-5/12 translate-y-0 transition-all desktop-menu__right">
+
+          <!-- switcher -->
+          <div class="flex items-center gap-[19px] ">
+            <div class="mode-switcher"><input type="checkbox" id="toggle">
+              <label id="switch" for="toggle">
+                <div id="circle"></div>
+              </label>
+            </div>
+          </div>
+
+          <!-- switcher -->
+
+          <!-- TODO: animacje svg -->
+          <a href=" #" class="btn btn--dark">
+            <span>Cennik</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+              <g id="Cennik_Icon" transform="translate(-135 -24)">
+                <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(135 24)" fill="none" stroke="#f9f2e5"
+                  stroke-width="1.5">
+                  <rect width="20" height="13" stroke="none" />
+                  <rect x="0.75" y="0.75" width="18.5" height="11.5" fill="none" />
+                </g>
+                <line id="Line_9" data-name="Line 9" x2="11" transform="translate(139.5 29.5)" fill="none"
+                  stroke="#f9f2e5" stroke-width="1.5" />
+              </g>
+            </svg>
+
+          </a>
+
+          <a href="/kontakt.html" class="btn btn--red whitespace-nowrap">
+            <span>Zamów projekt</span>
+
+            <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
+              <g id="Edit_Icon" transform="translate(-779.261 -1011.304)">
+                <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(787.786 1024.145)" fill="white"
+                  stroke="#f9f2e5" stroke-width="1.5" />
+                <g id="Path_316" data-name="Path 316" transform="translate(790.623 1011.304) rotate(45)" fill="none">
+                  <path d="M0,0H4.889V12.223l-2.4,3.845L0,12.223Z" stroke="none" />
+                  <path
+                    d="M 1.499998092651367 1.499997138977051 L 1.499998092651367 11.77978992462158 L 2.467294692993164 13.27259922027588 L 3.389317989349365 11.7939338684082 L 3.389317989349365 1.499997138977051 L 1.499998092651367 1.499997138977051 M -1.9073486328125e-06 -1.9073486328125e-06 L 4.889317989349365 -1.9073486328125e-06 L 4.889317989349365 12.22328758239746 L 2.491608142852783 16.06853675842285 L -1.9073486328125e-06 12.22328758239746 L -1.9073486328125e-06 -1.9073486328125e-06 Z"
+                    stroke="none" fill="#fff" />
+                </g>
+              </g>
+            </svg>
+
+          </a>
+
+
+        </div>
       </div>
 
-      <div class="w-full text-[16px] text-light flex items-center justify-center xl:hidden">
-        <p class=" relative inline-block pr-3 font-medium">GrafikOnline <span
-            class="absolute right-0 -top-2 inline-block text-[8px] uppercase">
-            pl</span></p>
-      </div>
+      <!-- slider is a part of top bar now -->
+      <div class="notificaton-slider w-full lg:invisible">
+        <!-- Slider main container -->
+        <div class="swiper--notification w-screen ">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper" style="transition-timing-function: linear;">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="flex items-center justify-start gap-7"> <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                  height="8" viewBox="0 0 8 8">
+                  <path class="fill-gray" id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
+                    transform="translate(0 8) rotate(-90)" />
+                </svg>
 
-      <div
-        class="border-[2px] border-dark w-[60px] lg:w-[110px] border-b-[0px] flex flex-none items-center justify-center xl:hidden">
-        <button class="hamburger hamburger--squeeze" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-      </div>
+                <div> Internetowe Studio Projektowe</div>
+              </div>
 
-      <!-- desktop -->
-      <div
-        class="desktop-menu on-scroll-initial hidden xl:flex items-center lg:w-6/12 xl:w-7/12 2xl:w-6/12 lg:pl-16 xl:pl-0 translate-y-0 transition-all">
-        <ul class="w-full flex lg:gap-[8px] xl:gap-[38px] 2xl:gap-[68px] h-full items-center">
 
-          <li class="relative fluid-text-base has-submenu group"><a
-              class="transition-all relative top-0 group-hover:-top-1 " href="#">Studio</a>
-            <ul
-              class="submenu overflow-hidden transition-all absolute bottom-0  translate-y-[100%] hidden group-hover:flex group-hover:opacity-100 ">
-              <li class="child group/child"><a href="about.html">O firmie <svg
-                    class="relative -left-3 opacity-0 transition-all group-hover/child:opacity-100 group-hover/child:left-0"
-                    xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="24"
-                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M5 12l14 0" />
-                    <path d="M13 18l6 -6" />
-                    <path d="M13 6l6 6" />
-                  </svg></a></li>
-              <li class="child"><a href="kontakt.html">Kontakt</a></li>
-              <li class="child"><a href="#">Aktualności</a></li>
-              <li class="child"><a href="#">Kariera</a></li>
-            </ul>
-          </li>
+            </div>
 
-          <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 "
-              href="#">Projekt
-              Logo</a></li>
-          <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 "
-              href="#">Projekty
-              Reklamowe</a></li>
-          <li class="fluid-text-base group"><a class="transition-all relative top-0 group-hover:-top-1 "
-              href="websites.html">Strony
-              Internetowe</a></li>
-        </ul>
-      </div>
+            <div class="swiper-slide">
+              <div class="flex items-center justify-start gap-7"> <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                  height="8" viewBox="0 0 8 8">
+                  <path class="fill-gray" id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
+                    transform="translate(0 8) rotate(-90)" />
+                </svg>
 
-      <div
-        class="hidden xl:flex items-center justify-end gap-[24px] xl:gap-[10px] 2xl:gap-[24px] lg:w-6/12 xl:w-5/12 translate-y-0 transition-all desktop-menu__right">
+                <div> Internetowe Studio Projektowe</div>
+              </div>
 
-        <!-- switcher -->
-        <div class="flex items-center gap-[19px] ">
-          <div class="mode-switcher"><input type="checkbox" id="toggle">
-            <label id="switch" for="toggle">
-              <div id="circle"></div>
-            </label>
+
+            </div>
+
+            <div class="swiper-slide">
+              <div class="flex items-center justify-start gap-7"> <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                  height="8" viewBox="0 0 8 8">
+                  <path class="fill-gray" id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
+                    transform="translate(0 8) rotate(-90)" />
+                </svg>
+
+                <div> Internetowe Studio Projektowe</div>
+              </div>
+
+
+            </div>
+
+
+
           </div>
         </div>
-
-        <!-- switcher -->
-
-        <!-- TODO: animacje svg -->
-        <a href=" #" class="btn btn--dark">
-          <span>Cennik</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
-            <g id="Cennik_Icon" transform="translate(-135 -24)">
-              <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(135 24)" fill="none" stroke="#f9f2e5"
-                stroke-width="1.5">
-                <rect width="20" height="13" stroke="none" />
-                <rect x="0.75" y="0.75" width="18.5" height="11.5" fill="none" />
-              </g>
-              <line id="Line_9" data-name="Line 9" x2="11" transform="translate(139.5 29.5)" fill="none"
-                stroke="#f9f2e5" stroke-width="1.5" />
-            </g>
-          </svg>
-
-        </a>
-
-        <a href="/kontakt.html" class="btn btn--red whitespace-nowrap">
-          <span>Zamów projekt</span>
-
-          <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
-            <g id="Edit_Icon" transform="translate(-779.261 -1011.304)">
-              <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(787.786 1024.145)" fill="white"
-                stroke="#f9f2e5" stroke-width="1.5" />
-              <g id="Path_316" data-name="Path 316" transform="translate(790.623 1011.304) rotate(45)" fill="none">
-                <path d="M0,0H4.889V12.223l-2.4,3.845L0,12.223Z" stroke="none" />
-                <path
-                  d="M 1.499998092651367 1.499997138977051 L 1.499998092651367 11.77978992462158 L 2.467294692993164 13.27259922027588 L 3.389317989349365 11.7939338684082 L 3.389317989349365 1.499997138977051 L 1.499998092651367 1.499997138977051 M -1.9073486328125e-06 -1.9073486328125e-06 L 4.889317989349365 -1.9073486328125e-06 L 4.889317989349365 12.22328758239746 L 2.491608142852783 16.06853675842285 L -1.9073486328125e-06 12.22328758239746 L -1.9073486328125e-06 -1.9073486328125e-06 Z"
-                  stroke="none" fill="#fff" />
-              </g>
-            </g>
-          </svg>
-
-        </a>
-
-
       </div>
     </section>
 
 
-    <section class="notificaton-slider mt-[60px]" style="display: none;">
-      <!-- Slider main container -->
-      <div class="swiper--notification">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper" style="transition-timing-function: linear;">
-          <!-- Slides -->
-          <div class="swiper-slide">Internetowe Studio Projektowe</div>
-          <div class="swiper-slide">Internetowe Studio Projektowe</div>
-          <div class="swiper-slide">Internetowe Studio Projektowe</div>
-        </div>
-      </div>
-    </section>
+
 
     <!-- mobile menu sidemenu -->
 
@@ -246,8 +290,8 @@
 
     </aside>
 
-    <!-- pt161 on homepage only if dont have breadcrumbs section -->
-    <main class="pt-[50px] lg:pt-[161px] z-50 w-full ">
+    <!-- pt161 on homepage only if dont have breadcrumbs section  -->
+    <main class="pt-[93px] lg:pt-[161px] z-50 w-full max-w-[100vw] overflow-hidden ">
 
       <section class="aside-offset__margin">
         <h1 class="fluid-text-5xl ">Tworzymy <span class="text-red lg:text-light">Projekty Graficzne
@@ -295,30 +339,30 @@
           </div>
 
           <div class=" flex items-center justify-center lg:justify-between
-         w-full lg:w-7/12 mt-20 md:mt-0  max-w-[680px]">
+         w-full lg:w-7/12 mt-[70px] md:mt-0 max-w-[680px] ">
 
             <p class="text-[14px] text-gray hidden xl:flex">Narzędzia i technologia:</p>
-            <ul class="flex  items-center gap-3 sm:gap-4 lg:gap-6">
-              <li><img src="icons/ps.svg" alt=""></li>
-              <li><img src="icons/ai.svg" alt=""></li>
-              <li><img src="icons/id.svg" alt=""></li>
-              <li><img src="icons/ae.svg" alt=""></li>
-              <li><img src="icons/xd.svg" alt=""></li>
-              <li><img src="icons/blender.svg" alt=""></li>
-              <li><img src="icons/hotjar.svg" alt=""></li>
-              <li><img src="icons/meet.svg" alt=""></li>
-              <li><img src="icons/drive.svg" alt=""></li>
-              <li><img src="icons/gmail.svg" alt=""></li>
-              <li><img src="icons/wordpress.svg" alt=""></li>
-              <li><img src="icons/gpt.svg" alt=""></li>
+            <ul class="flex items-center justify-between w-full gap-3 sm:gap-4 lg:gap-6">
+              <li><img class="max-lg:w-[14px]" src="icons/ps.svg" alt=""></li>
+              <li><img class="max-lg:w-[14px]" src="icons/ai.svg" alt=""></li>
+              <li><img class="max-lg:w-[14px]" src="icons/id.svg" alt=""></li>
+              <li><img class="max-lg:w-[14px]" src="icons/ae.svg" alt=""></li>
+              <li><img class="max-lg:w-[14px]" src="icons/xd.svg" alt=""></li>
+              <li><img class="max-lg:w-[14px]" src="icons/blender.svg" alt=""></li>
+              <li><img class="max-lg:w-[14px]" src="icons/hotjar.svg" alt=""></li>
+              <li><img class="max-lg:w-[14px]" src="icons/meet.svg" alt=""></li>
+              <li><img class="max-lg:w-[14px]" src="icons/drive.svg" alt=""></li>
+              <li><img class="max-lg:w-[14px]" src="icons/gmail.svg" alt=""></li>
+              <li><img class="max-lg:w-[14px]" src="icons/wordpress.svg" alt=""></li>
+              <li><img class="max-lg:w-[14px]" src="icons/gpt.svg" alt=""></li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section class="aside-offset__margin ">
+      <section class="aside-offset__margin">
         <div class="divider-with-text flex items-center mt-8 lg:mt-20 xl:mt-[85px]">
-          <p class="text-[14px] text-gray min-w-[90px] flex lg:hidden">Zjedź niżej </p>
+          <p class="text-[12px] text-gray min-w-[90px] flex lg:hidden">Zjedź niżej </p>
           <p class="text-[14px] text-gray hidden lg:flex w-[190px]">Zjedź niżej po więcej </p>
           <div class="border-[1px] border-dark w-full"></div>
           <div class="pl-6">
@@ -327,8 +371,9 @@
         </div>
       </section>
 
-      <section class="slider-row mt-8 lg:mt-11 pl-5 lg:pl-0 pr-5 lg:pr-0 ">
-        <div class="slider-row__swiper w-full overflow-hidden mb-5 relative">
+      <!-- first swiper projects -->
+      <section class="slider-row mt-8 lg:mt-11 lg:pl-0 lg:pr-0">
+        <div class="slider-row__swiper portfolio-slider w-full overflow-hidden mb-5 relative">
           <div
             class="portfolio__desktop-nav hidden lg:flex aside-offset__margin absolute left-0 top-1 w-full h-full  items-center justify-end">
 
@@ -343,7 +388,7 @@
             </button>
           </div>
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper relative -top-6 pt-6" style="transition-timing-function: linear;">
+          <div class="swiper-wrapper -top-6 pt-6 " style="transition-timing-function: linear;">
             <!-- Slides -->
             <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
               <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
@@ -359,32 +404,130 @@
                 <!-- icon -->
               </div>
             </div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+
+
 
           </div>
-          <div class="swiper-scrollbar lg:hidden" style="width: 90%; left: 5%"></div>
+
+          <div class="swiper-scrollbar w-full m-0 p-0 lg:hidden"></div>
+
         </div>
       </section>
 
-      <section class="pt-[36px] pb-12 service-grid-container lg:pb-[125px]  aside-offset__margin">
+      <!-- after first swiper projects -->
+      <section class="pt-[28px] pb-12 service-grid-container lg:pb-[125px] aside-offset__margin">
 
-        <h3 class="fluid-text-3xl grid__title pt-[20px] xl:pt-0 pb-[28px] xl:pb-0 ">Potrzebujesz Projektu <br />
+        <h3 class="text-[20px] lg:fluid-text-3xl grid__title pt-[17px] xl:pt-0 pb-[24px] xl:pb-0">Potrzebujesz Projektu
+          <br />
           Logo dla
           swojej
-          działalności?</h3>
+          działalności?
+        </h3>
 
         <div class="flex items-end gap-[10px] lg:gap-[24px] mt-6 lg:mt-[50px] xl:mt-[56px] grid__buttons ">
 
@@ -458,16 +601,17 @@
               <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
                 transform="translate(0 8) rotate(-90)" fill="#ef4123" />
             </svg>
-            <p class="text-[14px] text-red uppercase font-medium ">Logo design</p>
+            <p class="text-[12px] lg:text-[14px] text-red uppercase font-medium ">Logo design</p>
           </div>
 
         </div>
 
       </section>
 
-      <!-- projects swiper -->
-      <section class="slider-row  pl-5 lg:pl-0 pr-5 lg:pr-0">
-        <div class="slider-row__swiper-projects w-full overflow-hidden mb-5 relative">
+
+      <!-- second swiper projects -->
+      <section class="slider-row mt-2 lg:mt-11 lg:pl-0 lg:pr-0">
+        <div class="slider-row__swiper portfolio-slider w-full overflow-hidden mb-5 relative">
           <div
             class="portfolio__desktop-nav hidden lg:flex aside-offset__margin absolute left-0 top-1 w-full h-full  items-center justify-end">
 
@@ -482,11 +626,11 @@
             </button>
           </div>
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper relative -top-6 pt-6" style="transition-timing-function: linear;">
+          <div class="swiper-wrapper -top-6 pt-6 " style="transition-timing-function: linear;">
             <!-- Slides -->
-            <div class="swiper-slide  aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
-              <div class="swiper-slide__top" style="background-image:url('temp/1.webp')"></div>
-              <div class="swiper-slide__bottom" style="background-image:url('temp/2.webp')"></div>
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
               <!-- icon -->
               <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
                   width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
@@ -498,33 +642,130 @@
                 <!-- icon -->
               </div>
             </div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
-            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg 2xl:pb-[37.374%]"></div>
+
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+
+            <div class="swiper-slide aspect-square md:aspect-video bg-dark rounded-lg group/slide 2xl:pb-[37.374%]">
+              <div class="swiper-slide__top rounded-lg" style="background-image:url('temp/1.webp')"></div>
+              <div class="swiper-slide__bottom rounded-lg" style="background-image:url('temp/2.webp')"></div>
+              <!-- icon -->
+              <div class="swiper-slide__fullscreen-icon group/icon "><svg xmlns="http://www.w3.org/2000/svg"
+                  width="14.08" height="14.08" viewBox="0 0 14.08 14.08"
+                  class="scale-[100%] group/icon:hover:scale-[100%]">
+                  <path id="Fullscreen_Icon"
+                    d="M120-825.92v-3.911h1.564v2.347h2.347v1.564Zm10.169,0v-1.564h2.347v-2.347h1.564v3.911ZM120-836.089V-840h3.911v1.564h-2.347v2.347Zm12.516,0v-2.347h-2.347V-840h3.911v3.911Z"
+                    transform="translate(-120 840)" fill="#f9f2e5" />
+                </svg>
+                <!-- icon -->
+              </div>
+            </div>
+
+
 
           </div>
-          <div class="swiper-scrollbar lg:hidden" style="width: 90%; left: 5%"></div>
+
+          <div class="swiper-scrollbar w-full m-0 p-0 lg:hidden"></div>
+
         </div>
       </section>
 
-      <!-- after projects  -->
-      <section class="pt-[36px] pb-12 service-grid-container lg:pb-[125px]  aside-offset__margin">
+      <!-- after second swiper projects -->
+      <section class="pt-[28px] pb-12 service-grid-container lg:pb-[125px] aside-offset__margin">
 
-        <h3 class="fluid-text-3xl grid__title pt-[20px] xl:pt-0 pb-[28px] xl:pb-0 ">Potrzebujesz Projektu <br />
+        <h3 class="text-[20px] lg:fluid-text-3xl grid__title pt-[17px] xl:pt-0 pb-[24px] xl:pb-0">Potrzebujesz Projektu
+          <br />
           Logo dla
           swojej
-          działalności?</h3>
+          działalności?
+        </h3>
 
         <div class="flex items-end gap-[10px] lg:gap-[24px] mt-6 lg:mt-[50px] xl:mt-[56px] grid__buttons ">
 
@@ -598,12 +839,13 @@
               <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
                 transform="translate(0 8) rotate(-90)" fill="#ef4123" />
             </svg>
-            <p class="text-[14px] text-red uppercase font-medium ">Logo design</p>
+            <p class="text-[12px] lg:text-[14px] text-red uppercase font-medium ">Logo design</p>
           </div>
 
         </div>
 
       </section>
+
 
 
 
@@ -618,12 +860,12 @@
                   <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
                     transform="translate(0 8) rotate(-90)" fill="#777777" />
                 </svg>
-                <p class="text-[14px]  text-gray uppercase font-medium ">Kim jestesmy ?</p>
+                <p class="text-[12px] lg:text-[14px]  text-gray uppercase font-medium ">Kim jestesmy ?</p>
               </div>
             </div>
             <!-- label -->
             <h3
-              class="fluid-text-3xl lg:fluid-text-4-717rem grid__title pt-[20px] xl:pt-0 pb-[36px]  max-w-[1440px] lg:pb-[150px] ">
+              class="text-[20px] lg:fluid-text-3xl lg:fluid-text-4-717rem grid__title pt-[20px] xl:pt-0 pb-[36px]  max-w-[1440px] lg:pb-[150px] ">
               Jesteśmy zespołem
               praktyków z wieloletnim doświadczeniem projektowym <br class="hidden xl:block" />oraz wdrożeniowym.
               <span class="text-red">Doskonale
@@ -647,7 +889,8 @@
                       <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
                         transform="translate(0 8) rotate(-90)" />
                     </svg>
-                    <p class="text-[14px]  text-gray lg:text-red uppercase font-medium ">Nasze wartości</p>
+                    <p class="text-[12px] lg:text-[14px]  text-gray lg:text-red uppercase font-medium ">Nasze wartości
+                    </p>
                   </div>
                 </div>
 
@@ -671,7 +914,7 @@
 
               <!-- accordions -->
 
-              <div class="accordion-container xl:mt-[112px]">
+              <div class="accordion-container xl:mt-[112px] max-lg:mt-[12px]">
                 <div class="ac">
                   <h2 class="ac-header">
                     <button type="button" class="ac-trigger ">
@@ -776,16 +1019,15 @@
         </div>
       </section>
 
-
-      <section id="testimonials" class=" max-xl:pl-5 max-xl:pr-5 pt-[36px] lg:pt-[130px] pb-12 lg:pb-[124px]  ">
+      <section id="testimonials" class="pt-[36px] lg:pt-[130px] pb-12 lg:pb-[124px] ">
         <div class="flex flex-col lg:flex-row items-center justify-between lg:mb-[70px] aside-offset__margin">
-          <h3 class="fluid-text-3xl lg:fluid-text-4-717rem xl:whitespace-nowrap lg:pr-[34px]">
+          <h3 class="text-[24px] lg:fluid-text-3xl lg:fluid-text-4-717rem xl:whitespace-nowrap lg:pr-[34px]">
             Jakie zdanie mają o nas <span class="text-red">dotychczasowi Klienci?
             </span>
 
           </h3>
           <!-- divider -->
-          <div class="flex items-center w-full mt-[30px] lg:mt-0">
+          <div class="flex items-center w-full mt-[20px] lg:mt-0">
             <div class="border-[1px] border-dark w-full"></div>
             <div class="pl-6">
               <img class="lg:min-w-[14px]" src="arrow-down.svg" alt="">
@@ -794,7 +1036,7 @@
         </div>
 
         <!-- TODO: CLAMP text + buttons -->
-        <div class="slider-row__swiper--testimonials overflow-hidden relative">
+        <div class="slider-row__swiper--testimonials overflow-hidden relative max-lg:pl-[24px] max-lg:pr-[24px]">
           <div
             class="testimonials__desktop-nav hidden lg:flex aside-offset__margin absolute left-0 top-1 w-full h-full  items-center justify-end">
 
@@ -810,7 +1052,7 @@
           </div>
           <div class="testimonials swiper-wrapper ">
             <div
-              class="testimonial swiper-slide lg:bg-dark3 flex flex-col-reverse lg:flex-col mt-[24px] lg:pt-[54px] lg:pl-[51px] lg:pr-[51px] lg:pb-0 xl:max-w-[1196px]">
+              class="testimonial swiper-slide lg:bg-dark3 flex flex-col-reverse lg:flex-col lg:pt-[54px] lg:pl-[51px] lg:pr-[51px] lg:pb-0 xl:max-w-[1196px]">
               <div
                 class="testimonial__content text-[14px] lg:text-[20px] lg:leading-[36px] font-normal text-light mt-[22px] lg:mt-0 lg:pb-[134px]">
                 Jako firma Boxmet Ltd. Sp. z o.o. współpracujemy ze Studiem GrafikOnline.PL od stosunkowo niedługiego
@@ -846,7 +1088,7 @@
               </div>
             </div>
             <div
-              class="testimonial swiper-slide lg:bg-dark3 flex flex-col-reverse lg:flex-col mt-[24px] lg:pt-[54px] lg:pl-[51px] lg:pr-[51px] lg:pb-0 xl:max-w-[1196px]">
+              class="testimonial swiper-slide lg:bg-dark3 flex flex-col-reverse lg:flex-col  lg:pt-[54px] lg:pl-[51px] lg:pr-[51px] lg:pb-0 xl:max-w-[1196px]">
               <div
                 class="testimonial__content text-[14px] lg:text-[20px] lg:leading-[36px] font-normal text-light mt-[22px] lg:mt-0 lg:pb-[134px]">
                 Jako firma Boxmet Ltd. Sp. z o.o. współpracujemy ze Studiem GrafikOnline.PL od stosunkowo niedługiego
@@ -882,7 +1124,7 @@
               </div>
             </div>
             <div
-              class="testimonial swiper-slide lg:bg-dark3 flex flex-col-reverse lg:flex-col mt-[24px] lg:pt-[54px] lg:pl-[51px] lg:pr-[51px] lg:pb-0 xl:max-w-[1196px]">
+              class="testimonial swiper-slide lg:bg-dark3 flex flex-col-reverse lg:flex-col  lg:pt-[54px] lg:pl-[51px] lg:pr-[51px] lg:pb-0 xl:max-w-[1196px]">
               <div
                 class="testimonial__content text-[14px] lg:text-[20px] lg:leading-[36px] font-normal text-light mt-[22px] lg:mt-0 lg:pb-[134px]">
                 Jako firma Boxmet Ltd. Sp. z o.o. współpracujemy ze Studiem GrafikOnline.PL od stosunkowo niedługiego
@@ -918,7 +1160,7 @@
               </div>
             </div>
             <div
-              class="testimonial swiper-slide lg:bg-dark3 flex flex-col-reverse lg:flex-col mt-[24px] lg:pt-[54px] lg:pl-[51px] lg:pr-[51px] lg:pb-0 xl:max-w-[1196px] ">
+              class="testimonial swiper-slide lg:bg-dark3 flex flex-col-reverse lg:flex-col  lg:pt-[54px] lg:pl-[51px] lg:pr-[51px] lg:pb-0 xl:max-w-[1196px] ">
               <div
                 class="testimonial__content text-[14px] lg:text-[20px] lg:leading-[36px] font-normal text-light mt-[22px] lg:mt-0 lg:pb-[134px]">
                 Jako firma Boxmet Ltd. Sp. z o.o. współpracujemy ze Studiem GrafikOnline.PL od stosunkowo niedługiego
@@ -957,21 +1199,34 @@
 
         </div>
 
-
-
-        <div class="testimonials--nav lg:hidden  flex items-center gap-[12px] mt-[38px]">
+        <div
+          class="testimonials--nav lg:hidden  flex items-center gap-[12px] mt-[38px] max-lg:pl-[24px] max-lg:pr-[24px]">
           <div
             class="w-6/12 flex items-center text-gray text-[12px] font-bold border-[2px]  border-dark rounded-[20px] h-[40px] pl-[18px] pr-[18px]">
             Rozwiń opis
           </div>
-          <div class="w-3/12 h-[40px] bg-dark rounded-[20px] flex items-center justify-start pl-[14px]">back</div>
-          <div class="w-3/12 h-[40px] bg-dark rounded-[20px] flex items-center justify-end pr-[14px]">next</div>
+          <div class="w-3/12 h-[40px] bg-dark rounded-[20px] flex items-center justify-start pl-[14px]">
+            <div>
+              <svg class="rotate-90 w-[11px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.993 14.993">
+                <path class="fill-light" id="Arrow_Down" d="M0,0V10.6H10.6V9.3H2.223L10.594.929,9.674.008,1.3,8.38V0Z"
+                  transform="translate(0 7.496) rotate(-45)" />
+              </svg>
+            </div>
+          </div>
+          <div class="w-3/12 h-[40px] bg-dark rounded-[20px] flex items-center justify-end pr-[14px]">
+            <div>
+              <svg class=" -rotate-90 w-[11px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.993 14.993">
+                <path class="fill-light" id="Arrow_Down" d="M0,0V10.6H10.6V9.3H2.223L10.594.929,9.674.008,1.3,8.38V0Z"
+                  transform="translate(0 7.496) rotate(-45)" />
+              </svg>
+            </div>
+          </div>
         </div>
 
 
       </section>
 
-      <section class="pl-5 lg:pl-0 pr-5 lg:pr-0 ">
+      <section>
 
         <div class="lg:pr-14 xl:pr-0   aside-offset__margin">
           <div class="divider-with-text flex items-center">
@@ -1007,99 +1262,93 @@
         </div>
       </section>
 
-      <section class="dark:bg-gradient-to-r pl-5 lg:pl-0 pr-5 lg:pr-14 lg:pt-[44px] xl:pb-[124px]  home-cta">
+      <section class="dark:bg-gradient-to-r pl-5 lg:pl-0 pr-5 lg:pr-14 lg:pt-[44px] lg:pb-[124px] ">
 
-        <div class="flex flex-col lg:flex-row aside-offset__margin max-xl:pl-0 max-xl:pr-0">
+        <div class="aside-offset__margin home-cta">
 
-          <!-- img -->
-          <div class="w-full flex lg:w-5/12 xl:min-w-[586px] home-cta__photo">
+          <!-- photo -->
+          <div class="w-full lg:flex lg:w-5/12 xl:min-w-[586px] home-cta__photo">
             <div class="w-full aspect-[1/1.111] bg-red rounded-lg xl:max-w-[586px]"></div>
           </div>
 
-          <div
-            class="w-full lg:w-7/12 lg:pl-[45px] xl:pl-[65px] 2xl:pl-[134px] pt-[38px] lg:pt-0 lg:flex lg:flex-col justify-between">
-
+          <!-- title -->
+          <div class="home-cta__title">
             <!-- jesteś gotowy na wspólprace -->
-            <div class="flex items-center justify-between home-cta__title max-xl:pb-[32px]">
+            <div class="lg:flex lg:items-center lg:justify-between max-xl:pb-[32px]">
               <div class="flex flex-col items-start justify-between xl:pt-[16px]">
-                <h1 class="fluid-text-5xl max-w-[444px]">Czy <span class="text-red">jesteś gotowy
+                <h1 class="text-[28px] lg:fluid-text-5xl max-w-[444px] ">Czy <span class="text-red">jesteś
+                    gotowy
                   </span> na współpracę?
                 </h1>
               </div>
             </div>
+          </div>
 
-            <!-- buttons -->
-            <div class="home-cta__buttons">
-              <div
-                class="flex  items-start xl:items-center max-xl:justify-between gap-[14px] lg:gap-[14px] 2xl:gap-[32px] max-xl:order-4">
-                <!-- TODO: icon -->
+          <!-- buttons -->
+          <div class="home-cta__buttons">
+            <div
+              class="flex items-start xl:items-center max-xl:justify-between gap-[14px] lg:gap-[14px] 2xl:gap-[32px] max-xl:order-4">
+              <!-- TODO: icon -->
 
-                <a href="#" class="btn btn--dark max-md:w-full whitespace-nowrap">
-                  <span> Kontakt</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
-                    <g id="Cennik_Icon" transform="translate(-135 -24)">
-                      <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(135 24)" fill="none"
-                        stroke="#f9f2e5" stroke-width="1.5">
-                        <rect width="20" height="13" stroke="none"></rect>
-                        <rect x="0.75" y="0.75" width="18.5" height="11.5" fill="none"></rect>
-                      </g>
-                      <line id="Line_9" data-name="Line 9" x2="11" transform="translate(139.5 29.5)" fill="none"
-                        stroke="#f9f2e5" stroke-width="1.5"></line>
+              <a href="#" class="btn btn--dark max-md:w-full whitespace-nowrap">
+                <span> Kontakt</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+                  <g id="Cennik_Icon" transform="translate(-135 -24)">
+                    <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(135 24)" fill="none"
+                      stroke="#f9f2e5" stroke-width="1.5">
+                      <rect width="20" height="13" stroke="none"></rect>
+                      <rect x="0.75" y="0.75" width="18.5" height="11.5" fill="none"></rect>
                     </g>
-                  </svg>
-
-                </a>
-
-                <a href=" #" class="max-lg:order-4 btn btn--red whitespace-nowrap max-lg:w-full ">
-                  <span>Zamów projekt</span>
-
-                  <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
-                    <g id="Edit_Icon" transform="translate(-779.261 -1011.304)">
-                      <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(787.786 1024.145)"
-                        fill="white" stroke="#f9f2e5" stroke-width="1.5" />
-                      <g id="Path_316" data-name="Path 316" transform="translate(790.623 1011.304) rotate(45)"
-                        fill="none">
-                        <path d="M0,0H4.889V12.223l-2.4,3.845L0,12.223Z" stroke="none" />
-                        <path
-                          d="M 1.499998092651367 1.499997138977051 L 1.499998092651367 11.77978992462158 L 2.467294692993164 13.27259922027588 L 3.389317989349365 11.7939338684082 L 3.389317989349365 1.499997138977051 L 1.499998092651367 1.499997138977051 M -1.9073486328125e-06 -1.9073486328125e-06 L 4.889317989349365 -1.9073486328125e-06 L 4.889317989349365 12.22328758239746 L 2.491608142852783 16.06853675842285 L -1.9073486328125e-06 12.22328758239746 L -1.9073486328125e-06 -1.9073486328125e-06 Z"
-                          stroke="none" fill="#fff" />
-                      </g>
-                    </g>
-                  </svg>
-
-                </a>
-              </div>
-            </div>
-
-            <!-- skontaktuj sie -->
-            <div class="pb-[29px] pt-[38px] xl:pt-0 home-cta__text">
-              <div class="flex items-center gap-[24px] pb-[37px] ">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
-                  <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
-                    transform="translate(0 8) rotate(-90)" fill="#ef4123"></path>
+                    <line id="Line_9" data-name="Line 9" x2="11" transform="translate(139.5 29.5)" fill="none"
+                      stroke="#f9f2e5" stroke-width="1.5"></line>
+                  </g>
                 </svg>
-                <p class="text-[14px] text-red uppercase font-medium ">SKONTAKTUJ SIĘ</p>
 
-              </div>
+              </a>
+
+              <a href=" #" class="max-lg:order-4 btn btn--red whitespace-nowrap max-lg:w-full ">
+                <span>Zamów projekt</span>
+
+                <svg width="14.819" height="14.819" viewBox="0 0 14.819 14.819">
+                  <g id="Edit_Icon" transform="translate(-779.261 -1011.304)">
+                    <line id="Line_8" data-name="Line 8" x2="6.294" transform="translate(787.786 1024.145)" fill="white"
+                      stroke="#f9f2e5" stroke-width="1.5" />
+                    <g id="Path_316" data-name="Path 316" transform="translate(790.623 1011.304) rotate(45)"
+                      fill="none">
+                      <path d="M0,0H4.889V12.223l-2.4,3.845L0,12.223Z" stroke="none" />
+                      <path
+                        d="M 1.499998092651367 1.499997138977051 L 1.499998092651367 11.77978992462158 L 2.467294692993164 13.27259922027588 L 3.389317989349365 11.7939338684082 L 3.389317989349365 1.499997138977051 L 1.499998092651367 1.499997138977051 M -1.9073486328125e-06 -1.9073486328125e-06 L 4.889317989349365 -1.9073486328125e-06 L 4.889317989349365 12.22328758239746 L 2.491608142852783 16.06853675842285 L -1.9073486328125e-06 12.22328758239746 L -1.9073486328125e-06 -1.9073486328125e-06 Z"
+                        stroke="none" fill="#fff" />
+                    </g>
+                  </g>
+                </svg>
+
+              </a>
+            </div>
+          </div>
+
+          <!-- content -->
+          <div class="pb-[29px] pt-[38px] xl:pt-0 home-cta__text home-cta__content lg:flex lg:flex-col lg:justify-end">
+            <div class="flex items-center gap-[24px] pb-[37px] ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                <path id="Arrow_Icon" d="M0,0V8H8V7.018H1.677L7.994.7,7.3.006.983,6.323V0Z"
+                  transform="translate(0 8) rotate(-90)" fill="#ef4123"></path>
+              </svg>
+              <p class="text-[14px] text-red uppercase font-medium ">SKONTAKTUJ SIĘ</p>
+            </div>
+            <div>
               <div>
-                <div>
-                  <p class="text-[14px] lg:fluid-text-base">Nazywam się Jarosław Grycaj i jako właściciel dbam do ciągły
-                    rozwój studia oraz nadzoruję pracę moich podwykonawców. Każdy projekt, który trafia do klienta
-                    uprzednio weryfikuję w trosce o zapewnienie najwyższej jakości.
-                  </p>
-                  <div class="divider border-b-[2px] border-dark lg:hidden max-lg:mt-[24px]"></div>
-
-                </div>
-
-
+                <p class="text-[14px] lg:fluid-text-base">Nazywam się Jarosław Grycaj i jako właściciel dbam do ciągły
+                  rozwój studia oraz nadzoruję pracę moich podwykonawców. Każdy projekt, który trafia do klienta
+                  uprzednio weryfikuję w trosce o zapewnienie najwyższej jakości.
+                </p>
+                <div class="divider border-b-[2px] border-dark lg:hidden max-lg:mt-[24px]"></div>
               </div>
-
             </div>
           </div>
 
         </div>
       </section>
-
 
       <footer class="footer">
         <div class="flex flex-col lg:flex-row items-start xl:items-stretch  aside-offset__margin ">

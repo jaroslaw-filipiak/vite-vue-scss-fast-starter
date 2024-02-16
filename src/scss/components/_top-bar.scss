@@ -1,5 +1,5 @@
 .top-bar {
-  @apply h-[60px] lg:h-[128px] flex justify-between dark:text-light;
+  @apply flex flex-col items-start justify-between dark:text-light;
   @apply dark:bg-gradient-to-r dark:from-[#1e1e1e] dark:to-[#262626] translate-y-[0%] transition-all;
 
   &--hidden {
