@@ -1,5 +1,5 @@
 .footer {
-  @apply dark:bg-dark3  lg:pl-0 pr-5 lg:pr-14 pt-[38px] pb-[38px] xl:pt-[147px]  xl:pb-[147px] lg:dark:bg-gradient-to-r lg:dark:from-[#1e1e1e] lg:dark:to-[#262626];
+  @apply dark:bg-dark3  lg:pl-0 lg:pr-14 pt-[38px] pb-[38px] xl:pt-[147px]  xl:pb-[147px] lg:dark:bg-gradient-to-r lg:dark:from-[#1e1e1e] lg:dark:to-[#262626];
 
   &__links {
     @apply dark:text-light flex flex-col;
