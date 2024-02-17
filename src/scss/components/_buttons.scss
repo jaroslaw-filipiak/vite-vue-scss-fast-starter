@@ -19,6 +19,14 @@
   }
 }
 
+/*
+*
+* ========================================================
+* CUSTOM ANIMATIONS ON HOVER
+* ========================================================
+*  
+*/
+
 .btn--contact__animation {
   .line__transform {
     transform: translate(455.213px, 7761.406px);
@@ -28,6 +36,36 @@
     .line__transform {
       transform: translate(455.213px, 7772.5px);
       transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    }
+  }
+}
+
+@keyframes startX2 {
+  to {
+    x2: 6; /* Adjust the desired value at the end of the animation */
+  }
+}
+
+@keyframes startX2 {
+  to {
+    x2: 11; /* Adjust the desired value at the end of the animation */
+  }
+}
+
+.btn--pricing__animation {
+  .line__transform {
+    transform: translate(139.5px, 29.5px);
+    transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transform-origin: center !important;
+    animation: startX2 0.3s ease forwards;
+  }
+
+  &:hover {
+    .line__transform {
+      transform: translate(139.5px, 29.5px);
+      transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+      transform-origin: center !important;
+      animation: endX2 0.3s ease forwards;
     }
   }
 }

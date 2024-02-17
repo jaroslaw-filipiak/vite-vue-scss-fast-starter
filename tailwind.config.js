@@ -63,6 +63,7 @@ export default {
       values: {
         '3rem': 3,
         '4-717rem': 4.717, // 38px on 2xl
+        '5xl': [6, 1.4],
         // ...
         base: 0,
         // ...
