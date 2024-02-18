@@ -75,11 +75,103 @@ const handleTopBar = () => {
   });
 };
 
+class Testimonials {
+  constructor(options) {
+    this.options = options;
+    this.testimonials = document.querySelectorAll('.testimonials .testimonial');
+    this.testimonialsArray = Array.from(this.testimonials);
+    this.content = this.testimonialsArray.map((testimonial) => {
+      return testimonial.querySelector('.testimonial__content').innerText;
+    });
+  }
+
+  init() {
+    this.handleExcerpt();
+    // this.handleBtn();
+    this.handleBtnToAll();
+  }
+
+  handleBtn() {
+    const btn = document.querySelector('.testimonials__more-btn');
+
+    btn.addEventListener('click', () => {
+      const active = document.querySelector(
+        '.testimonials .swiper-slide-active'
+      );
+      const more = active.querySelector('.testimonials__more');
+      const dots = active.querySelector('.testimonial__dots');
+
+      more.classList.toggle('hidden');
+      dots.classList.toggle('hidden');
+
+      more.classList.contains('hidden')
+        ? (btn.innerText = 'Rozwiń opis')
+        : (btn.innerText = 'Schowaj opis');
+    });
+  }
+
+  handleBtnToAll() {
+    const btn = document.querySelector('.testimonials__more-btn');
+
+    btn.addEventListener('click', () => {
+      const mores = document.querySelectorAll(
+        '.testimonials .testimonials__more'
+      );
+      const dotses = document.querySelectorAll(
+        '.testimonials .testimonial__dots'
+      );
+
+      mores.forEach((more) => {
+        more.classList.toggle('hidden');
+      });
+      dotses.forEach((dots) => {
+        dots.classList.toggle('hidden');
+      });
+
+      mores.forEach((more) => {
+        more.classList.contains('hidden')
+          ? (btn.innerText = 'Rozwiń opis')
+          : (btn.innerText = 'Schowaj opis');
+      });
+    });
+  }
+
+  handleExcerpt() {
+    const excerpts = this.content.map((item) => {
+      return item.substring(0, this.options.excerpt);
+    });
+
+    // console.log(excerpts);
+    // console.log(excerpts.length);
+
+    const rest = this.content.map((item) => {
+      return item.substring(this.options.excerpt, item.length);
+    });
+
+    // console.log(rest);
+
+    this.testimonialsArray.map((testimonial, index) => {
+      testimonial.querySelector('.testimonial__content').innerHTML =
+        `<span class=' inline'>${excerpts[index]}</span>` +
+        `<span class='text-red inline testimonial__dots'>(...)</span>` +
+        `<span class="testimonials__more hidden">${rest[index]}</span>`;
+    });
+  }
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   handleHamburger();
   handleMobileMenuClick();
   handleTopBar();
   handleBackToTop();
+
+  if (window.innerWidth < 1024) {
+    const testimonials = new Testimonials({
+      excerpt: 276,
+    });
+
+    testimonials.init();
+  }
 
   const swiper = new Swiper('.swiper--notification', {
     speed: 9400,
@@ -157,7 +249,7 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 1,
       },
       // when window width is >= 640px
-      720: {
+      1024: {
         slidesPerView: 'auto',
       },
     },

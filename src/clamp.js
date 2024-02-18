@@ -6,7 +6,6 @@
  * http://sam.zoy.org/wtfpl/
  */
 
-console.log('clamp.js');
 (function () {
   window.$clamp = function (c, d) {
     function s(a, b) {
