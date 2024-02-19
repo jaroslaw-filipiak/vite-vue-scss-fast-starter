@@ -256,7 +256,13 @@ const initSwipers = () => {
       },
       // when window width is >= 640px
       1024: {
+        slidesPerView: 1,
+      },
+
+      1280: {
         slidesPerView: 'auto',
+        centeredSlides: false,
+        loop: true,
       },
     },
     navigation: {

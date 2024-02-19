@@ -62,6 +62,10 @@
   @apply max-w-[1440px] xl:ml-[180px] 2xl:ml-[240px] max-xl:pl-[24px] max-xl:pr-[24px];
 }
 
+.aside-offset__margin--testimonials {
+  @apply w-full xl:ml-[180px] 2xl:ml-[240px] max-xl:pl-[24px] max-xl:pr-[24px];
+}
+
 .aside {
   @apply bg-opacity-90;
 }

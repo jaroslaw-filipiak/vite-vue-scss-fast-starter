@@ -11,4 +11,11 @@
   .swiper-slide-next {
     @apply opacity-20;
   }
+
+  &__desktop-nav {
+    // xl:right-[180px] 2xl:right-[240px]  right-0 top-1;
+    // xl:ml-[180px] 2xl:ml-[240px] max-xl:pl-[24px] max-xl:pr-[24px]
+    @apply hidden lg:flex absolute items-center justify-end w-full h-full;
+    @apply xl:-left-[180px] 2xl:left-0 top-0 xl:max-w-[1440px];
+  }
 }
