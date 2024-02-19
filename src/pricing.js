@@ -88,6 +88,13 @@ const handlePricingPopup = () => {
   });
 };
 
+const handlePricingSearchBox = () => {
+  const input = document.querySelector('.pricing__searchbox');
+  input.addEventListener('input', (e) => {
+    console.log('typing', e.target.value);
+  });
+};
+
 /* Hidden box-search when click outside
 
 $(document).mouseup(function(e) {
@@ -105,6 +112,7 @@ window.addEventListener('DOMContentLoaded', () => {
   handleMobileMenuClick();
   handleTopBar();
   handlePricingPopup();
+  handlePricingSearchBox();
 
   const swiper = new Swiper('.swiper--notification', {
     speed: 9400,

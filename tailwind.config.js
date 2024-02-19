@@ -43,8 +43,8 @@ export default {
     },
     extend: {
       fontSize: {
-        '1-75rem': '1.75rem', // 28px ? 21 pokazuje jako fluid , text-2xl pokazuje 27.78
-        '2-75rem': '2.75rem', // 28px ? 21 pokazuje jako fluid , text-2xl pokazuje 27.78
+        '1-75rem': '1.75rem',
+        '2-75rem': '2.75rem',
       },
     },
   },
@@ -63,6 +63,7 @@ export default {
       values: {
         '3rem': 3,
         '4-717rem': 4.717, // 38px on 2xl
+        '3xl': [4, 1.4],
         '5xl': [6, 1.4],
         // ...
         base: 0,

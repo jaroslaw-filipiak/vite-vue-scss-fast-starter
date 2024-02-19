@@ -22,7 +22,7 @@
 
   @media (min-width: 1280px) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 98px 1fr;
     grid-template-areas:
       'title label'
       'buttons excerpt';
