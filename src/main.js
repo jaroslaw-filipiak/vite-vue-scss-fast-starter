@@ -159,20 +159,26 @@ class Testimonials {
   }
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  handleHamburger();
-  handleMobileMenuClick();
-  handleTopBar();
-  handleBackToTop();
-
+const testimonialsMobileNavigation = () => {
   if (window.innerWidth < 1024) {
-    const testimonials = new Testimonials({
-      excerpt: 276,
+    const next = document.querySelector('.testimonial__next--mobile');
+    const prev = document.querySelector('.testimonial__prev--mobile');
+
+    const swiper = document.querySelector(
+      '.slider-row__swiper--testimonials'
+    ).swiper;
+
+    next.addEventListener('click', () => {
+      swiper.slideNext();
     });
 
-    testimonials.init();
-  }
+    prev.addEventListener('click', () => {
+      swiper.slidePrev();
+    });
+  } else return;
+};
 
+const initSwipers = () => {
   const swiper = new Swiper('.swiper--notification', {
     speed: 9400,
     centeredSlides: false,
@@ -295,6 +301,23 @@ window.addEventListener('DOMContentLoaded', () => {
       },
     },
   });
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+  initSwipers();
+  handleHamburger();
+  handleMobileMenuClick();
+  handleTopBar();
+  handleBackToTop();
+  testimonialsMobileNavigation();
+
+  if (window.innerWidth < 1024) {
+    const testimonials = new Testimonials({
+      excerpt: 276,
+    });
+
+    testimonials.init();
+  }
 
   new Accordion('.accordion-container', {
     duration: 130,
