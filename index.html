@@ -1541,9 +1541,18 @@
   <!-- back to top  -->
 
   <div
-    class="back-to-top w-[80px] h-[80px] bg-dark flex items-center justify-center rounded-full fixed bottom-6 rotate-180 right-6 cursor-pointer group hover:bg-red trnsition-all z-[9999]">
-    <svg class="relative top-0 group-hover:top-[4px] transition-all" xmlns=" http://www.w3.org/2000/svg" width="14.993"
-      height="14.993" viewBox="0 0 14.993 14.993">
+    class="back-to-top w-[52px] xl:w-[80px] h-[52px] xl:h-[80px] bg-dark flex items-center justify-center rounded-full fixed bottom-6 rotate-180 right-6 cursor-pointer group hover:bg-red trnsition-all z-[9999]">
+
+    <!-- mobile arrow -->
+    <svg class="lg:hidden" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8.687 1L5.095 4.592L1.5 1L1 1.5L5.1 5.6L9.19 1.5L8.687 1Z" fill="#F9F2E5" stroke="#F9F2E5"
+        stroke-width="0.5" />
+    </svg>
+
+
+    <!-- arrow desktop -->
+    <svg class="relative hidden lg:flex top-0 group-hover:top-[4px] transition-all" xmlns=" http://www.w3.org/2000/svg"
+      width="14.993" height="14.993" viewBox="0 0 14.993 14.993">
       <path id="Arrow_Down" d="M0,0V10.6H10.6V9.3H2.223L10.594.929,9.674.008,1.3,8.38V0Z"
         transform="translate(0 7.496) rotate(-45)" class="fill-light" />
     </svg>
